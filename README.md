@@ -7,6 +7,8 @@ Mission framework made for TCS based on F3 which currently includes:
 
 * Automatic radio insertion into the player's inventory. (Radios do not come configured with specific channels)
 
+* Proper group names in the role selection screen.
+
 
 ## Installation
 1. Download the repository.
