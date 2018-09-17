@@ -1,7 +1,10 @@
 # TCS Mission Framework
-Mission framework made for TCS based on F3 which currently includes:  
+Mission framework made for TCS based on F3 which currently includes: 
+
 * Compositions for: East and West sides.
+
 * Side-independent group markers that are only visible to their side. (Configurable)
+
 * Automatic radio insertion into the player's inventory. (Radios do not come configured with specific channels)
 
 
@@ -13,6 +16,7 @@ Mission framework made for TCS based on F3 which currently includes:
 
 ## Configuration
 All configuration options are set in the `tcs/fn_configure.sqf` file, the only ones not self explanatory are:  
+
 * `TCS_var_westGroupMarkers`  
 To make it easier to customize and add new groups into the mission the group markers were made independent of the group variable name. For that it was necessary to define somewhere which marker would represent what "kind" of squad. So that mission maker's don't have to remember the exact name of the marker class a translation "table" was created, which is what this variable is.  
 There are "translation tables" for each side, making it possible to have different markers for each side.
