@@ -23,10 +23,6 @@ All configuration options are set in the `tcs/fn_configure.sqf` file, the only o
 To make it easier to customize and add new groups into the mission the group markers were made independent of the group variable name. For that it was necessary to define somewhere which marker would represent what "kind" of squad. So that mission maker's don't have to remember the exact name of the marker class a translation "table" was created, which is what this variable is.  
 There are "translation tables" for each side, making it possible to have different markers for each side.
 
-* `TCS_var_defaultRadioPreset`  
-Contrary to what the variable name might seem like, this variable actually contains a function that is responsable for applying a radio preset to a given group. With the only parameter being passed being the group.  
-This function then takes a group and handles all the radio operations needed to have the radios properly set for a group when it is initalized.
-
 * `TCS_var_westRadios`  
 This variable contains a definition of which radios should a unit have. It is an array of arrays whose index `0` indicates which radios the leader of the group should have and index `1` contains a list of radios which all of the other units in the group should have.
 
