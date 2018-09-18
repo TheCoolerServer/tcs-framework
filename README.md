@@ -14,7 +14,8 @@ Mission framework made for TCS based on F3 which currently includes:
 
 ## Installation
 1. Download the repository.
-2. Copy all the files except "mission.sqm" into your mission folder.
+2. Copy all the files except "compositions" into your mission folder.
+3. Copy the folders inside the "compositions" folder into your profile's compositions folder.
 3. Place one of the side compositions into the map.
 
 
