@@ -9,6 +9,8 @@ Mission framework made for TCS based on F3 which currently includes:
 
 * Proper group names in the role selection screen.
 
+* Ticked based respawn system.
+
 
 ## Installation
 1. Download the repository.
