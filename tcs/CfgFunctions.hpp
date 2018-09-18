@@ -28,6 +28,8 @@ class TCS {
     file = "tcs";
 
     class initGroup {};
+    class initZeus {};
+    
     class configure {PreInit = 1;};
   };
 

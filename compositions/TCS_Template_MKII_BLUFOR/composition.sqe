@@ -14328,9 +14328,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-75.633301,0,-6.7626953};
+			position[]={-75.632813,0,-6.7624512};
 		};
 		name="ZEUS1";
+		init="call{[this] call TCS_fnc_initZeus;}";
 		isPlayable=1;
 		description="Zeus  1";
 		id=104;
@@ -14341,9 +14342,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-74.625488,0,-19.21582};
+			position[]={-74.625977,0,-19.215332};
 		};
 		name="ZEUS2";
+		init="call{[this] call TCS_fnc_initZeus;}";
 		isPlayable=1;
 		description="Zeus 2";
 		id=105;
