@@ -21,12 +21,10 @@ TCS_var_civilianGroupMarkers = TCS_var_westGroupMarkers;
 
 
 //---------------Radios---------------------
-//Should the radios defined here be added to the group units?
 TCS_var_addRadiosToGroup = true;
-//Should the radios that the unit had before the new radios are added be removed?
 TCS_var_removeRadiosInInventory = true;
 
-TCS_var_defaultRadioPreset = TCS_fnc_defaultRadios;
+TCS_var_reinitializeRadiosOnRespawn = true;
 
 //Radios to be given to a unit.
 //The first index are the radios given to the group leader.

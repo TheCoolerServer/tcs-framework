@@ -15,7 +15,9 @@ if (TCS_var_addRadiosToGroup) then {
 			[] call acre_api_fnc_isInitialized
 		};
 
-		_this call TCS_var_defaultRadioPreset;
+		{
+			[_x] call TCS_fnc_initUnitRadios;
+		} forEach (units (_this select 0));
 	}
 	
 };

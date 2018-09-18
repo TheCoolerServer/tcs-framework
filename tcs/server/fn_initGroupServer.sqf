@@ -1,2 +1,1 @@
-
-[_this select 0] call TCS_fnc_initRadios;
+[_this select 0] call TCS_fnc_initGroupRadios;

@@ -18,8 +18,9 @@ class TCS {
     file = "tcs\server";
 
     class initGroupServer {};
-    class initRadios {};
-    class defaultRadios {};
+
+    class initGroupRadios {};
+    class initUnitRadios {};
   }
 
 
