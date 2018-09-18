@@ -37,3 +37,10 @@ TCS_var_westRadios = [
 TCS_var_eastRadios = TCS_var_westRadios;
 TCS_var_independentRadios = TCS_var_westRadios;
 TCS_var_civilianRadios = TCS_var_westRadios;
+
+
+//----------------Tickets----------------------
+TCS_var_westTickets = 10;
+TCS_var_eastTickets = 10;
+TCS_var_independentTickets = 10;
+TCS_var_civilianTickets = 10;

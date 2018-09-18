@@ -31,5 +31,19 @@ class TCS {
     class configure {PreInit = 1;};
   };
 
+  class Tickets {
+    file = "tcs\tickets";
+
+    class ticketsOnPlayerKilled {};
+    class ticketsOnPlayerRespawn {};
+
+    class ticketsRespawnLoop {};
+
+    class ticketsPlayerRespawned {};
+
+    class setTickets {};
+    class addTickets {};
+  }
+
 
 };
