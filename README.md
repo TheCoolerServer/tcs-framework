@@ -14,7 +14,7 @@ Mission framework made for TCS based on F3 which currently includes:
 
 ## Installation
 1. Download the repository.
-2. Copy all the files except "compositions" into your mission folder.
+2. Copy all the files except "compositions" into your mission folder.k
 3. Copy the folders inside the "compositions" folder into your profile's compositions folder.
 3. Place one of the side compositions into the map.
 
@@ -43,3 +43,22 @@ Example:
 [this, "Lead", "ASL", "ColorRed"] call TCS_fnc_initGroup;
 ```
 Thihs will create a marker on the map that is a `Lead` element being `ASL` whose color will be red. The group will also have the proper radios if the configuration option to initialize the radios is enabled.
+
+
+## Switching the default respawn system to the ticket-based one
+To change the mission from having no respawns to a ticket-based respawn is really simple, all that is needed is for respawn to be enabled on the mission (`Attributes -> Multiplayer -> Respawn`) and the respawn template be changed to use the tickets.  
+
+To change the respawn template to tickets all that is necessary is to change the `respawnTemplates` setting in the `description.ext` to include the `TCS_Tickets` template. For example, this are the default respawn templates:
+```sqf
+respawnTemplates[] = {"TCS_Respawn", "Counter"};
+```
+
+If we want to change this to use tickets, all that we have to do is remove the `Counter` template and add the `TCS_Tickets` one. Which would result in:
+```sqf
+respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"};
+```
+
+If you are wondering why the `Counter` respawn template was removed, it was because the tickets respawn screen already contains a counter for how long the player has to wait until he respawns and the default one would be wrong since it would always be reset to the default value due to the way how respawns are handled.  
+
+**Note:** The `TCS_Respawn` template is there to provide a smooth transition between death and the spectator screen and initializes calls `BIS_fnc_EGSpectator`. If you don't want that behaviour you can remove that template and it will not affect the tickets. But you will have to call `BIS_fnc_EGSpectator` youself to get the nice spectator screen.
+
