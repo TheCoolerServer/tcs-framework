@@ -1,14 +1,14 @@
 version=53;
-center[]={5683.502,5,3377.2734};
+center[]={5674.585,5,3390.4924};
 class items
 {
-	items=34;
+	items=41;
 	class Item0
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-4.9921875,0,-46.92627};
+			position[]={3.9248047,0,-60.145264};
 		};
 		id=0;
 		type="ACE_moduleAssignEngineerRoles";
@@ -60,7 +60,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-1.6845703,0,67.814453};
+			position[]={7.2324219,0,54.595459};
 		};
 		id=1;
 		type="ACE_moduleAssignMedicRoles";
@@ -119,7 +119,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-0.25195313,0.0014390945,49.476563};
+					position[]={8.6650391,0.0014390945,36.257568};
 				};
 				side="West";
 				flags=6;
@@ -308,7 +308,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.7480469,0.0014390945,47.827637};
+					position[]={13.665039,0.0014390945,34.608643};
 				};
 				side="West";
 				flags=4;
@@ -561,7 +561,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.2524414,0.0014390945,47.827881};
+					position[]={3.6645508,0.0014390945,34.608887};
 				};
 				side="West";
 				flags=4;
@@ -710,7 +710,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={9.7475586,0.0014390945,45.087646};
+					position[]={18.664551,0.0014390945,31.868652};
 				};
 				side="West";
 				flags=4;
@@ -935,7 +935,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-30.626953,0.0014390945,30.115723};
+					position[]={-21.709961,0.0014390945,16.896729};
 				};
 				side="West";
 				flags=6;
@@ -1085,7 +1085,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-25.626465,0.0014390945,28.4646};
+					position[]={-16.709473,0.0014390945,15.245605};
 				};
 				side="West";
 				flags=4;
@@ -1310,7 +1310,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-31.151855,0.0014390945,19.525635};
+					position[]={-22.234863,0.0014390945,6.3066406};
 				};
 				side="West";
 				flags=6;
@@ -1460,7 +1460,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-26.152344,0.0014390945,17.875732};
+					position[]={-17.235352,0.0014390945,4.6567383};
 				};
 				side="West";
 				flags=4;
@@ -1610,7 +1610,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-21.151855,0.0014390945,15.135498};
+					position[]={-12.234863,0.0014390945,1.9165039};
 				};
 				side="West";
 				flags=4;
@@ -1760,7 +1760,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-35.789063,0.0014390945,17.732666};
+					position[]={-26.87207,0.0014390945,4.5136719};
 				};
 				side="West";
 				flags=4;
@@ -1966,7 +1966,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-30.76416,0.0014390945,9.9956055};
+					position[]={-21.847168,0.0014390945,-3.2233887};
 				};
 				side="West";
 				flags=6;
@@ -2116,7 +2116,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-25.76416,0.0014390945,8.3444824};
+					position[]={-16.847168,0.0014390945,-4.8745117};
 				};
 				side="West";
 				flags=4;
@@ -2266,7 +2266,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-20.76416,0.0014390945,5.6057129};
+					position[]={-11.847168,0.0014390945,-7.6132813};
 				};
 				side="West";
 				flags=4;
@@ -2416,7 +2416,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-35.401367,0.0014390945,8.2028809};
+					position[]={-26.484375,0.0014390945,-5.0161133};
 				};
 				side="West";
 				flags=4;
@@ -2622,7 +2622,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-8.8427734,0.0014390945,30.106689};
+					position[]={0.07421875,0.0014390945,16.887695};
 				};
 				side="West";
 				flags=6;
@@ -2772,7 +2772,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.8432617,0.0014390945,28.456787};
+					position[]={5.0737305,0.0014390945,15.237793};
 				};
 				side="West";
 				flags=4;
@@ -2997,7 +2997,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-8.7021484,0.0014390945,18.395508};
+					position[]={0.21484375,0.0014390945,5.1765137};
 				};
 				side="West";
 				flags=6;
@@ -3147,7 +3147,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.7021484,0.0014390945,16.74585};
+					position[]={5.2148438,0.0014390945,3.5268555};
 				};
 				side="West";
 				flags=4;
@@ -3297,7 +3297,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={1.2978516,0.0014390945,14.005615};
+					position[]={10.214844,0.0014390945,0.78662109};
 				};
 				side="West";
 				flags=4;
@@ -3447,7 +3447,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-13.613281,0.0014390945,15.798584};
+					position[]={-4.6962891,0.0014390945,2.5795898};
 				};
 				side="West";
 				flags=4;
@@ -3653,7 +3653,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-9.355957,0.0014390945,8.265625};
+					position[]={-0.43896484,0.0014390945,-4.9533691};
 				};
 				side="West";
 				flags=6;
@@ -3803,7 +3803,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.3564453,0.0014390945,6.614502};
+					position[]={4.5605469,0.0014390945,-6.6044922};
 				};
 				side="West";
 				flags=4;
@@ -3953,7 +3953,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={0.64355469,0.0014390945,3.8757324};
+					position[]={9.5605469,0.0014390945,-9.3432617};
 				};
 				side="West";
 				flags=4;
@@ -4103,7 +4103,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-14.26709,0.0014390945,5.6687012};
+					position[]={-5.3500977,0.0014390945,-7.550293};
 				};
 				side="West";
 				flags=4;
@@ -4309,7 +4309,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={16.180176,0.0014390945,29.445557};
+					position[]={25.097168,0.0014390945,16.226563};
 				};
 				side="West";
 				flags=6;
@@ -4459,7 +4459,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={21.179688,0.0014390945,27.796631};
+					position[]={30.09668,0.0014390945,14.577637};
 				};
 				side="West";
 				flags=4;
@@ -4684,7 +4684,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={16.049805,0.0014390945,18.287598};
+					position[]={24.966797,0.0014390945,5.0686035};
 				};
 				side="West";
 				flags=6;
@@ -4834,7 +4834,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={21.049805,0.0014390945,16.636475};
+					position[]={29.966797,0.0014390945,3.4174805};
 				};
 				side="West";
 				flags=4;
@@ -4984,7 +4984,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={26.049805,0.0014390945,13.897705};
+					position[]={34.966797,0.0014390945,0.67871094};
 				};
 				side="West";
 				flags=4;
@@ -5134,7 +5134,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={11.625488,0.0014390945,16.561768};
+					position[]={20.54248,0.0014390945,3.3427734};
 				};
 				side="West";
 				flags=4;
@@ -5340,7 +5340,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={15.283203,0.0014390945,6.7827148};
+					position[]={24.200195,0.0014390945,-6.4362793};
 				};
 				side="West";
 				flags=6;
@@ -5490,7 +5490,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={20.282715,0.0014390945,5.1325684};
+					position[]={29.199707,0.0014390945,-8.0864258};
 				};
 				side="West";
 				flags=4;
@@ -5640,7 +5640,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={25.282715,0.0014390945,2.3937988};
+					position[]={34.199707,0.0014390945,-10.825195};
 				};
 				side="West";
 				flags=4;
@@ -5790,7 +5790,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={10.859863,0.0014390945,5.0568848};
+					position[]={19.776855,0.0014390945,-8.1621094};
 				};
 				side="West";
 				flags=4;
@@ -5996,7 +5996,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={35.625977,0.0014390945,26.956543};
+					position[]={44.542969,0.0014390945,13.737549};
 				};
 				side="West";
 				flags=6;
@@ -6146,7 +6146,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={40.626465,0.0014390945,25.305908};
+					position[]={49.543457,0.0014390945,12.086914};
 				};
 				side="West";
 				flags=4;
@@ -6352,7 +6352,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={35.26123,0.0014390945,15.164551};
+					position[]={44.178223,0.0014390945,1.9455566};
 				};
 				side="West";
 				flags=6;
@@ -6502,7 +6502,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={40.260742,0.0014390945,13.513916};
+					position[]={49.177734,0.0014390945,0.29492188};
 				};
 				side="West";
 				flags=4;
@@ -6708,7 +6708,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={48.888184,0.0014390945,26.776611};
+					position[]={57.805176,0.0014390945,13.557617};
 				};
 				side="West";
 				flags=7;
@@ -6856,7 +6856,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={52.887695,0.0014390945,24.776611};
+					position[]={61.804688,0.0014390945,11.557617};
 				};
 				side="West";
 				flags=5;
@@ -7061,7 +7061,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={48.888184,0.0014390945,15.776611};
+					position[]={57.805176,0.0014390945,2.5576172};
 				};
 				side="West";
 				flags=7;
@@ -7209,7 +7209,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={52.887695,0.0014390945,13.776611};
+					position[]={61.804688,0.0014390945,0.55761719};
 				};
 				side="West";
 				flags=5;
@@ -7414,7 +7414,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={35.63916,0.0014390945,2.3867188};
+					position[]={44.556152,0.0014390945,-10.832275};
 				};
 				side="West";
 				flags=6;
@@ -7564,7 +7564,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={40.638672,0.014439106,0.73657227};
+					position[]={49.555664,0.014439106,-12.482422};
 				};
 				side="West";
 				flags=4;
@@ -7772,7 +7772,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={35.319824,0.0014390945,-6.2143555};
+					position[]={44.236816,0.0014390945,-19.43335};
 				};
 				side="West";
 				flags=6;
@@ -7922,7 +7922,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={40.319824,0.0014390945,-7.864502};
+					position[]={49.236816,0.0014390945,-21.083496};
 				};
 				side="West";
 				flags=4;
@@ -8129,7 +8129,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={35.85498,0.0014390945,-21.408447};
+					position[]={44.771973,0.0014390945,-34.627441};
 				};
 				side="West";
 				flags=6;
@@ -8279,7 +8279,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={40.855469,0.0014390945,-23.057861};
+					position[]={49.772461,0.0014390945,-36.276855};
 				};
 				side="West";
 				flags=4;
@@ -8486,7 +8486,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={36.185059,0.0014390945,-32.480469};
+					position[]={45.102051,0.0014390945,-45.699463};
 				};
 				side="West";
 				flags=6;
@@ -8636,7 +8636,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={41.18457,0.0014390945,-34.131592};
+					position[]={50.101563,0.0014390945,-47.350586};
 				};
 				side="West";
 				flags=4;
@@ -8843,7 +8843,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={34.858887,0.0014390945,-45.246338};
+					position[]={43.775879,0.0014390945,-58.465332};
 				};
 				side="West";
 				flags=6;
@@ -9031,7 +9031,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={39.858887,0.0014390945,-46.89624};
+					position[]={48.775879,0.0014390945,-60.115234};
 				};
 				side="West";
 				flags=4;
@@ -9218,7 +9218,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={31.365234,0.0014390945,-46.075684};
+					position[]={40.282227,0.0014390945,-59.294678};
 				};
 				side="West";
 				flags=4;
@@ -9405,7 +9405,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={44.858887,0.0014390945,-49.636475};
+					position[]={53.775879,0.0014390945,-62.855469};
 				};
 				side="West";
 				flags=4;
@@ -9649,7 +9649,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-46.98291,0.0014390945,-16.178467};
+					position[]={-38.065918,0.0014390945,-29.397461};
 				};
 				side="West";
 				flags=6;
@@ -9799,7 +9799,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-45.469238,0.0014390945,-18.0354};
+					position[]={-36.552246,0.0014390945,-31.254395};
 				};
 				side="West";
 				flags=4;
@@ -9949,7 +9949,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-45.358398,0.0014390945,-16.19751};
+					position[]={-36.441406,0.0014390945,-29.416504};
 				};
 				side="West";
 				flags=4;
@@ -10137,7 +10137,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-47.000488,0.0014390945,-18.190186};
+					position[]={-38.083496,0.0014390945,-31.40918};
 				};
 				side="West";
 				flags=4;
@@ -10343,7 +10343,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-47.066895,0.0014390945,-44.472412};
+					position[]={-38.149902,0.0014390945,-57.691406};
 				};
 				side="West";
 				flags=6;
@@ -10493,7 +10493,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-47.15332,0.0014390945,-46.583252};
+					position[]={-38.236328,0.0014390945,-59.802246};
 				};
 				side="West";
 				flags=4;
@@ -10643,7 +10643,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-45.540527,0.0014390945,-46.699463};
+					position[]={-36.623535,0.0014390945,-59.918457};
 				};
 				side="West";
 				flags=4;
@@ -10831,7 +10831,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-45.442383,0.0014390945,-44.509521};
+					position[]={-36.525391,0.0014390945,-57.728516};
 				};
 				side="West";
 				flags=4;
@@ -11037,7 +11037,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-22.225098,0.0014390945,-14.975342};
+					position[]={-13.308105,0.0014390945,-28.194336};
 				};
 				side="West";
 				flags=6;
@@ -11187,7 +11187,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-20.587402,0.0014390945,-15.002686};
+					position[]={-11.67041,0.0014390945,-28.22168};
 				};
 				side="West";
 				flags=4;
@@ -11432,7 +11432,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-21.145996,0.0014390945,-45.451416};
+					position[]={-12.229004,0.0014390945,-58.67041};
 				};
 				side="West";
 				flags=6;
@@ -11582,7 +11582,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-19.862793,0.0014390945,-45.496338};
+					position[]={-10.945801,0.0014390945,-58.715332};
 				};
 				side="West";
 				flags=4;
@@ -11827,7 +11827,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-5.8139648,0.0014390945,-11.522461};
+					position[]={3.1030273,0.0014390945,-24.741455};
 				};
 				side="West";
 				flags=6;
@@ -12062,7 +12062,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-3.2944336,0.0014390945,-11.633545};
+					position[]={5.6225586,0.0014390945,-24.852539};
 				};
 				side="West";
 				flags=4;
@@ -12297,7 +12297,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-4.5004883,0.0014390945,-11.5354};
+					position[]={4.4165039,0.0014390945,-24.754395};
 				};
 				side="West";
 				flags=4;
@@ -12626,7 +12626,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.7768555,0.0014390945,-12.069336};
+					position[]={16.693848,0.0014390945,-25.28833};
 				};
 				side="West";
 				flags=6;
@@ -12861,7 +12861,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={10.928711,0.0014390945,-12.143311};
+					position[]={19.845703,0.0014390945,-25.362305};
 				};
 				side="West";
 				flags=4;
@@ -13096,7 +13096,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={9.3227539,0.0014390945,-12.123291};
+					position[]={18.239746,0.0014390945,-25.342285};
 				};
 				side="West";
 				flags=4;
@@ -13425,7 +13425,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={23.912109,0.0014390945,-11.633301};
+					position[]={32.829102,0.0014390945,-24.852295};
 				};
 				side="West";
 				flags=6;
@@ -13660,7 +13660,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={27.116699,0.0014390945,-11.865479};
+					position[]={36.033691,0.0014390945,-25.084473};
 				};
 				side="West";
 				flags=4;
@@ -13895,7 +13895,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={25.554688,0.0014390945,-11.75708};
+					position[]={34.47168,0.0014390945,-24.976074};
 				};
 				side="West";
 				flags=4;
@@ -14217,11 +14217,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-66.07666,0,-18.515625};
+			position[]={-101.08203,0,78.834473};
 		};
 		name="ZEUS_2";
 		init="this addCuratorEditableObjects [playableUnits,true];";
-		id=103;
+		id=207;
 		type="ModuleCurator_F";
 		class CustomAttributes
 		{
@@ -14328,13 +14328,13 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-75.632813,0,-6.7624512};
+			position[]={-110.63916,0,90.588623};
 		};
 		name="ZEUS1";
 		init="call{[this] call TCS_fnc_initZeus;}";
 		isPlayable=1;
 		description="Zeus  1";
-		id=104;
+		id=208;
 		type="VirtualCurator_F";
 	};
 	class Item30
@@ -14342,13 +14342,13 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-74.625977,0,-19.215332};
+			position[]={-109.63184,0,78.134521};
 		};
 		name="ZEUS2";
 		init="call{[this] call TCS_fnc_initZeus;}";
 		isPlayable=1;
 		description="Zeus 2";
-		id=105;
+		id=209;
 		type="VirtualCurator_F";
 	};
 	class Item31
@@ -14356,11 +14356,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-66.493652,0,-6.2807617};
+			position[]={-101.5,0,91.06958};
 		};
 		name="ZEUS_1";
 		init="this addCuratorEditableObjects [playableUnits,true];";
-		id=106;
+		id=210;
 		type="ModuleCurator_F";
 		class CustomAttributes
 		{
@@ -14467,10 +14467,10 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-83.756836,0,-6.8583984};
+			position[]={-118.7627,0,90.492188};
 		};
 		isPlayable=1;
-		id=107;
+		id=211;
 		type="HeadlessClient_F";
 	};
 	class Item33
@@ -14478,11 +14478,794 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-83.62793,0,-19.27832};
+			position[]={-118.63379,0,78.072266};
 		};
 		isPlayable=1;
-		id=108;
+		id=212;
 		type="HeadlessClient_F";
+	};
+	class Item34
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-101.66992,0,99.75293};
+		};
+		name="ZEUS_3";
+		init="this addCuratorEditableObjects [playableUnits,true];";
+		id=1617;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="#adminLogged";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Zeus3";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item35
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-101.15283,0,107.93042};
+			angles[]={-0,4.7209234,0};
+		};
+		name="ZEUS_HINGLE";
+		init="this addCuratorEditableObjects [playableUnits,true];";
+		id=1618;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="76561193743586276";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Hingle McCringleberry";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item36
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-101.13574,0,109.93042};
+			angles[]={-0,4.7209234,0};
+		};
+		name="ZEUS_LUCAS";
+		init="this addCuratorEditableObjects [playableUnits,true];";
+		id=1619;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="76561198028549221";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Lucas";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item37
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-101.11865,0,111.93018};
+			angles[]={-0,4.7209234,0};
+		};
+		name="ZEUS_SCIENCE";
+		init="this addCuratorEditableObjects [playableUnits,true];";
+		id=1620;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="76561197992043612";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Science!";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item38
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-101.10156,0,113.93042};
+			angles[]={-0,4.7209234,0};
+		};
+		name="ZEUS_METKIL";
+		init="this addCuratorEditableObjects [playableUnits,true];";
+		id=1621;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="76561197981421300";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Metkil";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item39
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-101.08447,0,115.93018};
+			angles[]={-0,4.7209234,0};
+		};
+		name="ZEUS_KANUK";
+		init="this addCuratorEditableObjects [playableUnits,true];";
+		id=1622;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="76561198101895148";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Kanuk";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item40
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-101.06738,0,117.93018};
+			angles[]={-0,4.7209234,0};
+		};
+		name="ZEUS_M16";
+		init="this addCuratorEditableObjects [playableUnits,true];";
+		id=1623;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="76561197997429145";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="M16AndPregnant";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
 	};
 };
 class connections
@@ -14607,8 +15390,8 @@ class connections
 		class Item11
 		{
 			linkID=11;
-			item0=104;
-			item1=106;
+			item0=9;
+			item1=1;
 			class CustomData
 			{
 				type="Sync";
@@ -14617,8 +15400,8 @@ class connections
 		class Item12
 		{
 			linkID=12;
-			item0=105;
-			item1=103;
+			item0=22;
+			item1=1;
 			class CustomData
 			{
 				type="Sync";
@@ -14627,7 +15410,7 @@ class connections
 		class Item13
 		{
 			linkID=13;
-			item0=9;
+			item0=6;
 			item1=1;
 			class CustomData
 			{
@@ -14637,7 +15420,7 @@ class connections
 		class Item14
 		{
 			linkID=14;
-			item0=22;
+			item0=35;
 			item1=1;
 			class CustomData
 			{
@@ -14647,8 +15430,8 @@ class connections
 		class Item15
 		{
 			linkID=15;
-			item0=6;
-			item1=1;
+			item0=208;
+			item1=210;
 			class CustomData
 			{
 				type="Sync";
@@ -14657,8 +15440,8 @@ class connections
 		class Item16
 		{
 			linkID=16;
-			item0=35;
-			item1=1;
+			item0=209;
+			item1=207;
 			class CustomData
 			{
 				type="Sync";
