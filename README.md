@@ -62,7 +62,7 @@ After that, the default ticket amount for each side is `10`. That can be changed
 
 If you are wondering why the `Counter` respawn template was removed, it was because the tickets respawn screen already contains a counter for how long the player has to wait until he respawns and the default one would be wrong since it would always be reset to the default value due to the way how respawns are handled.  
 
-**Note:** The `TCS_Respawn` template is there to provide a smooth transition between death and the spectator screen and initializes calls `BIS_fnc_EGSpectator`. If you don't want that behaviour you can remove that template and it will not affect the tickets. But you will have to call `BIS_fnc_EGSpectator` youself to get the nice spectator screen.
+**Note:** The `TCS_Respawn` template is there to provide a smooth transition between death and the spectator screen and calls `BIS_fnc_EGSpectator`. If you don't want that behaviour you can remove that template and it will not affect the tickets. But you will have to call `BIS_fnc_EGSpectator` youself to get the nice spectator screen.
 
 ### Changing the amount of tickets of a side
 There are `2` functions that can be called to set/add tickets to a side, both of these functions **MUST** be called on the server, if you are not executing the code in the server, `remoteExecCall` the function.  
