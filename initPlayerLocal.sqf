@@ -1,11 +1,3 @@
-// F3 - Radio Systems Support
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-[] execVM "f\radios\radio_init.sqf";
-
-
-// ====================================================================================
-
 // F3 - Mute Orders and Reports
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
