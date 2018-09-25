@@ -1,5 +1,6 @@
 //-------------------Group markers--------------------------
-TCS_var_showMarkersOfOtherSides = true;
+TCS_var_groupMarkersEnabled = true;
+TCS_var_showMarkersOfOtherSides = false;
 
 TCS_var_westGroupMarkers = [
 	["Lead", "b_hq"], 			// Command elements

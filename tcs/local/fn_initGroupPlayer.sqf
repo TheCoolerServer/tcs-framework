@@ -1,4 +1,4 @@
-if (!isDedicated && hasInterface) then {
+if (!isDedicated && hasInterface && TCS_var_groupMarkersEnabled) then {
 	_this spawn {
 		private _group = _this select 0;
 		private _groupType = _this select 1;
