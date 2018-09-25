@@ -280,7 +280,7 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={89.246582,0,100.64795};
+			position[]={89.246582,0,100.64771};
 		};
 		name="ZEUS_3";
 		init="this addCuratorEditableObjects [playableUnits,true];";
@@ -322,7 +322,7 @@ class items
 								"SCALAR"
 							};
 						};
-						value=1;
+						value=0;
 					};
 				};
 			};
@@ -392,7 +392,7 @@ class items
 		class PositionInfo
 		{
 			position[]={89.763672,0,108.82544};
-			angles[]={-0,4.7209234,0};
+			angles[]={0,4.7209234,0};
 		};
 		name="ZEUS_HINGLE";
 		init="this addCuratorEditableObjects [playableUnits,true];";
@@ -504,7 +504,7 @@ class items
 		class PositionInfo
 		{
 			position[]={89.780762,0,110.82544};
-			angles[]={-0,4.7209234,0};
+			angles[]={0,4.7209234,0};
 		};
 		name="ZEUS_LUCAS";
 		init="this addCuratorEditableObjects [playableUnits,true];";
@@ -616,7 +616,7 @@ class items
 		class PositionInfo
 		{
 			position[]={89.797852,0,112.8252};
-			angles[]={-0,4.7209234,0};
+			angles[]={0,4.7209234,0};
 		};
 		name="ZEUS_SCIENCE";
 		init="this addCuratorEditableObjects [playableUnits,true];";
@@ -728,7 +728,7 @@ class items
 		class PositionInfo
 		{
 			position[]={89.814941,0,114.82544};
-			angles[]={-0,4.7209234,0};
+			angles[]={0,4.7209234,0};
 		};
 		name="ZEUS_METKIL";
 		init="this addCuratorEditableObjects [playableUnits,true];";
@@ -840,7 +840,7 @@ class items
 		class PositionInfo
 		{
 			position[]={89.832031,0,116.8252};
-			angles[]={-0,4.7209234,0};
+			angles[]={0,4.7209234,0};
 		};
 		name="ZEUS_KANUK";
 		init="this addCuratorEditableObjects [playableUnits,true];";
@@ -952,7 +952,7 @@ class items
 		class PositionInfo
 		{
 			position[]={89.849121,0,118.8252};
-			angles[]={-0,4.7209234,0};
+			angles[]={0,4.7209234,0};
 		};
 		name="ZEUS_M16";
 		init="this addCuratorEditableObjects [playableUnits,true];";
@@ -13018,11 +13018,11 @@ class connections
 {
 	class LinkIDProvider
 	{
-		nextID=38;
+		nextID=19;
 	};
 	class Links
 	{
-		items=38;
+		items=19;
 		class Item0
 		{
 			linkID=0;
@@ -13206,196 +13206,6 @@ class connections
 		class Item18
 		{
 			linkID=18;
-			item0=205;
-			item1=213;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item19
-		{
-			linkID=19;
-			item0=208;
-			item1=210;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item20
-		{
-			linkID=20;
-			item0=209;
-			item1=207;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item21
-		{
-			linkID=21;
-			item0=214;
-			item1=183;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item22
-		{
-			linkID=22;
-			item0=187;
-			item1=214;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item23
-		{
-			linkID=23;
-			item0=174;
-			item1=214;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item24
-		{
-			linkID=24;
-			item0=172;
-			item1=214;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item25
-		{
-			linkID=25;
-			item0=173;
-			item1=214;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item26
-		{
-			linkID=26;
-			item0=175;
-			item1=214;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item27
-		{
-			linkID=27;
-			item0=203;
-			item1=214;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item28
-		{
-			linkID=28;
-			item0=200;
-			item1=214;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item29
-		{
-			linkID=29;
-			item0=195;
-			item1=214;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item30
-		{
-			linkID=30;
-			item0=190;
-			item1=214;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item31
-		{
-			linkID=31;
-			item0=179;
-			item1=214;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item32
-		{
-			linkID=32;
-			item0=116;
-			item1=213;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item33
-		{
-			linkID=33;
-			item0=129;
-			item1=213;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item34
-		{
-			linkID=34;
-			item0=113;
-			item1=213;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item35
-		{
-			linkID=35;
-			item0=142;
-			item1=213;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item36
-		{
-			linkID=36;
-			item0=169;
-			item1=213;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item37
-		{
-			linkID=37;
 			item0=205;
 			item1=213;
 			class CustomData
