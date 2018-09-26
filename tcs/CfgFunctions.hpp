@@ -8,19 +8,21 @@ class TCS {
     class groupMarker {};
 
     class initGroupPlayer {};
-    class initUnit {};
+    
+    class initUnitRadios {};
 
     class onPlayerKilled {};
     class onPlayerRespawn {};
+
+    class initPlayer {};
   };
   
   class Server{
     file = "tcs\server";
 
     class initGroupServer {};
-
-    class initGroupRadios {};
-    class initUnitRadios {};
+    
+    class initServer {};
   }
 
 

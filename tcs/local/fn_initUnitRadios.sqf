@@ -1,10 +1,10 @@
 private _unit = _this select 0;
 
 if (TCS_var_removeRadiosInInventory) then {
-	private _radiosToRemove = ["ACRE_PRC152", "ACRE_PRC343", "ACRE_PRC148"];
-
+	private _radiosToRemove = [] call acre_api_fnc_getCurrentRadioList;
 	{
 		private _radioClass = _x;
+		
 		while {[_unit, _radioClass] call acre_api_fnc_hasKindOfRadio} do {
 
 			_unit unassignItem _radioClass;
@@ -13,6 +13,8 @@ if (TCS_var_removeRadiosInInventory) then {
 			_unit removeItemFromBackpack _radioClass;
 			_unit removeItemFromUniform  _radioClass;
 			_unit removeItemFromVest  _radioClass;
+
+			systemChat format["Removed  %1 radio from unit %2", _radioClass, _unit];
 		};
 	}forEach _radiosToRemove;
 };
@@ -37,7 +39,7 @@ if (_leader == _unit) then {
 	{
 		(uniformContainer _unit) addItemCargoGlobal [_x, 1];
 	}forEach (_radioPreset select 0);//First one is the leader's radios
-}else {
+} else {
 	{	
 		(uniformContainer _unit) addItemCargoGlobal [_x, 1];
 	}forEach (_radioPreset select 1);//Group member radios

@@ -49,3 +49,5 @@ f_script_briefing = [] execVM "briefing.sqf";
 // f_var_mapClickTeleport_Units = [];				// Restrict map click teleport to these units
 // f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a HALO drop and automatically assign parachutes to units
 // [] execVM "f\mapClickTeleport\f_mapClickTeleportAction.sqf";
+
+[] call TCS_fnc_initPlayer;
