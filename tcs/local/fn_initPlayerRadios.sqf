@@ -1,5 +1,6 @@
 if (TCS_var_removeRadiosInInventory) then {
 	private _radiosToRemove = [] call acre_api_fnc_getCurrentRadioList;
+	
 	{
 		private _radioClass = _x;
 		
@@ -11,8 +12,6 @@ if (TCS_var_removeRadiosInInventory) then {
 			player removeItemFromBackpack _radioClass;
 			player removeItemFromUniform  _radioClass;
 			player removeItemFromVest  _radioClass;
-
-			systemChat format["Removed  %1 radio from unit %2", _radioClass, player];
 		};
 	}forEach _radiosToRemove;
 };
