@@ -3,7 +3,11 @@ cutText ["", "BLACK OUT", 5];
 
 [] spawn {
 	sleep 5;
-	["Initialize", [player]] call BIS_fnc_EGSpectator;
+
+	//Just in case the player respawned immediately, otherwise he will get stuck in the spectator screen
+	if (!alive player) then{
+		["Initialize", [player]] call BIS_fnc_EGSpectator;	
+	};
 
 	cutText ["", "BLACK IN", 1];
 	1 fadeSound 1;
