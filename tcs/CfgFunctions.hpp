@@ -9,7 +9,7 @@ class TCS {
 
     class initGroupPlayer {};
     
-    class initUnitRadios {};
+    class initPlayerRadios {};
 
     class onPlayerKilled {};
     class onPlayerRespawn {};
