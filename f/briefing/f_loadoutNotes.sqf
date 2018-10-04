@@ -6,43 +6,36 @@ if (!hasInterface) exitWith {}; //Exit if not a player.
 
 // DECLARE VARIABLES AND FUNCTIONS
 
-private ["_text","_stuff","_weps","_items","_fnc_wepMags","_wepMags","_magArr","_s","_mags","_bp","_maxload"];
+private ["_text","_weps","_items","_fnc_wepMags","_mags","_bp","_maxload","_attachments","_wepItems"];
 
 // Local function to set the proper magazine count.
 _fnc_wepMags = {
-		private ["_w","_magarr"];
-		_w = _this select 0;
+	private ["_wepMags","_magArr","_s"];
+	params ["_w"];
 
-		//Get possible magazines for weapon
-		_wepMags = getArray (configFile >> "CfgWeapons" >> _w >> "magazines");
+	//Get possible magazines for weapon
+	_wepMags = getArray (configFile >> "CfgWeapons" >> _w >> "magazines");
 
-  		// Compare weapon magazines with player magazines
-  		_magArr = [];
-  		{
-  			// findInPairs returns the first index that matches the checked for magazine
-  			_s = [_mags,_x] call BIS_fnc_findInPairs;
+	// Compare weapon magazines with player magazines
+	_magArr = [];
+	{
+		// findInPairs returns the first index that matches the checked for magazine
+		_s = [_mags,_x] call BIS_fnc_findInPairs;
 
-  			//If we have a match
-  			if (_s != -1) then {
-  				// Add the number of magazines to the list
-  				_magArr set [count _magArr,([_mags,[_s, 1]] call BIS_fnc_returnNestedElement)];
+		//If we have a match
+		if (_s != -1) then {
+			// Add the number of magazines to the list
+			_magArr pushBack ([_mags,[_s, 1]] call BIS_fnc_returnNestedElement);
 
-  				// Remove the entry
-  				_mags = [_mags, _s] call BIS_fnc_removeIndex;
+			// Remove the entry
+			_mags deleteAt _s;
 
-  			};
-  		} forEach _wepMags;
+		};
+	} forEach _wepMags;
 
-  		if (count _magArr > 0) then {
-  			_text = _text + " [";
-
-  			{
-  				_text = _text + format ["%1",_x];
-  				if (count _magarr > (_forEachIndex + 1)) then {_text = _text + "+";}
-  			} forEach _magArr;
-
-  			_text = _text + "]";
-  		};
+	if (count _magArr > 0) then {
+		_text = _text + format ["[%1]", _magArr joinString "+"];
+	};
 };
 
 
@@ -52,7 +45,6 @@ _fnc_wepMags = {
 
 _text = "<br />NOTE: The loadout shown below is only accurate at mission start.<br />
 <br />";
-_stuff = [];
 
 // All weapons minus the field glasses
 _weps = weapons player - ["Rangefinder","Binocular","Laserdesignator"];
@@ -77,9 +69,9 @@ if (count _weps > 0) then {
 		_text = _text + format["<br/>%1",getText (configFile >> "CfgWeapons" >> _x >> "displayname")];
 
 		//Add magazines for weapon
-  		[_x] call _fnc_wepMags;
+		[_x] call _fnc_wepMags;
 
-  		// Check if weapon has an underslung grenade launcher
+		// Check if weapon has an underslung grenade launcher
 		if ({_x in ["GL_3GL_F","EGLM","UGL_F"]} count (getArray (configFile >> "CfgWeapons" >> _x >> "muzzles")) > 0) then {
 			_text = _text + "<br/> |- UGL";
 			["UGL_F"] call _fnc_wepMags;
@@ -88,10 +80,10 @@ if (count _weps > 0) then {
 		// List weapon attachments
 		// Get attached items
 		_attachments = _wepItems select (([_wepItems,_x] call BIS_fnc_findNestedElement) select 0);
-		_attachments = [_attachments,0] call BIS_fnc_removeIndex; // Remove the first element as it points to the weapon itself
+		_attachments deleteAt 0; // Remove the first element as it points to the weapon itself
 
 		{
-			if (typeName _x != typeName [] && {_x != ""}) then {
+			if (!(_x isEqualType []) && {_x != ""}) then {
 				_text = _text + format["<br/> |- %1",getText (configFile >> "CfgWeapons" >> _x >> "displayname")];
 			};
 		} forEach _attachments;
