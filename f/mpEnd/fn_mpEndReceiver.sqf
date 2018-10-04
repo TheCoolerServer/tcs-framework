@@ -102,10 +102,6 @@ switch (_ending) do
 };
 
 // ====================================================================================
-// Exit the End-Game spectator
-[] call f_fnc_terminateSpectator;
-
-// ====================================================================================
 
 // Using the integer we've got we use format to compile a string (e.g. "end1") and call the BIS function with it.
 _ending = format ["end%1",_ending];
