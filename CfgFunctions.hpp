@@ -1,5 +1,5 @@
 class CfgFunctions{
-	#include "f\common\functions.hpp"
+	#include "f\CfgFunctions.hpp"
 	
 	#include "tcs\CfgFunctions.hpp"
 };
