@@ -42,7 +42,7 @@ Example:
 ```sqf
 [this, "Lead", "ASL", "ColorRed"] call TCS_fnc_initGroup;
 ```
-Thihs will create a marker on the map that is a `Lead` element being `ASL` whose color will be red. The group will also have the proper radios if the configuration option to initialize the radios is enabled.
+Thihs will create a marker on the map that is a `Lead` element being `ASL` whose color will be red.
 
 
 ## Switching the default respawn system to the ticket-based one
