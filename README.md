@@ -1,7 +1,7 @@
 # TCS Mission Framework
 Mission framework made for TCS based on F3 which currently includes: 
 
-* Compositions for: East and West sides.
+* Compositions for: East, West and Independent sides.
 
 * Side-independent group markers that are only visible to their side. (Configurable)
 
