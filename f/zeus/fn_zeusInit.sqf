@@ -11,17 +11,19 @@ if !(isServer) exitWith {};
 
 // DECLARE VARIABLES
 
-private ["_unit","_addons","_objects","_curator","_createModule"];
+private ["_curator"];
 
 // ====================================================================================
 
 // SET KEY VARIABLES
 // Using variables passed to the script instance, we will create some local variables:
 
-_unit = [_this,0,objNull] call bis_fnc_param;
-_addons = [_this,1,true,["",true,[]]] call bis_fnc_param;
-_objects = [_this,2,[],[objNull,true,[],west]] call bis_fnc_param;
-_announce = [_this,3,false] call bis_fnc_param;
+params [
+	["_unit", objNull],
+	["_addons", true, ["",true,[]]],
+	["_objects", [], [objNull,true,[],west]],
+	["_announce", false, [true]]
+];
 
 // ====================================================================================
 
@@ -49,7 +51,7 @@ if (isNil "f_var_sideCenter") then {
 };
 
 // Create a new curator logic
-_curator = (createGroup f_var_sideCenter) createUnit ["ModuleCurator_F",[0,0,0] , [], 0, ""];
+_curator = (createGroup f_var_sideCenter) createUnit ["ModuleCurator_F", [0,0,0], [], 0, "NONE"];
 
 // Assign the passed unit as curator
 _unit assignCurator _curator;
@@ -66,7 +68,15 @@ _curator setCuratorWaypointCost 0;
 
 // Check if F3 AI Skill Selector is active and assign corresponding event-handler
 if({!isNil _x} count ["f_param_AISkill_BLUFOR","f_param_AISkill_INDP","f_param_AISkill_OPFOR"] > 0) then {
-    _curator addEventHandler ['CuratorObjectPlaced',{{[_x] call f_fnc_setAISkill;} forEach crew(_this select 1)}];
+	_curator addEventHandler ['CuratorObjectPlaced',{
+		params[
+			["_curator", objNull, [objNull]],
+			["_entity", objNull, [objNull]]
+		];
+		{
+			[_x] call f_fnc_setAISkill;
+		} forEach crew _entity;
+	}];
 };
 
 // Setup
@@ -74,7 +84,7 @@ if({!isNil _x} count ["f_param_AISkill_BLUFOR","f_param_AISkill_INDP","f_param_A
 // If announce is set to true, the new curator will be announced to all players
 if (_announce) then {
 	_curator setVariable ["owner",format["%1",_unit],true];
-	[["Alert",[format ["%1 has become curator!",name _unit]]],"BIS_fnc_showNotification",true] call BIS_fnc_MP;
+	["Alert",[format ["%1 has become curator!",name _unit]]] remoteExec ["BIS_fnc_showNotification", 0];
 };
 
 // ====================================================================================

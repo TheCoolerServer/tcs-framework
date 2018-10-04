@@ -25,6 +25,7 @@ class F // Defines the "owner"
 		file = "f\mapClickTeleport";
 		class mapClickTeleportUnit{};
 		class mapClickTeleportGroup{};
+		class mapClickTeleportParachute{};
 	};
 	
 	class zeus{
