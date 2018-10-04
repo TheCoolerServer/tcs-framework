@@ -26,13 +26,6 @@ f_script_briefing = [] execVM "briefing.sqf";
 
 // ====================================================================================
 
-// F3 - ORBAT Notes
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-[] execVM "f\briefing\f_orbatNotes.sqf";
-
-// ====================================================================================
-
 // F3 - Loadout Notes
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
