@@ -1,1064 +1,9 @@
 version=53;
-center[]={5483.6685,5,3389.5974};
+center[]={5483.666,5,3389.5989};
 class items
 {
 	items=41;
 	class Item0
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={89.834473,0,79.729492};
-		};
-		name="ZEUS_2";
-		init="call{this addCuratorEditableObjects [playableUnits,true];" \n "[this] call TCS_fnc_initZeus;}";
-		id=207;
-		type="ModuleCurator_F";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="ModuleCurator_F_Owner";
-				expression="_this setVariable ['Owner',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="ZEUS2";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="ModuleCurator_F_Forced";
-				expression="_this setVariable ['Forced',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="ModuleCurator_F_Name";
-				expression="_this setVariable ['Name',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="Zeus 2";
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="ModuleInfo";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="ModuleCurator_F_Addons";
-				expression="_this setVariable ['Addons',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=3;
-					};
-				};
-			};
-			nAttributes=5;
-		};
-	};
-	class Item1
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={80.277344,0,91.483643};
-		};
-		name="ZEUS1";
-		init="call{[this] call TCS_fnc_initZeus;}";
-		isPlayable=1;
-		description="Zeus  1";
-		id=208;
-		type="VirtualCurator_F";
-	};
-	class Item2
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={81.284668,0,79.029541};
-		};
-		name="ZEUS2";
-		init="call{[this] call TCS_fnc_initZeus;}";
-		isPlayable=1;
-		description="Zeus 2";
-		id=209;
-		type="VirtualCurator_F";
-	};
-	class Item3
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={89.416504,0,91.9646};
-		};
-		name="ZEUS_1";
-		init="call{this addCuratorEditableObjects [playableUnits,true];" \n "[this] call TCS_fnc_initZeus;}";
-		id=210;
-		type="ModuleCurator_F";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="ModuleCurator_F_Owner";
-				expression="_this setVariable ['Owner',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="ZEUS1";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="ModuleCurator_F_Forced";
-				expression="_this setVariable ['Forced',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="ModuleCurator_F_Name";
-				expression="_this setVariable ['Name',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="Zeus 1";
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="ModuleInfo";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="ModuleCurator_F_Addons";
-				expression="_this setVariable ['Addons',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=3;
-					};
-				};
-			};
-			nAttributes=5;
-		};
-	};
-	class Item4
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={72.153809,0,91.387207};
-		};
-		isPlayable=1;
-		id=211;
-		type="HeadlessClient_F";
-	};
-	class Item5
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={72.282715,0,78.967285};
-		};
-		isPlayable=1;
-		id=212;
-		type="HeadlessClient_F";
-	};
-	class Item6
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={89.246582,0,100.64771};
-		};
-		name="ZEUS_3";
-		init="this addCuratorEditableObjects [playableUnits,true];";
-		id=1617;
-		type="ModuleCurator_F";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="ModuleCurator_F_Owner";
-				expression="_this setVariable ['Owner',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="#adminLogged";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="ModuleCurator_F_Forced";
-				expression="_this setVariable ['Forced',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="ModuleCurator_F_Name";
-				expression="_this setVariable ['Name',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="Zeus3";
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="ModuleInfo";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="ModuleCurator_F_Addons";
-				expression="_this setVariable ['Addons',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=3;
-					};
-				};
-			};
-			nAttributes=5;
-		};
-	};
-	class Item7
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={89.763672,0,108.82544};
-			angles[]={0,4.7209234,0};
-		};
-		name="ZEUS_HINGLE";
-		init="this addCuratorEditableObjects [playableUnits,true];";
-		id=1618;
-		type="ModuleCurator_F";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="ModuleCurator_F_Owner";
-				expression="_this setVariable ['Owner',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="76561193743586276";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="ModuleCurator_F_Forced";
-				expression="_this setVariable ['Forced',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="ModuleCurator_F_Name";
-				expression="_this setVariable ['Name',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="Hingle McCringleberry";
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="ModuleInfo";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="ModuleCurator_F_Addons";
-				expression="_this setVariable ['Addons',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=3;
-					};
-				};
-			};
-			nAttributes=5;
-		};
-	};
-	class Item8
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={89.780762,0,110.82544};
-			angles[]={0,4.7209234,0};
-		};
-		name="ZEUS_LUCAS";
-		init="this addCuratorEditableObjects [playableUnits,true];";
-		id=1619;
-		type="ModuleCurator_F";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="ModuleCurator_F_Owner";
-				expression="_this setVariable ['Owner',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="76561198028549221";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="ModuleCurator_F_Forced";
-				expression="_this setVariable ['Forced',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="ModuleCurator_F_Name";
-				expression="_this setVariable ['Name',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="Lucas";
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="ModuleInfo";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="ModuleCurator_F_Addons";
-				expression="_this setVariable ['Addons',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=3;
-					};
-				};
-			};
-			nAttributes=5;
-		};
-	};
-	class Item9
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={89.797852,0,112.8252};
-			angles[]={0,4.7209234,0};
-		};
-		name="ZEUS_SCIENCE";
-		init="this addCuratorEditableObjects [playableUnits,true];";
-		id=1620;
-		type="ModuleCurator_F";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="ModuleCurator_F_Owner";
-				expression="_this setVariable ['Owner',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="76561197992043612";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="ModuleCurator_F_Forced";
-				expression="_this setVariable ['Forced',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="ModuleCurator_F_Name";
-				expression="_this setVariable ['Name',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="Science!";
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="ModuleInfo";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="ModuleCurator_F_Addons";
-				expression="_this setVariable ['Addons',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=3;
-					};
-				};
-			};
-			nAttributes=5;
-		};
-	};
-	class Item10
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={89.814941,0,114.82544};
-			angles[]={0,4.7209234,0};
-		};
-		name="ZEUS_METKIL";
-		init="this addCuratorEditableObjects [playableUnits,true];";
-		id=1621;
-		type="ModuleCurator_F";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="ModuleCurator_F_Owner";
-				expression="_this setVariable ['Owner',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="76561197981421300";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="ModuleCurator_F_Forced";
-				expression="_this setVariable ['Forced',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="ModuleCurator_F_Name";
-				expression="_this setVariable ['Name',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="Metkil";
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="ModuleInfo";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="ModuleCurator_F_Addons";
-				expression="_this setVariable ['Addons',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=3;
-					};
-				};
-			};
-			nAttributes=5;
-		};
-	};
-	class Item11
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={89.832031,0,116.8252};
-			angles[]={0,4.7209234,0};
-		};
-		name="ZEUS_KANUK";
-		init="this addCuratorEditableObjects [playableUnits,true];";
-		id=1622;
-		type="ModuleCurator_F";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="ModuleCurator_F_Owner";
-				expression="_this setVariable ['Owner',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="76561198101895148";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="ModuleCurator_F_Forced";
-				expression="_this setVariable ['Forced',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="ModuleCurator_F_Name";
-				expression="_this setVariable ['Name',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="Kanuk";
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="ModuleInfo";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="ModuleCurator_F_Addons";
-				expression="_this setVariable ['Addons',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=3;
-					};
-				};
-			};
-			nAttributes=5;
-		};
-	};
-	class Item12
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={89.849121,0,118.8252};
-			angles[]={0,4.7209234,0};
-		};
-		name="ZEUS_M16";
-		init="this addCuratorEditableObjects [playableUnits,true];";
-		id=1623;
-		type="ModuleCurator_F";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="ModuleCurator_F_Owner";
-				expression="_this setVariable ['Owner',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="76561197997429145";
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="ModuleCurator_F_Forced";
-				expression="_this setVariable ['Forced',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="ModuleCurator_F_Name";
-				expression="_this setVariable ['Name',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="M16AndPregnant";
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="ModuleInfo";
-				expression="false";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="ModuleCurator_F_Addons";
-				expression="_this setVariable ['Addons',_value,true];";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=3;
-					};
-				};
-			};
-			nAttributes=5;
-		};
-	};
-	class Item13
 	{
 		dataType="Group";
 		side="East";
@@ -1070,7 +15,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-18.101074,0.0014390945,18.79541};
+					position[]={-18.099121,0.0014390945,18.794189};
 				};
 				side="East";
 				flags=6;
@@ -1080,7 +25,7 @@ class items
 					rank="COLONEL";
 					lock="UNLOCKED";
 					name="UnitCSAT_CO";
-					description="CSAT Commander@Command";
+					description="Commander@Command";
 					isPlayable=1;
 				};
 				id=110;
@@ -1221,7 +166,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-13.101074,0.0014390945,17.144775};
+					position[]={-13.099121,0.0014390945,17.143066};
 				};
 				side="East";
 				flags=4;
@@ -1230,7 +175,7 @@ class items
 					skill=0.60000002;
 					rank="CORPORAL";
 					name="UnitCSAT_CO_JTAC";
-					description="CSAT JTAC";
+					description="JTAC";
 					isPlayable=1;
 				};
 				id=111;
@@ -1277,6 +222,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -1294,7 +258,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -1344,7 +308,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item2
@@ -1352,7 +316,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-23.101074,0.0014390945,17.144775};
+					position[]={-23.099121,0.0014390945,17.143066};
 				};
 				side="East";
 				flags=4;
@@ -1360,7 +324,7 @@ class items
 				{
 					skill=0.60000002;
 					name="UnitCSAT_CO_UAV";
-					description="CSAT UAV Operator";
+					description="UAV Operator";
 					isPlayable=1;
 				};
 				id=112;
@@ -1407,6 +371,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -1424,7 +407,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -1474,7 +457,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item3
@@ -1482,7 +465,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-8.1010742,0.0014390945,14.404541};
+					position[]={-8.0991211,0.0014390945,14.403076};
 				};
 				side="East";
 				flags=4;
@@ -1490,7 +473,7 @@ class items
 				{
 					skill=0.60000002;
 					name="UnitCSAT_CO_M";
-					description="CSAT Medic";
+					description="Medic";
 					isPlayable=1;
 				};
 				id=113;
@@ -1537,6 +520,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -1554,7 +556,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -1604,7 +606,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -1657,7 +659,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item14
+	class Item1
 	{
 		dataType="Group";
 		side="East";
@@ -1669,7 +671,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-41.51416,0.0014390945,6.3793945};
+					position[]={-41.512207,0.0014390945,6.3781738};
 				};
 				side="East";
 				flags=6;
@@ -1679,7 +681,7 @@ class items
 					rank="CAPTAIN";
 					lock="UNLOCKED";
 					name="UnitCSAT_ASL_SL";
-					description="CSAT Alpha Squad Leader@Alpha";
+					description="Squad Leader@Alpha";
 					isPlayable=1;
 				};
 				id=115;
@@ -1820,7 +822,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-36.51416,0.0014390945,4.7287598};
+					position[]={-36.512207,0.0014390945,4.7270508};
 				};
 				side="East";
 				flags=4;
@@ -1829,7 +831,7 @@ class items
 					skill=0.60000002;
 					lock="UNLOCKED";
 					name="UnitCSAT_ASL_M";
-					description="CSAT Alpha Medic";
+					description="Medic";
 					isPlayable=1;
 				};
 				id=116;
@@ -1876,6 +878,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -1893,7 +914,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -1943,7 +964,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -1996,7 +1017,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item15
+	class Item2
 	{
 		dataType="Group";
 		side="East";
@@ -2008,7 +1029,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-41.558105,0.0014390945,-3.1535645};
+					position[]={-41.556152,0.0014390945,-3.1547852};
 				};
 				side="East";
 				flags=6;
@@ -2018,7 +1039,7 @@ class items
 					rank="LIEUTENANT";
 					lock="UNLOCKED";
 					name="UnitCSAT_A1_FTL";
-					description="CSAT Alpha 1 Fire Team Leader@Alpha 1";
+					description="Fire Team Leader@Alpha 1";
 					isPlayable=1;
 				};
 				id=118;
@@ -2159,7 +1180,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-36.557617,0.0014390945,-4.8044434};
+					position[]={-36.555176,0.0014390945,-4.8059082};
 				};
 				side="East";
 				flags=4;
@@ -2169,7 +1190,7 @@ class items
 					rank="SERGEANT";
 					lock="UNLOCKED";
 					name="UnitCSAT_A1_AR1";
-					description="CSAT Alpha 1 Automatic Rifleman";
+					description="Automatic Rifleman";
 					isPlayable=1;
 				};
 				id=119;
@@ -2216,6 +1237,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -2233,7 +1273,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -2283,7 +1323,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item2
@@ -2291,7 +1331,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-31.557617,0.0014390945,-7.5437012};
+					position[]={-31.555176,0.0014390945,-7.5449219};
 				};
 				side="East";
 				flags=4;
@@ -2301,7 +1341,7 @@ class items
 					rank="CORPORAL";
 					lock="UNLOCKED";
 					name="UnitCSAT_A1_AT";
-					description="CSAT Alpha 1 Assaultman (AT)";
+					description="Assaultman (AT)";
 					isPlayable=1;
 				};
 				id=120;
@@ -2348,6 +1388,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -2365,7 +1424,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -2415,7 +1474,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item3
@@ -2423,7 +1482,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-45.859375,0.0014390945,-6.135498};
+					position[]={-45.856934,0.0014390945,-6.1367188};
 				};
 				side="East";
 				flags=4;
@@ -2432,7 +1491,7 @@ class items
 					skill=0.60000002;
 					lock="UNLOCKED";
 					name="UnitCSAT_A1_R1";
-					description="CSAT Alpha 1 Rifleman";
+					description="Rifleman";
 					isPlayable=1;
 				};
 				id=121;
@@ -2479,6 +1538,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -2496,7 +1574,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -2546,7 +1624,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -2599,7 +1677,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item16
+	class Item3
 	{
 		dataType="Group";
 		side="East";
@@ -2611,7 +1689,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-40.835938,0.0014390945,-10.174561};
+					position[]={-40.833008,0.0014390945,-10.175781};
 				};
 				side="East";
 				flags=6;
@@ -2621,7 +1699,7 @@ class items
 					rank="LIEUTENANT";
 					lock="UNLOCKED";
 					name="UnitCSAT_A2_FTL";
-					description="CSAT Alpha 2 Fire Team Leader@Alpha 2";
+					description="Fire Team Leader@Alpha 2";
 					isPlayable=1;
 				};
 				id=123;
@@ -2762,7 +1840,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-35.835938,0.0014390945,-11.824951};
+					position[]={-35.833008,0.0014390945,-11.826904};
 				};
 				side="East";
 				flags=4;
@@ -2772,7 +1850,7 @@ class items
 					rank="SERGEANT";
 					lock="UNLOCKED";
 					name="UnitCSAT_A2_AR1";
-					description="CSAT Alpha 2 Automatic Rifleman";
+					description="Automatic Rifleman";
 					isPlayable=1;
 				};
 				id=124;
@@ -2819,6 +1897,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -2836,7 +1933,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -2886,7 +1983,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item2
@@ -2894,7 +1991,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-30.835938,0.0014390945,-14.564209};
+					position[]={-30.833008,0.0014390945,-14.565918};
 				};
 				side="East";
 				flags=4;
@@ -2904,7 +2001,7 @@ class items
 					rank="CORPORAL";
 					lock="UNLOCKED";
 					name="UnitCSAT_A2_AT";
-					description="CSAT Alpha 2 Assaultman (AT)";
+					description="Assaultman (AT)";
 					isPlayable=1;
 				};
 				id=125;
@@ -2951,6 +2048,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -2968,7 +2084,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -3018,7 +2134,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item3
@@ -3026,7 +2142,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-46.004883,0.0014390945,-13.16333};
+					position[]={-46.001953,0.0014390945,-13.164795};
 				};
 				side="East";
 				flags=4;
@@ -3035,7 +2151,7 @@ class items
 					skill=0.60000002;
 					lock="UNLOCKED";
 					name="UnitCSAT_A2_R1";
-					description="CSAT Alpha 2 Rifleman";
+					description="Rifleman";
 					isPlayable=1;
 				};
 				id=126;
@@ -3082,6 +2198,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -3099,7 +2234,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -3149,7 +2284,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -3202,7 +2337,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item17
+	class Item4
 	{
 		dataType="Group";
 		side="East";
@@ -3214,7 +2349,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-17.280273,0.0014390945,4.1733398};
+					position[]={-17.277832,0.0014390945,4.1721191};
 				};
 				side="East";
 				flags=6;
@@ -3224,7 +2359,7 @@ class items
 					rank="CAPTAIN";
 					lock="UNLOCKED";
 					name="UnitCSAT_BSL_SL";
-					description="CSAT Bravo Squad Leader@Bravo";
+					description="Squad Leader@Bravo";
 					isPlayable=1;
 				};
 				id=128;
@@ -3365,7 +2500,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-12.279785,0.0014390945,2.5227051};
+					position[]={-12.276855,0.0014390945,2.5212402};
 				};
 				side="East";
 				flags=4;
@@ -3374,7 +2509,7 @@ class items
 					skill=0.60000002;
 					lock="UNLOCKED";
 					name="UnitCSAT_BSL_M";
-					description="CSAT Bravo Medic";
+					description="Medic";
 					isPlayable=1;
 				};
 				id=129;
@@ -3421,6 +2556,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -3438,7 +2592,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -3488,7 +2642,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -3522,7 +2676,7 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item18
+	class Item5
 	{
 		dataType="Group";
 		side="East";
@@ -3534,7 +2688,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-17.819824,0.0014390945,-2.5070801};
+					position[]={-17.816895,0.0014390945,-2.5087891};
 				};
 				side="East";
 				flags=6;
@@ -3544,7 +2698,7 @@ class items
 					rank="LIEUTENANT";
 					lock="UNLOCKED";
 					name="UnitCSAT_B1_FTL";
-					description="CSAT Bravo 1 Fire Team Leader";
+					description="Fire Team Leader";
 					isPlayable=1;
 				};
 				id=131;
@@ -3591,6 +2745,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -3608,7 +2781,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -3658,7 +2831,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item1
@@ -3666,7 +2839,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-12.819824,0.0014390945,-4.1574707};
+					position[]={-12.816895,0.0014390945,-4.1589355};
 				};
 				side="East";
 				flags=4;
@@ -3676,7 +2849,7 @@ class items
 					rank="SERGEANT";
 					lock="UNLOCKED";
 					name="UnitCSAT_B1_AR1";
-					description="CSAT Bravo 1 Automatic Rifleman";
+					description="Automatic Rifleman";
 					isPlayable=1;
 				};
 				id=132;
@@ -3723,6 +2896,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -3740,7 +2932,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -3790,7 +2982,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item2
@@ -3798,7 +2990,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-7.8198242,0.0014390945,-6.8977051};
+					position[]={-7.8168945,0.0014390945,-6.8989258};
 				};
 				side="East";
 				flags=4;
@@ -3808,7 +3000,7 @@ class items
 					rank="CORPORAL";
 					lock="UNLOCKED";
 					name="UnitCSAT_B1_AT";
-					description="CSAT Bravo 1 Assaultman (AT)";
+					description="Assaultman (AT)";
 					isPlayable=1;
 				};
 				id=133;
@@ -3855,6 +3047,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -3872,7 +3083,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -3922,7 +3133,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item3
@@ -3930,7 +3141,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-21.515625,0.0014390945,-4.5437012};
+					position[]={-21.513184,0.0014390945,-4.5449219};
 				};
 				side="East";
 				flags=4;
@@ -3939,7 +3150,7 @@ class items
 					skill=0.60000002;
 					lock="UNLOCKED";
 					name="UnitCSAT_B1_R1";
-					description="CSAT Bravo 1 Rifleman";
+					description="Rifleman";
 					isPlayable=1;
 				};
 				id=134;
@@ -3986,6 +3197,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -4003,7 +3233,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -4053,7 +3283,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -4106,7 +3336,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item19
+	class Item6
 	{
 		dataType="Group";
 		side="East";
@@ -4118,7 +3348,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-18.339844,0.0014390945,-8.3952637};
+					position[]={-18.336914,0.0014390945,-8.3967285};
 				};
 				side="East";
 				flags=6;
@@ -4128,7 +3358,7 @@ class items
 					rank="LIEUTENANT";
 					lock="UNLOCKED";
 					name="UnitCSAT_B2_FTL";
-					description="CSAT Bravo 2 Fire Team Leader";
+					description="Fire Team Leader";
 					isPlayable=1;
 				};
 				id=136;
@@ -4175,6 +3405,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -4192,7 +3441,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -4242,7 +3491,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item1
@@ -4250,7 +3499,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-13.339844,0.0014390945,-10.045654};
+					position[]={-13.336914,0.0014390945,-10.046875};
 				};
 				side="East";
 				flags=4;
@@ -4260,7 +3509,7 @@ class items
 					rank="SERGEANT";
 					lock="UNLOCKED";
 					name="UnitCSAT_B2_AR1";
-					description="CSAT Bravo 2 Automatic Rifleman";
+					description="Automatic Rifleman";
 					isPlayable=1;
 				};
 				id=137;
@@ -4307,6 +3556,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -4324,7 +3592,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -4374,7 +3642,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item2
@@ -4382,7 +3650,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-8.3398438,0.0014390945,-12.784912};
+					position[]={-8.3369141,0.0014390945,-12.786865};
 				};
 				side="East";
 				flags=4;
@@ -4392,7 +3660,7 @@ class items
 					rank="CORPORAL";
 					lock="UNLOCKED";
 					name="UnitCSAT_B2_AT";
-					description="CSAT Bravo 2 Assaultman (AT)";
+					description="Assaultman (AT)";
 					isPlayable=1;
 				};
 				id=138;
@@ -4439,6 +3707,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -4456,7 +3743,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -4506,7 +3793,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item3
@@ -4514,7 +3801,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-22.748047,0.0014390945,-10.445557};
+					position[]={-22.746094,0.0014390945,-10.446777};
 				};
 				side="East";
 				flags=4;
@@ -4523,7 +3810,7 @@ class items
 					skill=0.60000002;
 					lock="UNLOCKED";
 					name="UnitCSAT_B2_R1";
-					description="CSAT Bravo 2 Rifleman";
+					description="Rifleman";
 					isPlayable=1;
 				};
 				id=139;
@@ -4570,6 +3857,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -4587,7 +3893,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -4637,7 +3943,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -4690,7 +3996,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item20
+	class Item7
 	{
 		dataType="Group";
 		side="East";
@@ -4702,7 +4008,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.3901367,0.0014390945,-0.29467773};
+					position[]={7.3930664,0.0014390945,-0.29589844};
 				};
 				side="East";
 				flags=6;
@@ -4712,7 +4018,7 @@ class items
 					rank="CAPTAIN";
 					lock="UNLOCKED";
 					name="UnitCSAT_CSL_SL";
-					description="CSAT Charlie Squad Leader@Charlie";
+					description="Squad Leader@Charlie";
 					isPlayable=1;
 				};
 				id=141;
@@ -4853,7 +4159,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={12.390137,0.0014390945,-1.9450684};
+					position[]={12.393066,0.0014390945,-1.9467773};
 				};
 				side="East";
 				flags=4;
@@ -4862,7 +4168,7 @@ class items
 					skill=0.60000002;
 					lock="UNLOCKED";
 					name="UnitCSAT_CSL_M";
-					description="CSAT Charlie Medic";
+					description="Medic";
 					isPlayable=1;
 				};
 				id=142;
@@ -4909,6 +4215,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -4926,7 +4251,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -4976,7 +4301,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -5029,7 +4354,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item21
+	class Item8
 	{
 		dataType="Group";
 		side="East";
@@ -5041,7 +4366,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.1499023,0.0014390945,-5.3896484};
+					position[]={7.1518555,0.0014390945,-5.3908691};
 				};
 				side="East";
 				flags=6;
@@ -5051,7 +4376,7 @@ class items
 					rank="LIEUTENANT";
 					lock="UNLOCKED";
 					name="UnitCSAT_C1_FTL";
-					description="CSAT Charlie 1 Fire Team Leader@Charlie 1";
+					description="Fire Team Leader@Charlie 1";
 					isPlayable=1;
 				};
 				id=144;
@@ -5192,7 +4517,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={12.150391,0.0014390945,-7.0397949};
+					position[]={12.152832,0.0014390945,-7.0407715};
 				};
 				side="East";
 				flags=4;
@@ -5202,7 +4527,7 @@ class items
 					rank="SERGEANT";
 					lock="UNLOCKED";
 					name="UnitCSAT_C1_AR1";
-					description="CSAT Charlie 1 Automatic Rifleman";
+					description="Automatic Rifleman";
 					isPlayable=1;
 				};
 				id=145;
@@ -5249,6 +4574,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -5266,7 +4610,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -5316,7 +4660,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item2
@@ -5324,7 +4668,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={17.150391,0.0014390945,-9.7790527};
+					position[]={17.152832,0.0014390945,-9.7807617};
 				};
 				side="East";
 				flags=4;
@@ -5334,7 +4678,7 @@ class items
 					rank="CORPORAL";
 					lock="UNLOCKED";
 					name="UnitCSAT_C1_AT";
-					description="CSAT Charlie 1 Assaultman (AT)";
+					description="Assaultman (AT)";
 					isPlayable=1;
 				};
 				id=146;
@@ -5381,6 +4725,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -5398,7 +4761,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -5448,7 +4811,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item3
@@ -5456,7 +4819,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={3.1806641,0.0014390945,-7.3776855};
+					position[]={3.1831055,0.0014390945,-7.3789063};
 				};
 				side="East";
 				flags=4;
@@ -5465,7 +4828,7 @@ class items
 					skill=0.60000002;
 					lock="UNLOCKED";
 					name="UnitCSAT_C1_R1";
-					description="CSAT Charlie 1 Rifleman";
+					description="Rifleman";
 					isPlayable=1;
 				};
 				id=147;
@@ -5512,6 +4875,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -5529,7 +4911,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -5579,7 +4961,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -5632,7 +5014,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item22
+	class Item9
 	{
 		dataType="Group";
 		side="East";
@@ -5644,7 +5026,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={7.1977539,0.0014390945,-11.439453};
+					position[]={7.2001953,0.0014390945,-11.440918};
 				};
 				side="East";
 				flags=6;
@@ -5654,7 +5036,7 @@ class items
 					rank="LIEUTENANT";
 					lock="UNLOCKED";
 					name="UnitCSAT_C2_FTL";
-					description="CSAT Charlie 2 Fire Team Leader@Charlie 2";
+					description="Fire Team Leader@Charlie 2";
 					isPlayable=1;
 				};
 				id=149;
@@ -5795,7 +5177,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={12.197754,0.0014390945,-13.0896};
+					position[]={12.200195,0.0014390945,-13.09082};
 				};
 				side="East";
 				flags=4;
@@ -5805,7 +5187,7 @@ class items
 					rank="SERGEANT";
 					lock="UNLOCKED";
 					name="UnitCSAT_C2_AR1";
-					description="CSAT Charlie 2 Automatic Rifleman";
+					description="Automatic Rifleman";
 					isPlayable=1;
 				};
 				id=150;
@@ -5852,6 +5234,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -5869,7 +5270,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -5919,7 +5320,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item2
@@ -5927,7 +5328,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={17.197754,0.0014390945,-15.828857};
+					position[]={17.200195,0.0014390945,-15.829834};
 				};
 				side="East";
 				flags=4;
@@ -5937,7 +5338,7 @@ class items
 					rank="CORPORAL";
 					lock="UNLOCKED";
 					name="UnitCSAT_C2_AT";
-					description="CSAT Charlie 2 Assaultman (AT)";
+					description="Assaultman (AT)";
 					isPlayable=1;
 				};
 				id=151;
@@ -5984,6 +5385,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -6001,7 +5421,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -6051,7 +5471,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item3
@@ -6059,7 +5479,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.2246094,0.0014390945,-13.006104};
+					position[]={4.2270508,0.0014390945,-13.007813};
 				};
 				side="East";
 				flags=4;
@@ -6068,7 +5488,7 @@ class items
 					skill=0.60000002;
 					lock="UNLOCKED";
 					name="UnitCSAT_C2_R1";
-					description="CSAT Charlie 2 Rifleman";
+					description="Rifleman";
 					isPlayable=1;
 				};
 				id=152;
@@ -6115,6 +5535,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -6132,7 +5571,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -6182,7 +5621,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -6235,7 +5674,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item23
+	class Item10
 	{
 		dataType="Group";
 		side="East";
@@ -6247,7 +5686,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={40.315918,0.0014390945,9.451416};
+					position[]={40.317871,0.0014390945,9.4501953};
 				};
 				side="East";
 				flags=6;
@@ -6257,7 +5696,7 @@ class items
 					rank="CORPORAL";
 					lock="UNLOCKED";
 					name="UnitCSAT_MMG1_AG";
-					description="CSAT Medium MG Team 1 Spotter (Leader)@Medium MG 1";
+					description="Spotter (Leader)@Medium MG 1";
 					isPlayable=1;
 				};
 				id=154;
@@ -6398,7 +5837,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={45.316406,0.0014390945,7.8010254};
+					position[]={45.318848,0.0014390945,7.7990723};
 				};
 				side="East";
 				flags=4;
@@ -6407,7 +5846,7 @@ class items
 					skill=0.60000002;
 					lock="UNLOCKED";
 					name="UnitCSAT_MMG1_G";
-					description="CSAT Medium MG Team 1 Gunner";
+					description="Gunner";
 					isPlayable=1;
 				};
 				id=155;
@@ -6454,6 +5893,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -6471,7 +5929,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -6521,7 +5979,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -6574,7 +6032,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item24
+	class Item11
 	{
 		dataType="Group";
 		side="East";
@@ -6586,7 +6044,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={40.646973,0.0014390945,2.1694336};
+					position[]={40.648926,0.0014390945,2.1682129};
 				};
 				side="East";
 				flags=6;
@@ -6596,7 +6054,7 @@ class items
 					rank="CORPORAL";
 					lock="UNLOCKED";
 					name="UnitCSAT_MMG2_AG";
-					description="CSAT Medium MG Team 2 Spotter (Leader)@Medium MG 2";
+					description="Spotter (Leader)@Medium MG 2";
 					isPlayable=1;
 				};
 				id=157;
@@ -6737,7 +6195,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={45.646484,0.0014390945,0.51879883};
+					position[]={45.648926,0.0014390945,0.51708984};
 				};
 				side="East";
 				flags=4;
@@ -6746,7 +6204,7 @@ class items
 					skill=0.60000002;
 					lock="UNLOCKED";
 					name="UnitCSAT_MMG2_G";
-					description="CSAT Medium MG Team 2 Gunner";
+					description="Gunner";
 					isPlayable=1;
 				};
 				id=158;
@@ -6793,6 +6251,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -6810,7 +6287,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -6860,7 +6337,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -6913,7 +6390,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item25
+	class Item12
 	{
 		dataType="Group";
 		side="East";
@@ -6925,7 +6402,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={41.331055,0.0014390945,-6.6376953};
+					position[]={41.333984,0.0014390945,-6.638916};
 				};
 				side="East";
 				flags=6;
@@ -6934,7 +6411,7 @@ class items
 					skill=0.60000002;
 					rank="CORPORAL";
 					name="UnitCSAT_MAT1_AG";
-					description="CSAT Medium AT Team 1 Spotter (Leader)@Medium AT 1";
+					description="Spotter (Leader)@Medium AT 1";
 					isPlayable=1;
 				};
 				id=160;
@@ -7075,7 +6552,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={46.331055,0.0014390945,-8.2878418};
+					position[]={46.333984,0.0014390945,-8.2888184};
 				};
 				side="East";
 				flags=4;
@@ -7083,7 +6560,7 @@ class items
 				{
 					skill=0.60000002;
 					name="UnitCSAT_MAT1_G";
-					description="CSAT Medium AT Team 1 Gunner";
+					description="Gunner";
 					isPlayable=1;
 				};
 				id=161;
@@ -7269,7 +6746,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item26
+	class Item13
 	{
 		dataType="Group";
 		side="East";
@@ -7281,7 +6758,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={40.903809,0.0014390945,-14.077637};
+					position[]={40.905762,0.0014390945,-14.078857};
 				};
 				side="East";
 				flags=6;
@@ -7290,7 +6767,7 @@ class items
 					skill=0.60000002;
 					rank="CORPORAL";
 					name="UnitCSAT_MAT2_AG";
-					description="CSAT Medium AT Team 2 Spotter (Leader)@Medium AT 2";
+					description="Spotter (Leader)@Medium AT 2";
 					isPlayable=1;
 				};
 				id=163;
@@ -7431,7 +6908,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={45.904297,0.0014390945,-15.728271};
+					position[]={45.907227,0.0014390945,-15.729736};
 				};
 				side="East";
 				flags=4;
@@ -7439,7 +6916,7 @@ class items
 				{
 					skill=0.60000002;
 					name="UnitCSAT_MAT2_G";
-					description="CSAT Medium AT Team 2 Gunner";
+					description="Gunner";
 					isPlayable=1;
 				};
 				id=164;
@@ -7625,7 +7102,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item27
+	class Item14
 	{
 		dataType="Group";
 		side="East";
@@ -7637,7 +7114,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={41.418945,0.0014390945,-22.174561};
+					position[]={41.420898,0.0014390945,-22.175781};
 				};
 				side="East";
 				flags=6;
@@ -7647,7 +7124,7 @@ class items
 					rank="CORPORAL";
 					init="call{this setGroupIdGlobal [""MTR1""];" \n "}";
 					name="UnitCSAT_MTR1_AG";
-					description="CSAT Mortar Team 1 Spotter (Leader)@Mortar team 1";
+					description="Spotter (Leader)@Mortar team 1";
 					isPlayable=1;
 				};
 				id=166;
@@ -7788,7 +7265,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={46.418945,0.0014390945,-23.825439};
+					position[]={46.420898,0.0014390945,-23.826904};
 				};
 				side="East";
 				flags=4;
@@ -7797,7 +7274,7 @@ class items
 					skill=0.60000002;
 					init="call{this setGroupIdGlobal [""MTR1""];" \n "}";
 					name="UnitCSAT_MTR1_G";
-					description="CSAT Mortar Team 1 Gunner";
+					description="Gunner";
 					isPlayable=1;
 				};
 				id=167;
@@ -7983,7 +7460,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item28
+	class Item15
 	{
 		dataType="Group";
 		side="East";
@@ -7995,7 +7472,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={41.86084,0.0014390945,-35.225586};
+					position[]={41.862793,0.0014390945,-35.226807};
 				};
 				side="East";
 				flags=6;
@@ -8004,7 +7481,7 @@ class items
 					skill=0.60000002;
 					rank="CORPORAL";
 					name="UnitCSAT_ST1_SP";
-					description="CSAT Sniper Team 1 Spotter (Leader)@Sniper team 1";
+					description="Spotter (Leader)@Sniper team 1";
 					isPlayable=1;
 				};
 				id=169;
@@ -8145,7 +7622,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={46.861328,0.0014390945,-36.876221};
+					position[]={46.86377,0.0014390945,-36.87793};
 				};
 				side="East";
 				flags=4;
@@ -8153,7 +7630,7 @@ class items
 				{
 					skill=0.60000002;
 					name="UnitCSAT_ST1_SN";
-					description="CSAT Sniper Team 1 Sniper";
+					description="Sniper";
 					isPlayable=1;
 				};
 				id=170;
@@ -8339,7 +7816,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item29
+	class Item16
 	{
 		dataType="Group";
 		side="East";
@@ -8351,7 +7828,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={9.4208984,0.0014390945,-38.370605};
+					position[]={9.4228516,0.0014390945,-38.371826};
 				};
 				side="East";
 				flags=6;
@@ -8360,7 +7837,7 @@ class items
 					skill=0.60000002;
 					rank="CORPORAL";
 					name="UnitCSAT_ENG1_FTL";
-					description="CSAT Engineer Team 1 Leader (Demo)@Engineer team 1";
+					description="Leader (Demo)@Engineer team 1";
 					isPlayable=1;
 				};
 				id=172;
@@ -8501,7 +7978,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={14.42041,0.0014390945,-40.020752};
+					position[]={14.422852,0.0014390945,-40.021729};
 				};
 				side="East";
 				flags=4;
@@ -8509,7 +7986,7 @@ class items
 				{
 					skill=0.60000002;
 					name="UnitCSAT_ENG1_A1";
-					description="CSAT Engineer Team 1 Assistant (Demo)";
+					description="Assistant (Demo)";
 					isPlayable=1;
 				};
 				id=173;
@@ -8556,6 +8033,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -8573,7 +8069,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -8623,7 +8119,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item2
@@ -8631,7 +8127,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={4.4204102,0.0014390945,-40.020752};
+					position[]={4.4228516,0.0014390945,-40.021729};
 				};
 				side="East";
 				flags=4;
@@ -8639,7 +8135,7 @@ class items
 				{
 					skill=0.60000002;
 					name="UnitCSAT_ENG1_A2";
-					description="CSAT Engineer Team 1 Assistant (Mines)";
+					description="Assistant (Mines)";
 					isPlayable=1;
 				};
 				id=174;
@@ -8686,6 +8182,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -8703,7 +8218,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -8753,7 +8268,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item3
@@ -8761,7 +8276,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={19.42041,0.0014390945,-42.76001};
+					position[]={19.422852,0.0014390945,-42.761719};
 				};
 				side="East";
 				flags=4;
@@ -8769,7 +8284,7 @@ class items
 				{
 					skill=0.60000002;
 					name="UnitCSAT_ENG1_A3";
-					description="CSAT Engineer Team 1 Assistant (Mines)";
+					description="Assistant (Mines)";
 					isPlayable=1;
 				};
 				id=175;
@@ -8816,6 +8331,25 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01PER";
+							};
+						};
+					};
+					class Attribute3
+					{
 						property="pitch";
 						expression="_this setpitch _value;";
 						class Value
@@ -8833,7 +8367,7 @@ class items
 							};
 						};
 					};
-					class Attribute3
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -8883,7 +8417,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -8936,7 +8470,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item30
+	class Item17
 	{
 		dataType="Group";
 		side="East";
@@ -8948,7 +8482,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-55.341309,0.0014390945,-31.110596};
+					position[]={-55.338867,0.0014390945,-31.111816};
 				};
 				side="East";
 				flags=6;
@@ -8957,7 +8491,7 @@ class items
 					skill=0.60000002;
 					rank="SERGEANT";
 					name="UnitCSAT_IFV1_C";
-					description="CSAT IFV 1 Commander@IFV 1";
+					description="Commander@IFV 1";
 					isPlayable=1;
 				};
 				id=177;
@@ -9098,7 +8632,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-53.274414,0.0014390945,-31.122314};
+					position[]={-53.271973,0.0014390945,-31.123779};
 				};
 				side="East";
 				flags=4;
@@ -9107,7 +8641,7 @@ class items
 					skill=0.60000002;
 					rank="CORPORAL";
 					name="UnitCSAT_IFV1_G";
-					description="CSAT IFV 1 Gunner";
+					description="Gunner";
 					isPlayable=1;
 				};
 				id=178;
@@ -9154,6 +8688,44 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute4
+					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
 						class Value
@@ -9202,7 +8774,7 @@ class items
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=5;
 				};
 			};
 			class Item2
@@ -9210,7 +8782,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-57.291016,0.0014390945,-31.254639};
+					position[]={-57.289063,0.0014390945,-31.255859};
 				};
 				side="East";
 				flags=4;
@@ -9218,7 +8790,7 @@ class items
 				{
 					skill=0.60000002;
 					name="UnitCSAT_IFV1_D";
-					description="CSAT IFV 1 Driver (Repair)";
+					description="Driver (Repair)";
 					isPlayable=1;
 				};
 				id=179;
@@ -9265,6 +8837,44 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male03PER";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.05;
+							};
+						};
+					};
+					class Attribute4
+					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
 						class Value
@@ -9313,7 +8923,7 @@ class items
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=5;
 				};
 			};
 		};
@@ -9366,7 +8976,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item31
+	class Item18
 	{
 		dataType="Group";
 		side="East";
@@ -9378,7 +8988,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-42.698242,0.0014390945,-31.19165};
+					position[]={-42.695801,0.0014390945,-31.192871};
 				};
 				side="East";
 				flags=6;
@@ -9387,7 +8997,7 @@ class items
 					skill=0.60000002;
 					rank="SERGEANT";
 					name="UnitCSAT_IFV2_C";
-					description="CSAT IFV 2 Commander@IFV 2";
+					description="Commander@IFV 2";
 					isPlayable=1;
 				};
 				id=181;
@@ -9528,7 +9138,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-39.444336,0.0014390945,-31.156494};
+					position[]={-39.441895,0.0014390945,-31.157715};
 				};
 				side="East";
 				flags=4;
@@ -9537,7 +9147,7 @@ class items
 					skill=0.60000002;
 					rank="CORPORAL";
 					name="UnitCSAT_IFV2_G";
-					description="CSAT IFV2 Gunner";
+					description="Gunner";
 					isPlayable=1;
 				};
 				id=182;
@@ -9603,6 +9213,25 @@ class items
 					};
 					class Attribute3
 					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.97000003;
+							};
+						};
+					};
+					class Attribute4
+					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
 						class Value
@@ -9651,7 +9280,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 			class Item2
@@ -9659,7 +9288,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-45.529297,0.0014390945,-31.071045};
+					position[]={-45.526855,0.0014390945,-31.072754};
 				};
 				side="East";
 				flags=4;
@@ -9667,7 +9296,7 @@ class items
 				{
 					skill=0.60000002;
 					name="UnitCSAT_IFV2_D";
-					description="CSAT IFV 2 Driver (Repair)";
+					description="Driver (Repair)";
 					isPlayable=1;
 				};
 				id=183;
@@ -9733,6 +9362,25 @@ class items
 					};
 					class Attribute3
 					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.99000001;
+							};
+						};
+					};
+					class Attribute4
+					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
 						class Value
@@ -9781,7 +9429,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -9834,7 +9482,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item32
+	class Item19
 	{
 		dataType="Group";
 		side="East";
@@ -9846,7 +9494,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-22.724121,0.0014390945,-32.912598};
+					position[]={-22.722168,0.0014390945,-32.913818};
 				};
 				side="East";
 				flags=6;
@@ -9855,7 +9503,7 @@ class items
 					skill=0.60000002;
 					rank="SERGEANT";
 					name="UnitCSAT_TNK1_C";
-					description="CSAT Tank 1 Commander@Tank 1";
+					description="Commander@Tank 1";
 					isPlayable=1;
 				};
 				id=185;
@@ -9996,7 +9644,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-20.644531,0.0014390945,-32.932373};
+					position[]={-20.64209,0.0014390945,-32.933838};
 				};
 				side="East";
 				flags=4;
@@ -10005,7 +9653,7 @@ class items
 					skill=0.60000002;
 					rank="CORPORAL";
 					name="UnitCSAT_TNK1_G";
-					description="CSAT Tank 1 Gunner";
+					description="Gunner";
 					isPlayable=1;
 				};
 				id=186;
@@ -10052,6 +9700,44 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02PER";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.95999998;
+							};
+						};
+					};
+					class Attribute4
+					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
 						class Value
@@ -10100,7 +9786,7 @@ class items
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=5;
 				};
 			};
 			class Item2
@@ -10108,7 +9794,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-24.294922,0.0014390945,-32.758057};
+					position[]={-24.291992,0.0014390945,-32.759766};
 				};
 				side="East";
 				flags=4;
@@ -10116,7 +9802,7 @@ class items
 				{
 					skill=0.60000002;
 					name="UnitCSAT_TNK1_D";
-					description="CSAT Tank 1 Driver (Repair)";
+					description="Driver (Repair)";
 					isPlayable=1;
 				};
 				id=187;
@@ -10163,6 +9849,44 @@ class items
 					};
 					class Attribute2
 					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01PER";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute4
+					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
 						class Value
@@ -10211,7 +9935,7 @@ class items
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=5;
 				};
 			};
 		};
@@ -10264,7 +9988,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item33
+	class Item20
 	{
 		dataType="Group";
 		side="East";
@@ -10276,7 +10000,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-59.51709,0.0014390945,-2.3134766};
+					position[]={-59.515137,0.0014390945,-2.3149414};
 				};
 				side="East";
 				flags=6;
@@ -10285,7 +10009,7 @@ class items
 					skill=0.60000002;
 					rank="LIEUTENANT";
 					name="UnitCSAT_TH1_P";
-					description="CSAT Transport Helo 1 Pilot@Transport helicopter 1";
+					description="Pilot@Transport helicopter 1";
 					isPlayable=1;
 				};
 				id=189;
@@ -10426,7 +10150,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-61.705566,0.0014390945,-2.1872559};
+					position[]={-61.703125,0.0014390945,-2.1887207};
 				};
 				side="East";
 				flags=4;
@@ -10435,7 +10159,7 @@ class items
 					skill=0.60000002;
 					rank="SERGEANT";
 					name="UnitCSAT_TH1_CP";
-					description="CSAT Transport Helo 1 Co-Pilot (Repair)";
+					description="Co-Pilot (Repair)";
 					isPlayable=1;
 				};
 				id=190;
@@ -10481,6 +10205,44 @@ class items
 						};
 					};
 					class Attribute2
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01PER";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -10530,7 +10292,7 @@ class items
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=5;
 				};
 			};
 			class Item2
@@ -10538,7 +10300,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-63.769531,0.0014390945,-2.2531738};
+					position[]={-63.76709,0.0014390945,-2.2548828};
 				};
 				side="East";
 				flags=4;
@@ -10547,7 +10309,7 @@ class items
 					skill=0.60000002;
 					rank="CORPORAL";
 					name="UnitCSAT_TH1_CM1";
-					description="CSAT Transport Helo 1 Crewman";
+					description="Crewman";
 					isPlayable=1;
 				};
 				id=191;
@@ -10688,7 +10450,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-65.583008,0.0014390945,-2.279541};
+					position[]={-65.581055,0.0014390945,-2.2807617};
 				};
 				side="East";
 				flags=4;
@@ -10697,7 +10459,7 @@ class items
 					skill=0.60000002;
 					rank="CORPORAL";
 					name="UnitCSAT_TH1_CM2";
-					description="CSAT Transport Helo 1 Crewman";
+					description="Crewman";
 					isPlayable=1;
 				};
 				id=192;
@@ -10883,7 +10645,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item34
+	class Item21
 	{
 		dataType="Group";
 		side="East";
@@ -10895,7 +10657,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-59.80127,0.0014390945,-5.5935059};
+					position[]={-59.798828,0.0014390945,-5.5947266};
 				};
 				side="East";
 				flags=6;
@@ -10904,7 +10666,7 @@ class items
 					skill=0.60000002;
 					rank="LIEUTENANT";
 					name="UnitCSAT_TH2_P";
-					description="CSAT Transport Helo 2 Pilot@Transport helicopter 2";
+					description="Pilot@Transport helicopter 2";
 					isPlayable=1;
 				};
 				id=194;
@@ -11045,7 +10807,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-61.75,0.0014390945,-5.720459};
+					position[]={-61.748047,0.0014390945,-5.7219238};
 				};
 				side="East";
 				flags=4;
@@ -11054,7 +10816,7 @@ class items
 					skill=0.60000002;
 					rank="SERGEANT";
 					name="UnitCSAT_TH2_CP";
-					description="CSAT Transport Helo 2 Co-Pilot (Repair)";
+					description="Co-Pilot (Repair)";
 					isPlayable=1;
 				};
 				id=195;
@@ -11100,6 +10862,44 @@ class items
 						};
 					};
 					class Attribute2
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male01PER";
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.01;
+							};
+						};
+					};
+					class Attribute4
 					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
@@ -11149,7 +10949,7 @@ class items
 							};
 						};
 					};
-					nAttributes=3;
+					nAttributes=5;
 				};
 			};
 			class Item2
@@ -11157,7 +10957,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-63.729492,0.0014390945,-5.6330566};
+					position[]={-63.727051,0.0014390945,-5.6347656};
 				};
 				side="East";
 				flags=4;
@@ -11166,7 +10966,7 @@ class items
 					skill=0.60000002;
 					rank="CORPORAL";
 					name="UnitCSAT_TH2_CM1";
-					description="CSAT Transport Helo 2 Crewman";
+					description="Crewman";
 					isPlayable=1;
 				};
 				id=196;
@@ -11307,7 +11107,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-65.629883,0.0014390945,-5.6677246};
+					position[]={-65.626953,0.0014390945,-5.6689453};
 				};
 				side="East";
 				flags=4;
@@ -11316,7 +11116,7 @@ class items
 					skill=0.60000002;
 					rank="CORPORAL";
 					name="UnitCSAT_TH2_CM2";
-					description="CSAT Transport Helo 2 Crewman";
+					description="Crewman";
 					isPlayable=1;
 				};
 				id=197;
@@ -11502,7 +11302,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item35
+	class Item22
 	{
 		dataType="Group";
 		side="East";
@@ -11514,7 +11314,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-61.492188,0.0014390945,-11.465576};
+					position[]={-61.490234,0.0014390945,-11.466797};
 				};
 				side="East";
 				flags=6;
@@ -11523,7 +11323,7 @@ class items
 					skill=0.60000002;
 					rank="LIEUTENANT";
 					name="UnitCSAT_AH1_P";
-					description="CSAT Attack Helo 1 Pilot@Attack helicopter 1";
+					description="Pilot@Attack helicopter 1";
 					isPlayable=1;
 				};
 				id=199;
@@ -11664,7 +11464,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-59.625488,0.0014390945,-11.446533};
+					position[]={-59.623047,0.0014390945,-11.447754};
 				};
 				side="East";
 				flags=4;
@@ -11673,7 +11473,7 @@ class items
 					skill=0.60000002;
 					rank="SERGEANT";
 					name="UnitCSAT_AH1_CP";
-					description="CSAT Attack Helo 1 Gunner (Repair)";
+					description="Gunner (Repair)";
 					isPlayable=1;
 				};
 				id=200;
@@ -11739,6 +11539,25 @@ class items
 					};
 					class Attribute3
 					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.01;
+							};
+						};
+					};
+					class Attribute4
+					{
 						property="Enh_ambientAnimParams";
 						expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		params ['_unit','_value'];		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;			waitUntil {sleep 0.1; ((behaviour _unit) == 'COMBAT') || (damage _unit > 0.6)};			_unit call BIS_fnc_ambientAnim__terminate;		};	}";
 						class Value
@@ -11787,7 +11606,7 @@ class items
 							};
 						};
 					};
-					nAttributes=4;
+					nAttributes=5;
 				};
 			};
 		};
@@ -11840,7 +11659,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item36
+	class Item23
 	{
 		dataType="Group";
 		side="East";
@@ -11852,7 +11671,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-62.187988,0.0014390945,-14.865479};
+					position[]={-62.186035,0.0014390945,-14.866943};
 				};
 				side="East";
 				flags=6;
@@ -11861,7 +11680,7 @@ class items
 					skill=0.60000002;
 					rank="LIEUTENANT";
 					name="UnitCSAT_AH2_P";
-					description="CSAT Attack Helo 2 Pilot@Attack helicopter 2";
+					description="Pilot@Attack helicopter 2";
 					isPlayable=1;
 				};
 				id=202;
@@ -12002,7 +11821,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={-60.321289,0.0014390945,-14.846924};
+					position[]={-60.318848,0.0014390945,-14.848877};
 				};
 				side="East";
 				flags=4;
@@ -12011,7 +11830,7 @@ class items
 					skill=0.60000002;
 					rank="SERGEANT";
 					name="UnitCSAT_AH2_CP";
-					description="CSAT Attack Helo 2 Gunner (Repair)";
+					description="Gunner (Repair)";
 					isPlayable=1;
 				};
 				id=203;
@@ -12197,7 +12016,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item37
+	class Item24
 	{
 		dataType="Group";
 		side="East";
@@ -12209,7 +12028,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={42.236816,0.0014390945,-41.936523};
+					position[]={42.23877,0.0014390945,-41.937744};
 				};
 				side="East";
 				flags=6;
@@ -12218,7 +12037,7 @@ class items
 					skill=0.60000002;
 					rank="CORPORAL";
 					name="UnitCSAT_ST2_SP";
-					description="CSAT Sniper Team 1 Spotter (Leader)@Sniper team 2";
+					description="Spotter (Leader)@Sniper team 2";
 					isPlayable=1;
 				};
 				id=205;
@@ -12359,7 +12178,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={47.237305,0.0014390945,-43.586182};
+					position[]={47.239746,0.0014390945,-43.587891};
 				};
 				side="East";
 				flags=4;
@@ -12367,7 +12186,7 @@ class items
 				{
 					skill=0.60000002;
 					name="UnitCSAT_ST2_SN";
-					description="CSAT Sniper Team 1 Sniper";
+					description="Sniper";
 					isPlayable=1;
 				};
 				id=206;
@@ -12553,12 +12372,12 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item38
+	class Item25
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-37.572266,0,33.886963};
+			position[]={-37.569824,0,33.885498};
 		};
 		id=213;
 		type="ACE_moduleAssignMedicRoles";
@@ -12605,12 +12424,12 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item39
+	class Item26
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-18.82666,0,-59.281982};
+			position[]={-18.824219,0,-59.283447};
 		};
 		id=214;
 		type="ACE_moduleAssignEngineerRoles";
@@ -12657,7 +12476,7 @@ class items
 			nAttributes=2;
 		};
 	};
-	class Item40
+	class Item27
 	{
 		dataType="Group";
 		side="East";
@@ -12669,7 +12488,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={41.677734,0.0014390945,-28.468506};
+					position[]={41.680176,0.0014390945,-28.469727};
 				};
 				side="East";
 				flags=6;
@@ -12678,7 +12497,7 @@ class items
 					skill=0.60000002;
 					rank="CORPORAL";
 					name="UnitCSAT_MTR2_AG";
-					description="CSAT Mortar Team 2 Spotter (Leader)@Mortar team 2";
+					description="Spotter (Leader)@Mortar team 2";
 					isPlayable=1;
 				};
 				id=216;
@@ -12819,7 +12638,7 @@ class items
 				dataType="Object";
 				class PositionInfo
 				{
-					position[]={46.677734,0.0014390945,-30.120361};
+					position[]={46.680176,0.0014390945,-30.121826};
 				};
 				side="East";
 				flags=4;
@@ -12827,7 +12646,7 @@ class items
 				{
 					skill=0.60000002;
 					name="UnitCSAT_MTR2_G";
-					description="CSAT Mortar Team 1 Gunner";
+					description="Gunner";
 					isPlayable=1;
 				};
 				id=217;
@@ -13011,6 +12830,1061 @@ class items
 				};
 			};
 			nAttributes=2;
+		};
+	};
+	class Item28
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={89.836914,0,79.728027};
+		};
+		name="ZEUS_2";
+		init="call{this addCuratorEditableObjects [playableUnits,true];" \n "[this] call TCS_fnc_initZeus;}";
+		id=207;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="ZEUS2";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Zeus 2";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item29
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={80.279785,0,91.482178};
+		};
+		name="ZEUS1";
+		init="call{[this] call TCS_fnc_initZeus;}";
+		isPlayable=1;
+		description="Zeus  1";
+		id=208;
+		type="VirtualCurator_F";
+	};
+	class Item30
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={81.287109,0,79.028076};
+		};
+		name="ZEUS2";
+		init="call{[this] call TCS_fnc_initZeus;}";
+		isPlayable=1;
+		description="Zeus 2";
+		id=209;
+		type="VirtualCurator_F";
+	};
+	class Item31
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={89.418945,0,91.963135};
+		};
+		name="ZEUS_1";
+		init="call{this addCuratorEditableObjects [playableUnits,true];" \n "[this] call TCS_fnc_initZeus;}";
+		id=210;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="ZEUS1";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Zeus 1";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item32
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={72.15625,0,91.385742};
+		};
+		isPlayable=1;
+		id=211;
+		type="HeadlessClient_F";
+	};
+	class Item33
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={72.285156,0,78.96582};
+		};
+		isPlayable=1;
+		id=212;
+		type="HeadlessClient_F";
+	};
+	class Item34
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={89.249023,0,100.64624};
+		};
+		name="ZEUS_3";
+		init="this addCuratorEditableObjects [playableUnits,true];";
+		id=1617;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="#adminLogged";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Zeus3";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item35
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={89.766113,0,108.82397};
+			angles[]={0,4.7209234,0};
+		};
+		name="ZEUS_HINGLE";
+		init="this addCuratorEditableObjects [playableUnits,true];";
+		id=1618;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="76561193743586276";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Hingle McCringleberry";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item36
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={89.783203,0,110.82397};
+			angles[]={0,4.7209234,0};
+		};
+		name="ZEUS_LUCAS";
+		init="this addCuratorEditableObjects [playableUnits,true];";
+		id=1619;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="76561198028549221";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Lucas";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item37
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={89.800293,0,112.82373};
+			angles[]={0,4.7209234,0};
+		};
+		name="ZEUS_SCIENCE";
+		init="this addCuratorEditableObjects [playableUnits,true];";
+		id=1620;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="76561197992043612";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Science!";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item38
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={89.817383,0,114.82397};
+			angles[]={0,4.7209234,0};
+		};
+		name="ZEUS_METKIL";
+		init="this addCuratorEditableObjects [playableUnits,true];";
+		id=1621;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="76561197981421300";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Metkil";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item39
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={89.834473,0,116.82373};
+			angles[]={0,4.7209234,0};
+		};
+		name="ZEUS_KANUK";
+		init="this addCuratorEditableObjects [playableUnits,true];";
+		id=1622;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="76561198101895148";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="Kanuk";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
+		};
+	};
+	class Item40
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={89.851563,0,118.82373};
+			angles[]={0,4.7209234,0};
+		};
+		name="ZEUS_M16";
+		init="this addCuratorEditableObjects [playableUnits,true];";
+		id=1623;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="76561197997429145";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="M16AndPregnant";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleInfo";
+				expression="false";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=3;
+					};
+				};
+			};
+			nAttributes=5;
 		};
 	};
 };
