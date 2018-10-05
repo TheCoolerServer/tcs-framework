@@ -82,7 +82,9 @@ if (_playerSide == civilian) exitwith {
 
 if (_playerSide == sideLogic) exitwith {
 
-	#include "f\briefing\f_briefing_zeus.sqf"
+	#include "f\briefing\f_briefing_admin.sqf"
+
+	#include "f\briefing\f_briefing_zeus.sqf"	
 
 	if (f_param_debugMode == 1) then{
 		player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.", sideLogic];
