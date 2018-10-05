@@ -27,7 +27,7 @@ switch(_groupSide) do{
 };
 
 //Get the correct marker based on the given group type
-private _markerType = nil;
+private _markerType = "b_hq";
 
 {
 	private _definition = _x;
@@ -36,9 +36,5 @@ private _markerType = nil;
 		_markerType = (_definition select 1);
 	};
 } forEach _markerArray;
-
-if (isNil "_markerType") then {
-	_markerType = "b_hq";
-};
 
 _markerType
