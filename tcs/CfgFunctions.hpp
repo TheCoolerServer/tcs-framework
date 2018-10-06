@@ -5,7 +5,6 @@ class TCS {
     file = "tcs";
 
     class initGroup {};
-    class initZeus {};
 
     class initPlayer {};
     class initServer {};
@@ -18,6 +17,8 @@ class TCS {
 
     class onPlayerKilled {};
     class onPlayerRespawn {};
+
+    class initZeus {};
   };
 
   class GroupMarkers {
