@@ -11,6 +11,7 @@
 if (isServer) then {
 	_this call TCS_fnc_initGroupServer;
 } else {
-	_this call TCS_fnc_initGroupPlayer;
+	if (TCS_var_groupMarkersEnabled) then {
+		_this call TCS_fnc_createGroupMarker;
+	};
 };
-

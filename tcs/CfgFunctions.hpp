@@ -6,35 +6,31 @@ class TCS {
 
     class initGroup {};
     class initZeus {};
-    
+
+    class initPlayer {};
+    class initServer {};
+
     class configure {PreInit = 1;};
   };
 
   class Base{
     file = "tcs\base";
 
-    //Player-side stuff
-    class initPlayer {};
-    class initGroupPlayer {};
-
     class onPlayerKilled {};
     class onPlayerRespawn {};
-
-    //Server-side stuff
-    class initServer {};
-    class initGroupServer {};
   };
 
   class GroupMarkers {
     file = "tcs\groupMarkers";
 
+    class createGroupMarker {};
     class getMarkerByGroup {};
     class groupMarker {};
   };
 
   class Radios {
     file = "tcs\radios";
-    
+
     class initPlayerRadios {};
   };
 

@@ -1,4 +1,4 @@
-if (!isDedicated && hasInterface && TCS_var_groupMarkersEnabled) then {
+if (!isDedicated && hasInterface) then {
 	_this spawn {
 		params [
 			"_group",
