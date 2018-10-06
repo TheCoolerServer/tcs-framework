@@ -22,7 +22,7 @@ TCS_var_civilianGroupMarkers = TCS_var_westGroupMarkers;
 
 
 //---------------Radios---------------------
-TCS_var_addRadiosToGroup = true;
+TCS_var_radiosModuleEnabled = true;
 TCS_var_removeRadiosInInventory = true;
 
 TCS_var_reinitializeRadiosOnRespawn = true;
