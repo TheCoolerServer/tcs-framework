@@ -1,4 +1,4 @@
-if (!isDedicated && hasInterface) then {
+if (hasInterface) then {
 	_this spawn {
 		params [
 			"_group",
