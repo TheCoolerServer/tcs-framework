@@ -1,3 +1,7 @@
+/**
+	Event handler for the onPlayerKilled of the TCS_Respawn respawn template.
+*/
+
 TCS_var_wasKilled = true;
 
 cutText ["", "BLACK OUT", 5];
