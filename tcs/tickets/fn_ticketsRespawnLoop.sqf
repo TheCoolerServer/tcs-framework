@@ -71,8 +71,6 @@ while {true} do {
 	//Handle the respawn
 	if(_timeRemaining < 0 && _tickets > 0) then {
 		[player, playerSide] remoteExecCall ["TCS_fnc_ticketsPlayerRespawned", 2]; //Tell the server we just respawned
-		
-		"TCS_layer_tickets" cutFadeout 2; //Remove the tickets display
 
 		//Need to set the respawn time properly after the player has respawned
 		[_respawnTime] spawn {
