@@ -1,3 +1,6 @@
+//Initialize player variables
+TCS_var_wasKilled = false;
+
 //Initialize the player's radios
 [] spawn {
 	waitUntil {

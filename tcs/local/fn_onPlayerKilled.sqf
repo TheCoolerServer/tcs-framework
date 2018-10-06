@@ -1,3 +1,5 @@
+TCS_var_wasKilled = true;
+
 cutText ["", "BLACK OUT", 5];
 5 fadeSound 0.1;
 
