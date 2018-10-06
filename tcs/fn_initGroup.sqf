@@ -9,7 +9,7 @@
 */
 
 if (isServer) then {
-	
+	//Nothing yet
 } else {
 	if (TCS_var_groupMarkersEnabled) then {
 		_this call TCS_fnc_createGroupMarker;
