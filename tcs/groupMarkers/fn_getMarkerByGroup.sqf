@@ -1,9 +1,9 @@
 /**
-	Returns the marker type based on the group's side and what kind of group it is.
+	Returns the marker classname based on the group's side and what kind of group it is.
 
 	Parameters:
 		0 - (Group) The group.
-		1 - (string) What kind of group it is. (See fn_configure.sqf)
+		1 - (string) What kind of group it is. (@see tcs\fn_configure.sqf)
 */
 
 private _groupSide = side (_this select 0);

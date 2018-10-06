@@ -3,9 +3,15 @@
 
 	Parameters:
 		0 - (Group) The group.
-		1 - (string) Marker type
+		1 - (string) Marker type (BIS classname)
 		2 - (string) Marker text
 		3 - (string) Marker color
+
+	Returns:
+		None
+
+	Example:
+		[group, "b_hq", "ASL", "ColorRed"] spawn TCS_fnc_groupMarker;
 
 */
 
