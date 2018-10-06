@@ -14,19 +14,16 @@ params [
 // SERVER DELAY
 // If this script is executing on the server a small delay is used.
 
-if (isServer) then
-{
+if (isServer) then{
 	sleep 3;
 // DEBUG
-	if (f_param_debugMode == 1) then
-	{
+	if (f_param_debugMode == 1) then{
 		player sideChat "DEBUG (f_fnc_mpEndReciever): This is the server.";
 	};
 };
 
 // DEBUG
-if (f_param_debugMode == 1) then
-{
+if (f_param_debugMode == 1) then{
 	player sideChat format ["DEBUG (f_fnc_mpEndReciever): _ending = %1, _state = %2",_ending,_state];
 };
 
@@ -38,11 +35,9 @@ if (f_param_debugMode == 1) then
 // ending using the parsed value. By default allowed values are: 1,2,3,4,5,6.
 
 
-switch (_ending) do
-{
+switch (_ending) do{
 // Ending #1
-	case 1:
-	{
+	case 1:{
 // Place any custom code for ending #1 after this line:
 
 
@@ -50,8 +45,7 @@ switch (_ending) do
 // Do not allow custom code for ending #1 to continue after this comment.
 	};
 // Ending #2
-	case 2:
-	{
+	case 2:{
 // Place any custom code for ending #2 after this line:
 
 
@@ -59,8 +53,7 @@ switch (_ending) do
 // Do not allow custom code for ending #2 to continue after this comment.
 	};
 // Ending #3
-	case 3:
-	{
+	case 3:{
 // Place any custom code for ending #3 after this line:
 
 
@@ -68,8 +61,7 @@ switch (_ending) do
 // Do not allow custom code for ending #3 to continue after this comment.
 	};
 // Ending #4
-	case 4:
-	{
+	case 4:{
 // Place any custom code for ending #4 after this line:
 
 
@@ -77,8 +69,7 @@ switch (_ending) do
 // Do not allow custom code for ending #4 to continue after this comment.
 	};
 // Ending #5
-	case 5:
-	{
+	case 5:{
 // Place any custom code for ending #5 after this line:
 
 
@@ -86,8 +77,7 @@ switch (_ending) do
 // Do not allow custom code for ending #5 to continue after this comment.
 	};
 // Ending #6
-	case 6:
-	{
+	case 6:{
 // Place any custom code for ending #6 after this line:
 
 
@@ -112,9 +102,6 @@ _ending = format ["end%1",_ending];
 // EXIT THE SPECTATOR SCRIPT IF IS OPEN
 // Clients just "hang" if the mission has ended but are still inside the
 // spectator script.
-if (dialog) then
-{
+if (dialog) then{
 	closeDialog 0;
 };
-
-// ====================================================================================
