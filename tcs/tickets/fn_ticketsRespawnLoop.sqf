@@ -1,3 +1,9 @@
+/**
+	Respawn loop responsible by updating the controls on the top of the screen when the tickets respawn template is used.
+*/
+
+"TCS_layer_tickets" cutRsc ["TicketsDisplay", "PLAIN"];
+
 private _ticketsControl = ((uiNamespace getVariable "TCS_var_ticketDisplay") displayCtrl 1100);
 private _countdownControl = ((uiNamespace getVariable "TCS_var_ticketDisplay") displayCtrl 1101);
 private _respawnTime = playerRespawnTime;
@@ -65,6 +71,8 @@ while {true} do {
 	//Handle the respawn
 	if(_timeRemaining < 0 && _tickets > 0) then {
 		[player, playerSide] remoteExecCall ["TCS_fnc_ticketsPlayerRespawned", 2]; //Tell the server we just respawned
+		
+		"TCS_layer_tickets" cutFadeout 2; //Remove the tickets display
 
 		//Need to set the respawn time properly after the player has respawned
 		[_respawnTime] spawn {

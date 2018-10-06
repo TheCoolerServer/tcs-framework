@@ -5,8 +5,14 @@
 	Parameters:
 		0 - (player) Who just respawned
 		1 - (side) The side of that player.
+
 	Returns:
 		None
+
+	Example: 
+		[player, playerSide] remoteExecCall ["TCS_fnc_ticketsPlayerRespawned", 2];
+
+		[player, (side player)] remoteExecCall ["TCS_fnc_ticketsPlayerRespawned", 2];
 */
 
 if (!isServer) exitWith {};

@@ -1,4 +1,6 @@
-"TCS_layer_tickets" cutRsc ["TicketsDisplay", "PLAIN"];
+/**
+	Event handler for the onPlayerKilled event of the tickets respawn template.
+*/
 
 if (isNil "TCS_var_ticketsRespawnLoopID") then {
 	TCS_var_ticketsRespawnLoopID = [] spawn TCS_fnc_ticketsRespawnLoop;
