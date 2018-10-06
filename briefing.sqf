@@ -81,8 +81,10 @@ if (_playerSide == civilian) exitwith {
 // BRIEFING: ZEUS
 
 if (_playerSide == sideLogic) exitwith {
-
-	#include "f\briefing\f_briefing_admin.sqf"
+	//Make sure we aren't admins so we don't incnlude the same briefing twice
+	if (!(serverCommandAvailable "#kick")) then {
+		#include "f\briefing\f_briefing_admin.sqf"
+	};
 
 	#include "f\briefing\f_briefing_zeus.sqf"	
 
