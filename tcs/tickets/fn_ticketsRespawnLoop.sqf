@@ -48,7 +48,7 @@ while {true} do {
 			_minutes = format["0%1", _minutes];
 		};
 
-		_countdownText = parseText (format["<t align='left'>Respawn timer: %1:%2</t>", _minutes, _seconds]);
+		_countdownText = parseText (format["<t align='left'>Respawn in: %1:%2</t>", _minutes, _seconds]);
 		_ticketsText = parseText (format ["<t alight='right'>Tickets remaining: %1</t>", _tickets]);
 	};
 
