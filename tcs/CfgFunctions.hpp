@@ -1,32 +1,7 @@
 class TCS {
   tag = "TCS";
 
-  class Local{
-    file = "tcs\local";
-    
-    class getMarkerByGroup {};
-    class groupMarker {};
-
-    class initGroupPlayer {};
-    
-    class initPlayerRadios {};
-
-    class onPlayerKilled {};
-    class onPlayerRespawn {};
-
-    class initPlayer {};
-  };
-  
-  class Server{
-    file = "tcs\server";
-
-    class initGroupServer {};
-    
-    class initServer {};
-  }
-
-
-  class Default {
+  class Root {
     file = "tcs";
 
     class initGroup {};
@@ -35,6 +10,35 @@ class TCS {
     class configure {PreInit = 1;};
   };
 
+  class Base{
+    file = "tcs\base";
+
+    //Player-side stuff
+    class initPlayer {};
+    class initGroupPlayer {};
+
+    class onPlayerKilled {};
+    class onPlayerRespawn {};
+
+    //Server-side stuff
+    class initServer {};
+    class initGroupServer {};
+  };
+
+  class GroupMarkers {
+    file = "tcs\groupMarkers";
+
+    class getMarkerByGroup {};
+    class groupMarker {};
+  };
+
+  class Radios {
+    file = "tcs\radios";
+    
+    class initPlayerRadios {};
+  };
+
+  
   class Tickets {
     file = "tcs\tickets";
 
@@ -47,7 +51,7 @@ class TCS {
 
     class setTickets {};
     class addTickets {};
-  }
+  };
 
 
 };
