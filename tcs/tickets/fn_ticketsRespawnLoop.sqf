@@ -33,7 +33,7 @@ while {true} do {
 	private _ticketsText = "";
 
 	if (_tickets <= 0) then {
-		_countdownText = parseText ("<t align='center'>Respawn timer: <t color='#FF0000'>--:--</t></t>");
+		_countdownText = parseText ("<t align='center'>Respawn in: <t color='#FF0000'>--:--</t></t>");
 		_ticketsText = parseText ("<t alight='right'>Tickets remaining: <t color='#FF0000'>0</t></t>");
 	}else {
 		private _minutes = 0;
