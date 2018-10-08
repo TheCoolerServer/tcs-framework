@@ -6,8 +6,8 @@
 */
 params ["_newUnit", "_oldUnit", "_respawn", "_respawnDelay"];
 
-if (M_var_wasJustKilled) then {
-	M_var_wasJustKilled = false;
+if (!isNil "TCS_var_btgWasKilled" && TCS_var_btgWasKilled) then {
+	TCS_var_btgWasKilled = false;
 
 	private _group = group _newUnit;
 

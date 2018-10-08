@@ -7,5 +7,5 @@
 
 params["_oldUnit", "_killer", "_respawn", "_respawnDelay"];
 
-M_var_deathPosition = getPos _oldUnit;
-M_var_wasJustKilled = true;
+TCS_var_btgDeathPosition = getPos _oldUnit;
+TCS_var_btgWasKilled = true;
