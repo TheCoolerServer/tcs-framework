@@ -5,7 +5,7 @@
 
 //respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
 respawnTemplates[] = {"TCS_Respawn", "Counter"}; //Default respawn
-respawnOnStart = 1;
+respawnOnStart = 0;
 
 // F3 - Start of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
