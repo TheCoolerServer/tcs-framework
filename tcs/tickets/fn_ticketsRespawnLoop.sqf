@@ -1,5 +1,5 @@
 /**
-	Respawn loop responsible by updating the controls on the top of the screen when the tickets respawn template is used.
+	Respawn loop responsible by updating the controls on the top of the screen and respawning the player when the tickets respawn template is used.
 */
 
 "TCS_layer_tickets" cutRsc ["TicketsDisplay", "PLAIN"];
