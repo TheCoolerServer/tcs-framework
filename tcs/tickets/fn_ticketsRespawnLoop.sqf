@@ -80,8 +80,8 @@ while {true} do {
 
 		//Respawn the player
 		setPlayerRespawnTime 0;
-		sleep 0.1;
-		forceRespawn player;
+		sleep 1;
+		//forceRespawn player;
 	};
 
 	sleep 1;
