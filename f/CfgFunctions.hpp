@@ -33,9 +33,4 @@ class F{ // Defines the "owner"
 		class zeusAddAddons{};
 		class zeusAddObjects{};
 	};
-
-	class safeStart{
-		file = "f\safeStart";
-		class safety{};
-	};
 };

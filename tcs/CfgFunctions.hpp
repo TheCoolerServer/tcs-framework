@@ -50,5 +50,17 @@ class TCS {
     class addTickets {};
   };
 
+  class safeStart{
+		file = "tcs\safeStart";
+
+		class safety{};
+
+    class safeStartLoop {};
+
+    class safeStartPlayer {};
+    class safeStartServer {};
+
+    class safeStart {};
+	};
 
 };

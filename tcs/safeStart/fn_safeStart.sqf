@@ -1,3 +1,5 @@
+//Original safe start with changed function names, called by the admin briefing to start/stop the safe start.
+
 // F3 - Safe Start
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
@@ -14,15 +16,14 @@ if (isNil "f_param_mission_timer") then {
 // BEGIN SAFE-START LOOP
 // If a value was set for the mission-timer, begin the safe-start loop and turn on invincibility
 
-if (f_param_mission_timer > 0) then
-{
+if (f_param_mission_timer > 0) then{
 	// The server will handle the loop and notifications
 	if (isServer) then {
-		[] execVM "f\safeStart\f_safeStartLoop.sqf";
+		[] spawn TCS_fnc_safeStartLoop;
 	};
 
 	// Enable invincibility for players
 	if (!isDedicated) then {
-		[true] call f_fnc_safety;
+		[true] call TCS_fnc_safety;
 	};
 };
