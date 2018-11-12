@@ -65,18 +65,34 @@
 		params ["_trigger", "_marker", "_markerWithText"];
 
 		private _triggerRepeats = (triggerActivation _trigger) select 2;
+		private _originalMarkerColor = markerColor _marker;
+		private _originalMarkerAlpha = markerAlpha _marker;
 
 		private _continueWaitingForTrigger = true;
 
 		while {_continueWaitingForTrigger} do {
 			if (triggerActivated _trigger) then {
 				_markerWithText setMarkerTextLocal "Triggered";
-				
+				_markerWithText setMarkerColorLocal "ColorWhite";
+				_marker setMarkerColorLocal "ColorBlack";
+				_marker setMarkerAlphaLocal 0.3;
+
+				private _triggerActivation = triggerActivation _trigger;
+				_markerWithText setMarkerTextLocal (format["%1 %2 - TRIGGERED", (_triggerActivation select 0), (_triggerActivation select 1)]);
+
 				if (!_triggerRepeats) then {
 					_continueWaitingForTrigger = false;
 				}
-			}else if (_triggerRepeats) then {
-				_markerWithText setMarkerTextLocal (format["%1 %2", (_triggerActivation select 0), (_triggerActivation select 1)]);
+			}else {
+				if (_triggerRepeats) then {
+					private _triggerActivation = triggerActivation _trigger;
+
+					_markerWithText setMarkerTextLocal (format["%1 %2", (_triggerActivation select 0), (_triggerActivation select 1)]);
+					_markerWithText setMarkerColorLocal _originalMarkerColor;
+
+					_marker setMarkerColorLocal _originalMarkerColor;
+					_marker setMarkerAlphaLocal _originalMarkerAlpha;
+				};
 			};
 
 			sleep 10;
