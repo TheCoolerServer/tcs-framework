@@ -60,4 +60,27 @@
 
 	_markerWithText setMarkerTextLocal _markerText;
 	_marker setMarkerDirLocal (_triggerArea select 2);
+
+	[_trigger, _marker, _markerWithText] spawn {
+		params ["_trigger", "_marker", "_markerWithText"];
+
+		private _triggerRepeats = (triggerActivation _trigger) select 2;
+
+		private _continueWaitingForTrigger = true;
+
+		while {_continueWaitingForTrigger} do {
+			if (triggerActivated _trigger) then {
+				_markerWithText setMarkerTextLocal "Triggered";
+				
+				if (!_triggerRepeats) then {
+					_continueWaitingForTrigger = false;
+				}
+			}else if (_triggerRepeats) then {
+				_markerWithText setMarkerTextLocal (format["%1 %2", (_triggerActivation select 0), (_triggerActivation select 1)]);
+			};
+
+			sleep 10;
+		};
+		
+	};
  } forEach _allTriggers;
