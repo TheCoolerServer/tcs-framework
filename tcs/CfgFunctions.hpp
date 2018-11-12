@@ -63,4 +63,11 @@ class TCS {
     class safeStart {};
 	};
 
+
+  class Debug {
+    file = "tcs\debug";
+
+    class triggerMarkers {};
+  };
+
 };
