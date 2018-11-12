@@ -52,9 +52,15 @@
 			_marker setMarkerColorLocal "ColorGreen";
 			_markerWithText setMarkerColorLocal "ColorGreen";
 		};
+
+		case "ANY PLAYER": {
+			_marker setMarkerColorLocal "ColorGreen";
+			_markerWithText setMarkerColorLocal "ColorGreen";
+		};
+
 		default {
-			_marker setMarkerColorLocal "ColorBlack";
-			_markerWithText setMarkerColorLocal "ColorBlack";
+			_marker setMarkerColorLocal "ColorPink";
+			_markerWithText setMarkerColorLocal "ColorPink";
 		};
 	};
 
