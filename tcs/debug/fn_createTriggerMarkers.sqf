@@ -18,10 +18,11 @@
 	private _trigger = _x;
 	private _triggerActivation = triggerActivation _trigger;
 	private _triggerArea = triggerArea _trigger;
+	private _triggerPos = getPos _trigger;
 
-	private _markerName = format ["marker_%1", random 99999];
-	private _marker = createMarkerLocal [_markerName, getPos _trigger];
-	private _markerWithText = createMarkerLocal [_markerName + "_text", getPos _trigger];
+	private _markerName = format ["marker_%1_%2_%3_%4", _triggerPos # 0, _triggerPos # 1, _triggerPos # 2, random 99999];
+	private _marker = createMarkerLocal [_markerName,  _triggerPos];
+	private _markerWithText = createMarkerLocal [_markerName + "_text", _triggerPos];
 	
 	if (_triggerArea select 3) then { //isRectangle
 		_marker setMarkerShapeLocal "RECTANGLE";
