@@ -8,4 +8,3 @@
 params["_oldUnit", "_killer", "_respawn", "_respawnDelay"];
 
 TCS_var_btgDeathPosition = getPos _oldUnit;
-TCS_var_btgWasKilled = true;
