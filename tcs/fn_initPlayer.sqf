@@ -14,5 +14,5 @@ if (TCS_var_radiosModuleEnabled) then {
 [] call TCS_fnc_safeStartPlayer;
 
 if (TCS_var_enableTriggerMarkers) then {
-	[] call TCS_fnc_triggerMarkers;
+	[] call TCS_fnc_createTriggerMarkers;
 };

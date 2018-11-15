@@ -67,7 +67,7 @@ class TCS {
   class Debug {
     file = "tcs\debug";
 
-    class triggerMarkers {};
+    class createTriggerMarkers {};
   };
 
 };
