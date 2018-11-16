@@ -1,11 +1,13 @@
 /**
 	Respawn loop responsible by updating the controls on the top of the screen and respawning the player when the tickets respawn template is used.
 */
+#define SPECTATOR_DISPLAY_ID 60492;
 
 "TCS_layer_tickets" cutRsc ["TicketsDisplay", "PLAIN"];
 
-private _ticketsControl = ((uiNamespace getVariable "TCS_var_ticketDisplay") displayCtrl 1100);
-private _countdownControl = ((uiNamespace getVariable "TCS_var_ticketDisplay") displayCtrl 1101);
+private _ticketsDisplay = uiNamespace getVariable "TCS_var_ticketDisplay";
+private _ticketsControl = (_ticketsDisplay displayCtrl 1100);
+private _countdownControl = (_ticketsDisplay displayCtrl 1101);
 private _respawnTime = playerRespawnTime;
 private _start = time;
 
@@ -68,9 +70,9 @@ while {true} do {
 	setPlayerRespawnTime _respawnTime;
 
 	
-	//Handle the respawn
-	if(_timeRemaining < 0 && _tickets > 0) then {
-		[player, playerSide] remoteExecCall ["TCS_fnc_ticketsPlayerRespawned", 2]; //Tell the server we just respawned
+	//Handle the respawn and exit the loop
+	if(_timeRemaining < 0 && _tickets > 0) exitWith {
+		[player, playerSide] remoteExec ["TCS_fnc_ticketsPlayerRespawned", 2]; //Tell the server we just respawned
 
 		//Need to set the respawn time properly after the player has respawned
 		[_respawnTime] spawn {
@@ -78,10 +80,12 @@ while {true} do {
 			setPlayerRespawnTime (_this select 0);
 		};
 
+		//Fade out the display;
+		"TCS_layer_tickets" cutFadeout 1;
+
 		//Respawn the player
 		setPlayerRespawnTime 0;
 		sleep 1;
-		//forceRespawn player;
 	};
 
 	sleep 1;
