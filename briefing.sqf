@@ -6,7 +6,7 @@ if (!hasInterface) exitWith {}; //Exit if not a player.
 
 
 // MAKE SURE THE PLAYER INITIALIZES PROPERLY
-if (!isDedicated && (isNull player)) then{
+if (isNull player) then{
     waitUntil {sleep 0.1; !isNull player};
 };
 
