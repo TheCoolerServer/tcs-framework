@@ -1,5 +1,3 @@
-// F3 - Start of Notifications block.
-
 class cfgNotifications{
 	// Notification Template
 	class Template{

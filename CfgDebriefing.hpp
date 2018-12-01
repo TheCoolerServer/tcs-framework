@@ -1,6 +1,4 @@
-// F3 - Briefing Template
-// Credits: BIS - Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
+// Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 class CfgDebriefing{
 	class End1{
 		title = "Ending 1";
