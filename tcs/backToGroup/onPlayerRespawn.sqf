@@ -51,5 +51,5 @@ if ({alive _x} count (units _group) > 1) then {
 	_newUnit setPos _spawnPos;
 	_newUnit setVectorDir _lookDirection;
 } else {
-	_newUnit setPos M_var_deathPosition;
+	_newUnit setPos TCS_var_btgDeathPosition;
 };
