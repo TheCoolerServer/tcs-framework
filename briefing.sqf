@@ -63,11 +63,3 @@ if (_playerSide == sideLogic) exitwith {
 
 	#include "f\briefing\f_briefing_zeus.sqf"	
 };
-
-
-// ====================================================================================
-
-// ERROR CHECKING
-// If the faction of the unit cannot be defined, the script exits with an error.
-
-player globalchat format ["DEBUG (briefing.sqf): Faction %1 is not defined.",_unitfaction];
