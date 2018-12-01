@@ -21,60 +21,35 @@ if (f_param_debugMode == 1) then{
 // BRIEFING: ADMIN
 
 if (serverCommandAvailable "#kick") then {
-
 	#include "f\briefing\f_briefing_admin.sqf"
-
-	if (f_param_debugMode == 1) then{
-		player sideChat format ["DEBUG (briefing.sqf): Briefing for host selected."];
-	};
 };
 
 // ====================================================================================
 // BRIEFING: WEST (BLUFOR)
 
 if (_playerSide == west) exitwith {
-
 	#include "f\briefing\f_briefing_west.sqf"
-
-	if (f_param_debugMode == 1) then{
-		player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.", west];
-	};
 };
 
 // ====================================================================================
 // BRIEFING: EAST (OPFOR)
 
 if (_playerSide == east) exitwith {
-
 	#include "f\briefing\f_briefing_east.sqf"
-
-	if (f_param_debugMode == 1) then{
-		player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.", east];
-	};
 };
 
 // ====================================================================================
 // BRIEFING: INDEPENDENT
 
 if (_playerSide == independent) exitwith {
-
 	#include "f\briefing\f_briefing_independent.sqf"
-
-	if (f_param_debugMode == 1) then{
-		player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.", independent];
-	};
 };
 
 // ====================================================================================
 // BRIEFING: CIVILIAN
 
 if (_playerSide == civilian) exitwith {
-
 	#include "f\briefing\f_briefing_civilian.sqf"
-
-	if (f_param_debugMode == 1) then{
-		player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.", civilian];
-	};
 };
 
 // ====================================================================================
@@ -87,10 +62,6 @@ if (_playerSide == sideLogic) exitwith {
 	};
 
 	#include "f\briefing\f_briefing_zeus.sqf"	
-
-	if (f_param_debugMode == 1) then{
-		player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.", sideLogic];
-	};
 };
 
 
