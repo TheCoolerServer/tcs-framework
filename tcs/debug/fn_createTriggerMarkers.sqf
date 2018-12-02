@@ -54,7 +54,7 @@
 			_markerWithText setMarkerColorLocal "ColorGreen";
 		};
 
-		case "ANY PLAYER": {
+		case "ANYPLAYER": {
 			_marker setMarkerColorLocal "ColorGreen";
 			_markerWithText setMarkerColorLocal "ColorGreen";
 		};
