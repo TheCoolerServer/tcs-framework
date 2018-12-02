@@ -59,6 +59,12 @@
 			_markerWithText setMarkerColorLocal "ColorPink";
 		};
 
+		case "NONE": {
+			_marker setMarkerColorLocal "ColorYellow";
+			_markerWithText setMarkerColorLocal "ColorYellow";
+			_markerText = str ((triggerStatements _trigger) select 0);
+		};
+
 		default {
 			_marker setMarkerColorLocal "ColorYellow";
 			_markerWithText setMarkerColorLocal "ColorYellow";
