@@ -55,13 +55,13 @@
 		};
 
 		case "ANYPLAYER": {
-			_marker setMarkerColorLocal "ColorGreen";
-			_markerWithText setMarkerColorLocal "ColorGreen";
+			_marker setMarkerColorLocal "ColorPink";
+			_markerWithText setMarkerColorLocal "ColorPink";
 		};
 
 		default {
-			_marker setMarkerColorLocal "ColorPink";
-			_markerWithText setMarkerColorLocal "ColorPink";
+			_marker setMarkerColorLocal "ColorYellow";
+			_markerWithText setMarkerColorLocal "ColorYellow";
 		};
 	};
 
