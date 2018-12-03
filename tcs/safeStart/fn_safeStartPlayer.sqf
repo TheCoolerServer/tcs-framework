@@ -3,7 +3,5 @@ if (isNil "f_param_mission_timer") then {
 };
 
 if (f_param_mission_timer > 0) then {
-	if (!isDedicated) then {
-		[true] call TCS_fnc_safety;
-	};
+	[true] call TCS_fnc_safety;
 };
