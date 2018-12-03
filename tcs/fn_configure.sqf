@@ -52,5 +52,9 @@ TCS_var_disableAIFSM = true;
 TCS_var_disableFSMSides = [east];
 TCS_var_disableFSMInterval = 60;
 
+//---------------Preinit freze-----------------
+TCS_var_preInitFreezeEnabled = true;
+TCS_var_preInitCountdownTime = 20;
+
 //-----------------Debug-----------------------
 TCS_var_enableTriggerMarkers = false;
