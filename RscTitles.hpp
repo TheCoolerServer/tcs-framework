@@ -1,1 +1,5 @@
-#include "tcs\RscTitles.hpp"
+#include "tcs\extra\BaseGUIDefines.hpp"
+
+class RscTitles{
+  #include "tcs\RscTitles.hpp"
+};
