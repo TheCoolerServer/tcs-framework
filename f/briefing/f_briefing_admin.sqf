@@ -75,7 +75,7 @@ Increase Safe Start timer by 1 minute</execute><br/>
 |- <execute expression=""f_param_mission_timer = f_param_mission_timer - 1; publicVariable 'f_param_mission_timer'; hintsilent format ['Mission Timer: %1',f_param_mission_timer];"">
 Decrease Safe Start timer by 1 minute</execute><br/>
 
-|- <execute expression=""[] remoteExec [""TCS_fnc_safeStart"", 0];
+|- <execute expression=""[] remoteExec ['TCS_fnc_safeStart', 0];
 hintsilent 'Safe Start started!';"">
 Begin Safe Start timer</execute><br/>
 
