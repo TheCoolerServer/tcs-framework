@@ -29,5 +29,5 @@ if (f_param_mission_timer == 0) then {
 		["SafeStartMissionStarting",["Mission starting now!"]] remoteExec ["bis_fnc_showNotification", 0];
 
 		// Remotely execute script to disable safety for all selectable units
-		[false] remoteExec ["f_fnc_safety", playableUnits + switchableUnits];
+		[false] remoteExec ["TCS_fnc_safety", playableUnits + switchableUnits];
 };
