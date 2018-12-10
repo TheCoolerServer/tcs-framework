@@ -70,4 +70,10 @@ class TCS {
     class createTriggerMarkers {};
   };
 
+  class PreInitFreeze {
+    file = "tcs\preInitFreeze";
+    
+    class revealPlayableUnits {};
+    class startCountdownLoop {};
+  };
 };
