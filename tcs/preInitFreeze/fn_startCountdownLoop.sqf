@@ -22,9 +22,10 @@
 		private _text = format ["Pre-init freeze\n%1 seconds remaining", _secondsRemaining];
 
 		[[_text, "PLAIN"]] remoteExec ["titleText", -2];
-		
+
 		sleep 1;
 	};
 
 	[["", "PLAIN"]] remoteExec ["titleText", -2];
+	remoteExec ["TCS_fnc_revealPlayableUnits", -2];
 }
