@@ -74,6 +74,6 @@ class TCS {
     file = "tcs\preInitFreeze";
     
     class revealPlayableUnits {};
-    class startCountdownLoop {};
+    class startFreezeLoop {};
   };
 };
