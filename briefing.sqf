@@ -12,15 +12,10 @@ if (isNull player) then{
 
 private _playerSide = side player;
 
-// DEBUG
-if (f_param_debugMode == 1) then{
-	player sideChat format ["DEBUG (briefing.sqf): Player side: %1", _playerSide];
-};
-
 // ====================================================================================
 // BRIEFING: ADMIN
 
-if (serverCommandAvailable "#kick") then {
+if (serverCommandAvailable "#kick" || [player] call TCS_fnc_isZeus) then {
 	#include "f\briefing\f_briefing_admin.sqf"
 };
 
@@ -56,10 +51,5 @@ if (_playerSide == civilian) exitwith {
 // BRIEFING: ZEUS
 
 if (_playerSide == sideLogic) exitwith {
-	//Make sure we aren't an admin so we don't include the same briefing twice
-	if (!(serverCommandAvailable "#kick")) then {
-		#include "f\briefing\f_briefing_admin.sqf"
-	};
-
 	#include "f\briefing\f_briefing_zeus.sqf"	
 };

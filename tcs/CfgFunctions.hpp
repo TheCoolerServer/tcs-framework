@@ -76,4 +76,10 @@ class TCS {
     class revealPlayableUnits {};
     class startFreezeLoop {};
   };
+
+  class Utils {
+    file = "tcs\utils";
+
+    class isZeus {};
+  };
 };
