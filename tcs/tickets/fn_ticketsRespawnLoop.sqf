@@ -41,7 +41,7 @@ while {true} do {
 		private _minutes = 0;
 		private _seconds = 0;
 
-		if (_timeRemaining > 60) then {
+		if (_timeRemaining >= 60) then {
 			_minutes = floor (_timeRemaining / 60);
 			_timeRemaining = round (_timeRemaining - _minutes * 60);
 		};
