@@ -25,8 +25,6 @@ if (serverCommandAvailable "#kick") then {
 		[] spawn {
 			private _start = time;
 
-			waitUntil {(time - _start > 1)};
-
 			while {(time - _start) < 10} do {
 				if (!isNull (getAssignedCuratorLogic player)) exitWith {
 					[] execVM "f\briefing\f_briefing_admin.sqf";
