@@ -23,41 +23,25 @@ private _side = _this select 1;
 
 switch (_side) do {
 	case west: {
-		TCS_var_westTickets = (TCS_var_westTickets - 1);
-
-		if (TCS_var_westTickets < 0) then {
-			TCS_var_westTickets = 0;
-		};
+		TCS_var_westTickets = (0 max (TCS_var_westTickets - 1));
 
 		publicVariable "TCS_var_westTickets";
 	};
 
 	case east: {
-		TCS_var_eastTickets = (TCS_var_eastTickets - 1);
-		
-		if (TCS_var_eastTickets < 0) then {
-			TCS_var_eastTickets = 0;
-		};
+		TCS_var_eastTickets = (0 max (TCS_var_eastTickets - 1));
 
 		publicVariable "TCS_var_eastTickets";
 	};
 
 	case independent: {
-		TCS_var_independentTickets = (TCS_var_independentTickets - 1);
-		
-		if (TCS_var_independentTickets < 0) then {
-			TCS_var_independentTickets = 0;
-		};
+		TCS_var_independentTickets = (0 max (TCS_var_independentTickets - 1));
 
 		publicVariable "TCS_var_independentTickets";
 	};
 
 	case civilian: {
-		TCS_var_civilianTickets = (TCS_var_civilianTickets - 1);
-		
-		if (TCS_var_civilianTickets < 0) then {
-			TCS_var_civilianTickets = 0;
-		};
+		TCS_var_civilianTickets = (0 max (TCS_var_civilianTickets - 1));
 
 		publicVariable "TCS_var_civilianTickets";
 	};
