@@ -1,3 +1,6 @@
+//-----------------------General----------------------------
+TCS_var_allZeusesGetAdminBriefing = true;
+
 //-------------------Group markers--------------------------
 TCS_var_groupMarkersEnabled = true;
 TCS_var_showMarkersOfOtherSides = false;
