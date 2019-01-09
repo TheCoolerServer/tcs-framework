@@ -7,7 +7,8 @@ The following is a set of guidelines and rules for contributing to the TCS missi
 ## Rules
 * Code blocks must be indented by 2 spaces, not 4  
 * Variable names must be descriptive and try not to shorten variable names too much  
-For example:
+
+For example:  
 Bad
 ```sqf
 private _g = createGroup [east, true];
