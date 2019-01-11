@@ -82,4 +82,10 @@ class TCS {
 
     class isZeus {};
   };
+
+  class Extra {
+    file = "tcs\extra";
+
+    class continuouslyDisableFSM {};
+  };
 };

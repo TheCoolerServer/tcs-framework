@@ -7,3 +7,7 @@
 if (TCS_var_preInitFreezeEnabled) then {
 	[] call TCS_fnc_startFreezeLoop;
 };
+
+if (TCS_var_disableAIFSM) then {
+	[] call TCS_fnc_continuouslyDisableFSM;
+};
