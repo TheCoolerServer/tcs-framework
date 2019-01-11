@@ -9,5 +9,5 @@ if (TCS_var_preInitFreezeEnabled) then {
 };
 
 if (TCS_var_disableAIFSM) then {
-	[] call TCS_fnc_continuouslyDisableFSM;
+	[] spawn TCS_fnc_continuouslyDisableFSM;
 };

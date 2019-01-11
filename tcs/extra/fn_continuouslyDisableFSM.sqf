@@ -13,7 +13,7 @@
  */
 
 
-[] spawn {
+while {true} do {
 	{	
 		private _group = _x;
 
