@@ -8,7 +8,7 @@
 		None
 
 	Example:
-		[] call TCS_fnc_continuouslyDisableFSM;
+		[] spawn TCS_fnc_continuouslyDisableFSM;
 
  */
 

@@ -36,4 +36,4 @@
 
 	[["", "PLAIN"]] remoteExec ["titleText", -2];
 	remoteExec ["TCS_fnc_revealPlayableUnits", -2];
-}
+};

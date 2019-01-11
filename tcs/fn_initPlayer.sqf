@@ -8,7 +8,7 @@ TCS_var_wasKilled = false;
 
 //Initialize the player's radios
 if (TCS_var_radiosModuleEnabled) then {
-	[] call TCS_fnc_initPlayerRadios;
+	[] spawn TCS_fnc_initPlayerRadios;
 };
 
 [] call TCS_fnc_safeStartPlayer;
