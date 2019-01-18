@@ -19,6 +19,21 @@ class TCS {
     class onPlayerRespawn {};
 
     class initZeus {};
+
+    
+  };
+
+  class Briefings {
+    file = "tcs\briefing";
+
+    class createBriefing {};
+
+    class briefing_admin {};
+    class briefing_civilian {};
+    class briefing_east {};
+    class briefing_independent {};
+    class briefing_west {};
+    class briefing_zeus {};
   };
 
   class GroupMarkers {

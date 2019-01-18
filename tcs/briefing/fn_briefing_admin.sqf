@@ -1,17 +1,4 @@
-// F3 - Briefing
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-// ====================================================================================
-
-// ADD MISSION MAKER NOTES SECTIONS
-// All text added below will only be visible to the current admin
-
-_customText = "";
-
-// ====================================================================================
-
-// ADMIN BRIEFING
-// This is a generic section displayed only to the ADMIN
-
+//================================ Admin briefing ================================
 _briefing ="
 <br/>
 <font size='18'>ADMIN SECTION</font><br/>
@@ -19,20 +6,14 @@ This briefing section can only be seen by the current admin.
 <br/><br/>
 ";
 
-// ====================================================================================
 
-// MISSION-MAKER NOTES
-// This section displays notes made by the mission-maker for the ADMIN
+// Mission-maker notes
+// This section displays notes made by the mission-maker for the admin
+_briefing = _briefing + "<br/><font size='18'>MISSION-MAKER NOTES</font><br/>";
 
-if (_customText != "") then {
-	_briefing = _briefing + "<br/><font size='18'>MISSION-MAKER NOTES</font><br/>";
-	_briefing = _briefing + _customText + "<br/><br/>";
-};
-
-// ====================================================================================
 
 // ENDINGS
-// This block of code collects all valid endings and formats them properly
+// Grab all the endings in CfgDebriefings and format them for displaying
 
 _title = [];
 _ending = [];
@@ -40,9 +21,11 @@ _endings = [];
 
 _i = 1;
 while {true} do {
-	_title = getText (missionconfigfile >> "CfgDebriefing" >> format ["end%1",_i] >> "title");
-	_description = getText (missionconfigfile >> "CfgDebriefing" >> format ["end%1",_i] >> "description");
+	_title = getText (missionconfigfile >> "CfgDebriefing" >> format ["end%1", _i] >> "title");
+	_description = getText (missionconfigfile >> "CfgDebriefing" >> format ["end%1", _i] >> "description");
+
 	if (_title == "") exitWith {};
+
 	_ending = [_i,_title,_description];
 	_endings append ([_ending]);
 	_i = _i + 1;
@@ -52,20 +35,25 @@ while {true} do {
 
 _briefing = _briefing + "
 <font size='18'>ENDINGS</font><br/>
-These endings are available. To trigger an ending click on its link.<br/><br/>
+These endings are available. To trigger an ending click on its link.<br/>
+<br/>
 ";
 
+//TODO: replace with the TCS function
 {
 	_end = _this select 0;
 	_briefing = _briefing + format [
-	"<execute expression=""[[%1],'f_fnc_mpEnd',false] spawn BIS_fnc_MP;"">'end%1'</execute> - %2:<br/>
-	%3<br/><br/>"
-	,_x select 0,_x select 1,_x select 2];
+		"<execute expression=""[[%1],'f_fnc_mpEnd',false] spawn BIS_fnc_MP;"">'end%1'</execute> - %2:<br/>
+		%3<br/><br/>",
+		_x select 0,
+		_x select 1,
+		_x select 2
+	];
 } forEach _endings;
 
-// ====================================================================================
-
-// SAFE START SECTION
+// ============================= Safe start ======================================
+//TODO: Replace with TCS function names
+//TODO: Replace BIS_fnc_mp with remoteExec
 
 _briefing = _briefing + "
 <font size='18'>SAFE START CONTROL</font><br/>
@@ -94,9 +82,9 @@ hintsilent 'Safety off!' "">
 Force safety off for all players</execute><br/><br/>
 ";
 
-// ====================================================================================
-
-// ADD ZEUS SUPPORT SECTION
+// =========================== Zeus support section =============================
+//TODO: Replace with TCS function names
+//TODO: Replace BIS_fnc_mp with remoteExec
 
 _briefing = _briefing + "
 <font size='18'>ZEUS SUPPORT</font><br/>
@@ -124,10 +112,5 @@ if (isNull (getAssignedCuratorLogic player)) then {hintsilent 'Assign ZEUS first
 <br/>
 ";
 
-// ====================================================================================
 
-// CREATE DIARY ENTRY
-
-player createDiaryRecord ["diary", ["F3 Admin Menu",_briefing]];
-
-// ====================================================================================
+player createDiaryRecord ["diary", ["F3 Admin Menu", _briefing]];
