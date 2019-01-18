@@ -1,7 +1,7 @@
-//-----------------------General----------------------------
+//==================================== General ===================================
 TCS_var_allZeusesGetAdminBriefing = true;
 
-//-------------------Group markers--------------------------
+//================================= Group markers ================================
 TCS_var_groupMarkersEnabled = true;
 TCS_var_showMarkersOfOtherSides = false;
 
@@ -24,7 +24,7 @@ TCS_var_independentGroupMarkers = TCS_var_westGroupMarkers;
 TCS_var_civilianGroupMarkers = TCS_var_westGroupMarkers;
 
 
-//---------------Radios---------------------
+//==================================== Radios ====================================
 TCS_var_radiosModuleEnabled = true;
 TCS_var_removeRadiosInInventory = true;
 
@@ -43,21 +43,21 @@ TCS_var_independentRadios = TCS_var_westRadios;
 TCS_var_civilianRadios = TCS_var_westRadios;
 
 
-//----------------Tickets----------------------
+//==================================== Tickets ===================================
 TCS_var_westTickets = 10;
 TCS_var_eastTickets = 10;
 TCS_var_independentTickets = 10;
 TCS_var_civilianTickets = 10;
 
 
-//------------------AI-------------------------
+//====================================== AI ======================================
 TCS_var_disableAIFSM = true;
 TCS_var_disableFSMSides = [east];
 TCS_var_disableFSMInterval = 60;
 
-//---------------Preinit freze-----------------
+//================================ Preinit freeze ================================
 TCS_var_preInitFreezeEnabled = true;
 TCS_var_preInitCountdownTime = 20;
 
-//-----------------Debug-----------------------
+//===================================== Debug ====================================
 TCS_var_enableTriggerMarkers = false;
