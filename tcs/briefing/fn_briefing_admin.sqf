@@ -7,12 +7,12 @@ This briefing section can only be seen by the current admin.
 ";
 
 
-// Mission-maker notes
+//------------------------------ Mission maker notes -----------------------------
 // This section displays notes made by the mission-maker for the admin
 _briefing = _briefing + "<br/><font size='18'>MISSION-MAKER NOTES</font><br/>";
 
 
-// ENDINGS
+//------------------------------------ Endings -----------------------------------
 // Grab all the endings in CfgDebriefings and format them for displaying
 
 _title = [];
