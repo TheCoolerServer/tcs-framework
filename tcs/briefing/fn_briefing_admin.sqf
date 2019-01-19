@@ -75,18 +75,18 @@ _briefing = _briefing + "
 |- <execute expression=""
 	TCS_param_mission_timer = -1; publicVariable 'TCS_param_mission_timer';
 	[['SafeStartMissionStarting',['Mission starting now!']] remoteExec ['BIS_fnc_showNotification', 0];
-	[false] remoteExec ['TCS_fnc_safety', playableUnits + switchableUnits];
+	[false] remoteExec ['TCS_fnc_toggleSafeStart', playableUnits + switchableUnits];
 	hintsilent 'Safe Start ended!';
 ""> End Safe Start timer </execute><br/>
 
 |- <execute expression=""
-	[true] remoteExec ['TCS_fnc_safety', playableUnits + switchableUnits];
-	hintsilent 'Safety on!';
+	[true] remoteExec ['TCS_fnc_toggleSafeStart', playableUnits + switchableUnits];
+	hintsilent 'Safe start on!';
 ""> Force safety on for all players </execute><br/>
 
 |- <execute expression=""
-	[false] remoteExec ['TCS_fnc_safety', playableUnits + switchableUnits];
-	hintsilent 'Safety off!';
+	[false] remoteExec ['TCS_fnc_toggleSafeStart', playableUnits + switchableUnits];
+	hintsilent 'Safe start off!';
 ""> Force safety off for all players </execute><br/>
 <br/>
 ";

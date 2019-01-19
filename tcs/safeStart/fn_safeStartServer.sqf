@@ -1,7 +1,17 @@
-if (isNil "f_param_mission_timer") then {
-	f_param_mission_timer = ["f_param_mission_timer",0] call BIS_fnc_getParamValue;
-};
+/*
+	Description:
+		Initializes the safe start looop on the server.
 
-if (f_param_mission_timer > 0) then {
+	Parameters:
+		None
+
+	Returns:
+		None:
+
+	Example:
+		[] call TCS_fnc_safeStartServer;
+*/
+
+if (TCS_param_safeStartTime > 0) then {
 	[] spawn TCS_fnc_safeStartLoop;
 };

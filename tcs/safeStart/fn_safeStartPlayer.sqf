@@ -1,7 +1,17 @@
-if (isNil "f_param_mission_timer") then {
-	f_param_mission_timer = ["f_param_mission_timer",0] call BIS_fnc_getParamValue;
-};
+/*
+	Description:
+		Initializes the safe start on the player.
 
-if (f_param_mission_timer > 0) then {
-	[true] call TCS_fnc_safety;
+	Parameters:
+		None
+
+	Returns:
+		None:
+
+	Example:
+		[] call TCS_fnc_safeStartPlayer;
+*/
+
+if (TCS_param_safeStartTime > 0) then {
+	[true] call TCS_fnc_toggleSafeStart;
 };

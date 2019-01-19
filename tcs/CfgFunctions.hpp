@@ -21,7 +21,9 @@ class TCS {
     class initZeus {};
 
     class mpEnd {};
-    class mpEndReceiver {};    
+    class mpEndReceiver {};
+
+    class initParameterVariables {};
   };
 
   class Briefings {
@@ -78,14 +80,12 @@ class TCS {
   class safeStart{
 		file = "tcs\safeStart";
 
-		class safety{};
+		class toggleSafeStart{};
 
     class safeStartLoop {};
 
     class safeStartPlayer {};
     class safeStartServer {};
-
-    class safeStart {};
 	};
 
 

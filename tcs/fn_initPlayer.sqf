@@ -1,17 +1,18 @@
 /**
 	Initializes everything that is needed by the framework on the player.
 */
+[] call TCS_fnc_initParameterVariables;
 
 {_x setSpeaker "NoVoice"} forEach playableUnits;
 
 [] spawn TCS_fnc_createBriefing;
 
+[] call TCS_fnc_safeStartPlayer;
+
 //Initialize the player's radios
 if (TCS_var_radiosModuleEnabled) then {
 	[] spawn TCS_fnc_initPlayerRadios;
 };
-
-[] call TCS_fnc_safeStartPlayer;
 
 if (TCS_var_enableTriggerMarkers) then {
 	[] call TCS_fnc_createDebugTriggerMarkers;
