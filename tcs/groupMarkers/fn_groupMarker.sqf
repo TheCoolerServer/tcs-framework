@@ -36,5 +36,5 @@ while {{!isNull _x} count units _group > 0} do{
 	private _leaderPos = getPos leader _group;
 
 	_marker setMarkerPosLocal _leaderPos;
-	sleep 6;
+	sleep TCS_var_groupMarkerUpdateInterval;
 };

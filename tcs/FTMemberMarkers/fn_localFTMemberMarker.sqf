@@ -51,7 +51,7 @@ while{alive _unit && (_unit in TCS_var_aliveFireteamMembers)} do {
 		TCS_var_aliveFireteamMembers = TCS_var_aliveFireteamMembers - [_unit];
 	};
 
-	sleep 3;
+	sleep TCS_var_fireteamMarkersUpdateInterval;
 };
 
 //He's dead Jim, let's clear up obsolete markers

@@ -4,6 +4,7 @@ TCS_var_allZeusesGetAdminBriefing = true;
 //================================= Group markers ================================
 TCS_var_groupMarkersEnabled = true;
 TCS_var_showMarkersOfOtherSides = false;
+TCS_var_groupMarkerUpdateInterval = 5;
 
 TCS_var_westGroupMarkers = [
 	["Lead", "b_hq"], 			// Command elements
@@ -25,6 +26,7 @@ TCS_var_civilianGroupMarkers = TCS_var_westGroupMarkers;
 
 //=============================== Fireteam markers ===============================
 TCS_var_fireteamMarkersEnabled = true;
+TCS_var_fireteamMarkersUpdateInterval = 3;
 
 //==================================== Radios ====================================
 TCS_var_radiosModuleEnabled = true;
