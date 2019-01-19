@@ -100,6 +100,8 @@ class TCS {
   }
 
   class Zeus {
+    file = "tcs\zeus";
+    
     class zeusInit {};
     class zeusAddAddons {};
     class zeusAddObjects {};
