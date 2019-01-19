@@ -58,4 +58,4 @@ TCS_var_disableFSMSides = [east];
 TCS_var_disableFSMInterval = 60;
 
 //===================================== Debug ====================================
-TCS_var_enableTriggerMarkers = false;
+TCS_var_enableTriggerDebugMarkers = false;

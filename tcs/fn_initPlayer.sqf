@@ -14,7 +14,7 @@ if (TCS_var_radiosModuleEnabled) then {
 	[] spawn TCS_fnc_initPlayerRadios;
 };
 
-if (TCS_var_enableTriggerMarkers) then {
+if (TCS_var_enableTriggerDebugMarkers) then {
 	[] call TCS_fnc_createDebugTriggerMarkers;
 };
 
