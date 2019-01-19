@@ -117,4 +117,4 @@ _briefing = _briefing + "
 ";
 
 
-player createDiaryRecord ["diary", ["F3 Admin Menu", _briefing]];
+player createDiaryRecord ["diary", ["TCS Admin Menu", _briefing]];
