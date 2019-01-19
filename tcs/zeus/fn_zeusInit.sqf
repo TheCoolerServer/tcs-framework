@@ -48,14 +48,14 @@ if (isNull _unit) exitWith {};
 
 //If the unit already has access to zeus don't do anything
 if !(isNull (getAssignedCuratorLogic _unit)) exitWith {
-	diag_log format ["DEBUG (f\zeus\fn_zeusInit.sqf): ZEUS already assigned to %1.",_unit];
-	systemchat format ["DEBUG (f\zeus\fn_zeusInit.sqf): ZEUS already assigned to %1.",_unit];
+	diag_log format ["DEBUG (tcs\zeus\fn_zeusInit.sqf): ZEUS already assigned to %1.",_unit];
+	systemchat format ["DEBUG (tcs\zeus\fn_zeusInit.sqf): ZEUS already assigned to %1.",_unit];
 };
 
 // Exit if the unit is not a player
 if !(isPlayer _unit) exitWith {
-	diag_log format ["DEBUG (f\zeus\fn_zeusInit.sqf): Did not assign ZEUS to %1 because it is not under control of a player.",_unit];
-	systemchat format ["DEBUG (f\zeus\fn_zeusInit.sqf): Did not assign ZEUS to %1 because it is not under control of a player.",_unit];
+	diag_log format ["DEBUG (tcs\zeus\fn_zeusInit.sqf): Did not assign ZEUS to %1 because it is not under control of a player.",_unit];
+	systemchat format ["DEBUG (tcs\zeus\fn_zeusInit.sqf): Did not assign ZEUS to %1 because it is not under control of a player.",_unit];
 };
 
 //Create a new curator module and assign it to the player with the correct addons
