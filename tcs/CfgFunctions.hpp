@@ -20,7 +20,8 @@ class TCS {
 
     class initZeus {};
 
-    
+    class mpEnd {};
+    class mpEndReceiver {};    
   };
 
   class Briefings {
@@ -100,13 +101,6 @@ class TCS {
     class revealPlayableUnits {};
     class startFreezeLoop {};
   };
-
-  class MpEnd{
-    file = "tcs\mpEnd";
-
-    class mpEnd {};
-    class mpEndReceiver {};
-  }
 
   class Zeus {
     file = "tcs\zeus";
