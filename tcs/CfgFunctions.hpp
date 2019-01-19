@@ -101,16 +101,12 @@ class TCS {
 
   class Zeus {
     file = "tcs\zeus";
-    
+
+    class isZeus {};
+
     class zeusInit {};
     class zeusAddAddons {};
     class zeusAddObjects {};
-  };
-
-  class Utils {
-    file = "tcs\utils";
-
-    class isZeus {};
   };
 
   class Extra {
