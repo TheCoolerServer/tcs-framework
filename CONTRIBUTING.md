@@ -28,8 +28,8 @@ If you can, also attach the zipped mission folder.
 
 ### Merge requests
 Pull requests must not contain any syntax errors and should be tested before the merge-request being made.
-If there are any syntax errors, the change causes error messages to apprear or there are bugs in the change being made the merge request will NOT be accepted.
-Please make sure your changes work as expected before submitting a merge-request.
+If there are any syntax errors or any merge conflicts the merge request will not be accepted, please fix those before submitting one.
+Nobody is perfect, but try to make sure your changes work as expected before submitting a merge-request.
 
 ### Procedure for merge requests
 To make a merge request please take these steps:
