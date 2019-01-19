@@ -23,6 +23,8 @@ TCS_var_eastGroupMarkers = TCS_var_westGroupMarkers;
 TCS_var_independentGroupMarkers = TCS_var_westGroupMarkers;
 TCS_var_civilianGroupMarkers = TCS_var_westGroupMarkers;
 
+//=============================== Fireteam markers ===============================
+TCS_var_fireteamMarkersEnabled = true;
 
 //==================================== Radios ====================================
 TCS_var_radiosModuleEnabled = true;
@@ -42,13 +44,11 @@ TCS_var_eastRadios = TCS_var_westRadios;
 TCS_var_independentRadios = TCS_var_westRadios;
 TCS_var_civilianRadios = TCS_var_westRadios;
 
-
 //==================================== Tickets ===================================
 TCS_var_westTickets = 10;
 TCS_var_eastTickets = 10;
 TCS_var_independentTickets = 10;
 TCS_var_civilianTickets = 10;
-
 
 //====================================== AI ======================================
 TCS_var_disableAIFSM = true;

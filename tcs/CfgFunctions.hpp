@@ -44,6 +44,15 @@ class TCS {
     class groupMarker {};
   };
 
+  class FireteamMarkers {
+    file = "tcs\FTMemberMarkers";
+
+    class teamColorToMarkerColor {};
+    class fireteamMarkersLoop {};
+    class initFireteamMarkers {};
+    class localFTMemberMarker {};
+  };
+
   class Radios {
     file = "tcs\radios";
 
