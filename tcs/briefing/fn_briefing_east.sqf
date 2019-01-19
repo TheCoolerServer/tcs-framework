@@ -4,8 +4,7 @@
 //------------------------------------ Credits -----------------------------------
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
-<br/>
+*** Insert mission credits here. ***<br/>
 <br/>
 Made with " + FRAMEWORK_NAME_FULL]];
 
@@ -26,13 +25,11 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
-<br/>
+*** Insert general information about the situation here.***<br/>
 <br/>
 <font size='18'>ENEMY FORCES</font>
 <br/>
-*** Insert information about enemy forces here.***
-<br/>
+*** Insert information about enemy forces here.***<br/>
 <br/>
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
