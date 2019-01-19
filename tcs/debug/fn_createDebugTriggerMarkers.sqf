@@ -1,5 +1,6 @@
 /**
-	Creates markers where all the triggers in the mission are positionated to make it easier to test each trigger.
+	Description:
+		Creates markers where all the triggers in the mission are positionated to make it easier to test each trigger.
 
 	Paramters:
 		None

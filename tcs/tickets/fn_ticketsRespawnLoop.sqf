@@ -1,5 +1,6 @@
 /**
-	Respawn loop responsible by updating the controls on the top of the screen and respawning the player when the tickets respawn template is used.
+	Description:
+		Respawn loop responsible by updating the controls on the top of the screen and respawning the player when the tickets respawn template is used.
 */
 #define SPECTATOR_DISPLAY_ID 60492;
 

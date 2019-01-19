@@ -1,5 +1,6 @@
 /**
-	Sets the amount of tickets for a given side. Must be executed on the server.
+	Description:
+		Sets the amount of tickets for a given side. Must be executed on the server.
 	
 	Parameters: 
 		0 - (side) Which side's tickets will be set.

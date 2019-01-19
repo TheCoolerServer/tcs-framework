@@ -1,7 +1,7 @@
 /**
-	Starts the pre-init freeze countdown.
-
-	MUST BE CALLED ON THE SERVER.
+	Description:
+		Starts the pre-init freeze countdown.
+		Must be called on the server.
 
 	Parameters:
 		0 - (number) How many seconds does the freeze last.

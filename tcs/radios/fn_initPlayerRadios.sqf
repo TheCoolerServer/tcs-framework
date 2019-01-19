@@ -1,6 +1,7 @@
 /**
-	Initializes a player's radios with the option of removing existing radios.
-	Spawns new thread that handles the initialization.
+	Description:
+		Initializes a player's radios with the option of removing existing radios.
+		Spawns new thread that handles the initialization.
 
 	Parameters:
 		None

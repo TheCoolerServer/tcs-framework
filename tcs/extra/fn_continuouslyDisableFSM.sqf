@@ -1,5 +1,6 @@
 /**
-	Continuously disables the FSM of the AI in the server. The side whose units the AI should be disabled and how often this function runs can be configured in fn_configure.
+	Description:
+		Continuously disables the FSM of the AI in the server. The side whose units the AI should be disabled and how often this function runs can be configured in fn_configure.
 
 	Parameters:
 		None

@@ -1,5 +1,6 @@
 /**
-	Initializes a zeus object. Should be called in the init field of thhe game master slot module.
+	Description:
+		Initializes a zeus object. Should be called in the init field of thhe game master slot module.
 	
 	Paramters:
 		0 - (Zeus) The zeus game object that should be initialized.

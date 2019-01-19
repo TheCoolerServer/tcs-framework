@@ -1,7 +1,7 @@
 /*
-	Taken from: https://github.com/astruyk/Ares/blob/master/src/addons/ares_zeusExtensions/functions/fn_IsZeus.sqf
-	
-	Determines if the specified unit is the Curator (Zeus).
+	Description:
+		Determines if the specified unit is the Curator (Zeus).
+		Taken from: https://github.com/astruyk/Ares/blob/master/src/addons/ares_zeusExtensions/functions/fn_IsZeus.sqf
 	
 	Parameters:
 		0 - [Object] The unit to test for zeusness

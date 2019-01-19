@@ -1,5 +1,6 @@
 /**
-	Event handler for the onPlayerRespawn event of the tickets respawn template.
+	Description:
+		Event handler for the onPlayerRespawn event of the tickets respawn template.
 */
 
 //Just in case the player was respawned by some other method than the tickets

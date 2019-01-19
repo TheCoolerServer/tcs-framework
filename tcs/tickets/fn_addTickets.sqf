@@ -1,5 +1,6 @@
 /**
-	Adds tickets to a given side.
+	Description:
+		Adds tickets to a given side.
 
 	Parameters:
 		0 - (side) Which side to add tickets to.

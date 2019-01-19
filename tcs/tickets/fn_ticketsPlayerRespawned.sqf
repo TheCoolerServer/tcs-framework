@@ -1,6 +1,7 @@
 /**
-	Called by the player by remoteExecCall on the server to tell the server that a player just respawned
-	so that it can update the tickets and broadcast the ticket value to everyone else.
+	Description:
+		Called by the player by remoteExecCall on the server to tell the server that a player just respawned
+		so that it can update the tickets and broadcast the ticket value to everyone else.
 
 	Parameters:
 		0 - (player) Who just respawned
