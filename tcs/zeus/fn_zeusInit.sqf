@@ -1,22 +1,6 @@
-// F3 Zeus Support  - Initialization
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-// ====================================================================================
-
-// SERVER CHECK
-// Ensure this script only executes on the server:
+//TODO: Add documentation
 
 if !(isServer) exitWith {};
-
-// ====================================================================================
-
-// DECLARE VARIABLES
-
-private ["_curator"];
-
-// ====================================================================================
-
-// SET KEY VARIABLES
-// Using variables passed to the script instance, we will create some local variables:
 
 params [
 	["_unit", objNull],

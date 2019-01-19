@@ -92,6 +92,19 @@ class TCS {
     class startFreezeLoop {};
   };
 
+  class MpEnd{
+    file = "tcs\mpEnd";
+
+    class mpEnd {};
+    class mpEndReceiver {};
+  }
+
+  class Zeus {
+    class zeusInit {};
+    class zeusAddAddons {};
+    class zeusAddObjects {};
+  };
+
   class Utils {
     file = "tcs\utils";
 
