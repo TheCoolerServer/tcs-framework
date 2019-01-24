@@ -39,7 +39,6 @@ if !(_curator in allCurators) then {
 //If still wasn't able to find a curator module, error out
 if (isNull _curator || typeOf _curator != "ModuleCurator_F") exitWith {
 	player GlobalChat format ["DEBUG (f\zeus\fn_zeusAddAddons.sqf): Could not resolve curator properly, is either null or not the correct type. IsNull = %1, _curator type : %2 (should be ModuleCurator_F)", isNull _curator, typeOf _curator];
-	exitWith {};
 };
 
 // Decide which addons to add based on passed mode

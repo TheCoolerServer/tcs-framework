@@ -1,5 +1,5 @@
 //================================ Admin briefing ================================
-_briefing ="
+private _briefing = "
 <br/>
 <font size='18'>ADMIN SECTION</font><br/>
 This briefing section can only be seen by the current admin.
@@ -14,19 +14,16 @@ _briefing = _briefing + "<br/><font size='18'>MISSION-MAKER NOTES</font><br/>";
 
 //------------------------------------ Endings -----------------------------------
 // Grab all the endings in CfgDebriefings and format them for displaying
+private _endings = [];
 
-_title = [];
-_ending = [];
-_endings = [];
-
-_i = 1;
+private _i = 1;
 while {true} do {
-	_title = getText (missionconfigfile >> "CfgDebriefing" >> format ["end%1", _i] >> "title");
+	private _title = getText (missionconfigfile >> "CfgDebriefing" >> format ["end%1", _i] >> "title");
 	_description = getText (missionconfigfile >> "CfgDebriefing" >> format ["end%1", _i] >> "description");
 
 	if (_title == "") exitWith {};
 
-	_ending = [_i,_title,_description];
+	private _ending = [_i, _title, _description];
 	_endings append ([_ending]);
 	_i = _i + 1;
 };
@@ -40,7 +37,6 @@ These endings are available. To trigger an ending click on its link.<br/>
 ";
 
 {
-	_end = _this select 0;
 	_briefing = _briefing + format [
 		"<execute expression=""[[%1], false] remoteExec ['TCS_fnc_mpEnd', 2];"">'end%1'</execute> - %2:<br/>
 		%3<br/>
@@ -56,38 +52,32 @@ These endings are available. To trigger an ending click on its link.<br/>
 _briefing = _briefing + "
 <font size='18'>SAFE START CONTROL</font><br/>
 |- <execute expression=""
-	TCS_param_mission_timer = TCS_param_mission_timer + 1;
-	publicVariable 'TCS_param_mission_timer';
-	hintsilent format ['Mission Timer: %1',TCS_param_mission_timer];
+	TCS_param_safeStartTime = TCS_param_safeStartTime + 1;
+	publicVariable 'TCS_param_safeStartTime';
+	hintsilent format ['Mission Timer: %1', TCS_param_safeStartTime];
 ""> Increase Safe Start timer by 1 minute </execute><br/>
 
 |- <execute expression=""
-	TCS_param_mission_timer = TCS_param_mission_timer - 1;
-	publicVariable 'TCS_param_mission_timer';
-	hintsilent format ['Mission Timer: %1',TCS_param_mission_timer];
+	TCS_param_safeStartTime = TCS_param_safeStartTime - 1;
+	publicVariable 'TCS_param_safeStartTime';
+	hintsilent format ['Mission Timer: %1', TCS_param_safeStartTime];
 ""> Decrease Safe Start timer by 1 minute </execute><br/>
 
 |- <execute expression=""
-	[] remoteExec ['TCS_fnc_safeStart', 0];
+	[true] remoteExec ['TCS_fnc_toggleSafeStart', playableUnits + switchableUnits];
+	['SafeStart', ['Safe start enabled']] remoteExec ['BIS_fnc_showNotification', 0];
 	hintsilent 'Safe Start started!';
-""> Begin Safe Start timer </execute><br/>
+""> Begin safe start timer </execute><br/>
 
 |- <execute expression=""
-	TCS_param_mission_timer = -1; publicVariable 'TCS_param_mission_timer';
-	[['SafeStartMissionStarting',['Mission starting now!']] remoteExec ['BIS_fnc_showNotification', 0];
+	TCS_param_safeStartTime = -1;
+	publicVariable 'TCS_param_safeStartTime';
+
+	['SafeStartMissionStarting', ['Mission starting now!']] remoteExec ['BIS_fnc_showNotification', 0];
+
 	[false] remoteExec ['TCS_fnc_toggleSafeStart', playableUnits + switchableUnits];
 	hintsilent 'Safe Start ended!';
-""> End Safe Start timer </execute><br/>
-
-|- <execute expression=""
-	[true] remoteExec ['TCS_fnc_toggleSafeStart', playableUnits + switchableUnits];
-	hintsilent 'Safe start on!';
-""> Force safety on for all players </execute><br/>
-
-|- <execute expression=""
-	[false] remoteExec ['TCS_fnc_toggleSafeStart', playableUnits + switchableUnits];
-	hintsilent 'Safe start off!';
-""> Force safety off for all players </execute><br/>
+""> End safe start timer </execute><br/>
 <br/>
 ";
 
@@ -95,7 +85,7 @@ _briefing = _briefing + "
 
 _briefing = _briefing + "
 <font size='18'>ZEUS SUPPORT</font><br/>
-<execute expression=""
+|- <execute expression=""
 	if !(isNull (getAssignedCuratorLogic player)) then {
 		hintsilent 'ZEUS already assigned!'
 	} else {
