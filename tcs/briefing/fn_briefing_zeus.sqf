@@ -6,7 +6,7 @@ player createDiaryRecord ["diary", ["Credits","
 <br/>
 *** Insert mission credits here. ***<br/>
 <br/>
-Made with " + FRAMEWORK_NAME_FULL_STRING]];
+Made with " + FRAMEWORK_NAME_FULL]];
 
 //-------------------------------- Administration --------------------------------
 player createDiaryRecord ["diary", ["Administration","
