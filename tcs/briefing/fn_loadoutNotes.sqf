@@ -23,6 +23,8 @@ private _buildMagazinesText = {
 	if (count _magArr > 0) then {
 		_text = _text + format ["[%1]", _magArr joinString "+"];
 	};
+
+	_text;
 };
 
 private _text = "<br />NOTE: The loadout shown below is only accurate at mission start.<br />
@@ -49,12 +51,12 @@ if (count _weapons > 0) then {
 		_text = _text + format["<br/>%1",getText (configFile >> "CfgWeapons" >> _weapon >> "displayname")];
 
 		//Add magazines for weapon
-		_text = _text + [_weapon] call _buildMagazinesText;
+		_text = _text + ([_weapon, _mags] call _buildMagazinesText);
 
 		// Check if weapon has an underslung grenade launcher
 		if ({_weapon in ["GL_3GL_F","EGLM","UGL_F"]} count (getArray (configFile >> "CfgWeapons" >> _weapon >> "muzzles")) > 0) then {
 			_text = _text + "<br/> |- UGL";
-			_text = _text + ["UGL_F"] call _buildMagazinesText;
+			_text = _text + (["UGL_F", _mags] call _buildMagazinesText);
 		};
 
 		// List weapon attachments
