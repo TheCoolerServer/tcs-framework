@@ -13,7 +13,7 @@ private _respawnTime = playerRespawnTime;
 private _start = time;
 
 //This loop is going to be terminated by the respawn event handler
-while {true} do {
+while {!(alive player)} do {
 	private _tickets = TCS_var_westTickets;
 	private _timeRemaining = _respawnTime - (time - _start);
 
@@ -62,7 +62,6 @@ while {true} do {
 	};
 
 	
-
 	//Set the text in the controls
 	_ticketsControl ctrlSetStructuredText _ticketsText;
 	_countdownControl ctrlSetStructuredText _countdownText;
@@ -81,9 +80,6 @@ while {true} do {
 			setPlayerRespawnTime (_this select 0);
 		};
 
-		//Fade out the display;
-		"TCS_layer_tickets" cutFadeout 1;
-
 		//Respawn the player
 		setPlayerRespawnTime 0;
 		sleep 1;
@@ -91,3 +87,6 @@ while {true} do {
 
 	sleep 1;
 };
+
+//Fade out the display;
+"TCS_layer_tickets" cutFadeout 1;
