@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Changelog
 ### Changed
 * Made the framework version macros make more sense and not require the `_STRING` suffix.
+### Fixed
+* TCS_fnc_mpEnd was still calling f_fnc_mpEndReceiver.
 
 
 ## 1.1.0 (2019-01-24)
