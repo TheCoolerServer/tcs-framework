@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 * TCS_fnc_mpEnd was still calling f_fnc_mpEndReceiver.
 * Tickets display was still apprearing if the player was respawned by something else.
+* Loadout notes was broken.
 
 
 ## 1.1.0 (2019-01-24)
