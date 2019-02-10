@@ -18,7 +18,7 @@
 if (!isServer) exitWith {};
 
 if (isNil "TCS_var_EndingTriggered") then {
-	_this remoteExec ["f_fnc_mpEndReceiver", 0];
+	_this remoteExec ["TCS_fnc_mpEndReceiver", 0];
 };
 
 TCS_var_EndingTriggered = true;
