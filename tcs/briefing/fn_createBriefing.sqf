@@ -2,6 +2,8 @@ if (!hasInterface) exitWith {};
 
 private _playerSide = side player;
 
+[] call TCS_fnc_loadoutNotes;
+
 //================================ Admin briefing ================================
 if (serverCommandAvailable "#kick") then {
 	[] call TCS_fnc_briefing_admin;

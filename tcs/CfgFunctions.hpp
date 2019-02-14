@@ -37,6 +37,8 @@ class TCS {
     class briefing_independent {};
     class briefing_west {};
     class briefing_zeus {};
+
+    class loadoutNotes {};
   };
 
   class GroupMarkers {
