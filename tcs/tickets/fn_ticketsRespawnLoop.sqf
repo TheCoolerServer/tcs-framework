@@ -38,7 +38,7 @@ while {!(alive player)} do {
 	if (_tickets <= 0) then {
 		_countdownText = parseText ("<t align='center'>Respawn in: <t color='#FF0000'>--:--</t></t>");
 		_ticketsText = parseText ("<t alight='right'>Tickets remaining: <t color='#FF0000'>0</t></t>");
-	}else {
+	} else {
 		private _minutes = 0;
 		private _seconds = 0;
 
