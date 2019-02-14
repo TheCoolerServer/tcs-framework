@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+
+## 1.1.2 (2019-02-14)
 ### Fixed
 * fn_loadoutNotes isnt called on fn_createBriefing.
 * Fixed JIP clients ignoring the updated mission parameters that caused safe start being enabled even though it shouldn't be.
