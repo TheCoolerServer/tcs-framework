@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Fixed
 * fn_loadoutNotes isnt called on fn_createBriefing.
+* Fixed JIP clients ignoring the updated mission parameters that caused safe start being enabled even though it shouldn't be.
 
 ## 1.1.1 (2019-02-10)
 ### Added
