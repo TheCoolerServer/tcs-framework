@@ -14,7 +14,7 @@
 */
 
 [] spawn {
-	private _freezeTime = TCS_param_preInitFreezetTime;
+	private _freezeTime = TCS_param_preInitFreezeTime;
 	private _start = time;
 
 	{

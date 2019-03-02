@@ -5,6 +5,6 @@
 
 [] call TCS_fnc_safeStartServer;
 
-if (TCS_param_preInitFreezetTime > 0) then {
+if (TCS_param_preInitFreezeTime > 0) then {
 	[] call TCS_fnc_startFreezeLoop;
 };
