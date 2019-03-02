@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 * Pre-init freeze parameter variable name.
 
+### Changed
+* Group markers now appear in SP and local MP.
+
 ## 1.1.2 (2019-02-14)
 ### Fixed
 * fn_loadoutNotes isnt called on fn_createBriefing.
