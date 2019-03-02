@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 1.1.3 (2019-03-02)
+### Removed
+* Disable FSM loop that caused AI to stop responding.
+
+### Fixed
+* Pre-init freeze parameter variable name.
+
 ## 1.1.2 (2019-02-14)
 ### Fixed
 * fn_loadoutNotes isnt called on fn_createBriefing.
