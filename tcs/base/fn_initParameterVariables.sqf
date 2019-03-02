@@ -23,6 +23,6 @@ if (isNil "TCS_param_safeStartTime") then {
 	TCS_param_safeStartTime = ["TCS_param_safeStart_Time", 3] call BIS_fnc_getParamValue;
 };
 
-if (isNil "TCS_param_preInitFreezetTime") then {
-	TCS_param_preInitFreezetTime = ["TCS_param_preInitFreeze_Time", 20] call BIS_fnc_getParamValue;
+if (isNil "TCS_param_preInitFreezeTime") then {
+	TCS_param_preInitFreezeTime = ["TCS_param_preInitFreeze_Time", 20] call BIS_fnc_getParamValue;
 };

@@ -52,10 +52,5 @@ TCS_var_eastTickets = 10;
 TCS_var_independentTickets = 10;
 TCS_var_civilianTickets = 10;
 
-//====================================== AI ======================================
-TCS_var_disableAIFSM = true;
-TCS_var_disableFSMSides = [east];
-TCS_var_disableFSMInterval = 60;
-
 //===================================== Debug ====================================
 TCS_var_enableTriggerDebugMarkers = false;
