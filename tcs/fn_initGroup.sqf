@@ -8,9 +8,7 @@
 		3 - (string) The color that this group should have.
 */
 
-if (isServer) then {
-	//Nothing yet
-} else {
+if (hasInterface) then {
 	if (TCS_var_groupMarkersEnabled) then {
 		_this call TCS_fnc_createGroupMarker;
 	};
