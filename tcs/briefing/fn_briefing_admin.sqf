@@ -19,7 +19,7 @@ private _endings = [];
 private _i = 1;
 while {true} do {
 	private _title = getText (missionconfigfile >> "CfgDebriefing" >> format ["end%1", _i] >> "title");
-	_description = getText (missionconfigfile >> "CfgDebriefing" >> format ["end%1", _i] >> "description");
+	private _description = getText (missionconfigfile >> "CfgDebriefing" >> format ["end%1", _i] >> "description");
 
 	if (_title == "") exitWith {};
 
