@@ -24,7 +24,7 @@ if (isServer) then{
 };
 
 // ====================================================================================
-
+// Add code here to be executed on each specific ending.
 switch (_ending) do{
 	// Ending #1
 	case 1:{};
