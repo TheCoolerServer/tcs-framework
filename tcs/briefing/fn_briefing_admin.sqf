@@ -38,7 +38,7 @@ These endings are available. To trigger an ending click on its link.<br/>
 
 {
 	_briefing = _briefing + format [
-		"<execute expression=""[[%1], false] remoteExec ['TCS_fnc_mpEnd', 2];"">'end%1'</execute> - %2:<br/>
+		"<execute expression=""[%1, false] remoteExec ['TCS_fnc_mpEnd', 2];"">'end%1'</execute> - %2:<br/>
 		%3<br/>
 		<br/>",
 		_x select 0,
