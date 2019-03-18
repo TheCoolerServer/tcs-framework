@@ -15,6 +15,12 @@
 
 if !(isServer) exitWith {};
 
+// initServer.sqf runs after the server loads the mission, so that means it runs while the players are on the briefing screen.
+// And since uiSleep doesn't care if the game has started or not it will sleep during the briefing and if people stay in the briefing
+// for too long safe-start will be disabled once the mission actually starts.
+// Putting a sleep here will make sure the actual safe-start loop starts after the briefing is done, just like the pre-init freeze.
+sleep 1;
+
 while {TCS_param_safeStartTime > 0} do {
 	// Broadcast remaining time to players
 	["SafeStart", [format ["Time Remaining: %1 min", TCS_param_safeStartTime]]] remoteExec ["BIS_fnc_showNotification", 0];
