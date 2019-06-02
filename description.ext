@@ -1,5 +1,13 @@
+author = "AUTHOR NAME";
+OnLoadName = "Operation Name";
+OnLoadMission = "Loading text";
+loadScreen = "load.jpg";
+
+
 //respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
+//respawnTemplates[] = {"TCS_Respawn", "TCS_Ind_Tickets"}; // Individual ticket based respawn
 respawnTemplates[] = {"TCS_Respawn", "Counter"}; //Default respawn
+
 
 //Do not change this unless you know what you are doing, even if you do read this
 //https://community.bistudio.com/wiki/Description.ext#respawnOnStart
