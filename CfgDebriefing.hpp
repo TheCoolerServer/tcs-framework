@@ -1,7 +1,7 @@
 // Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 class CfgDebriefing{
 	class End1{
-		title = "Ending 1";
+		title = "Success";
 		subtitle = "";
 		description = "";
 		// pictureBackground = "";
@@ -10,7 +10,7 @@ class CfgDebriefing{
 	};
 
 	class End2{
-		title = "Ending 2";
+		title = "Failure";
 		subtitle = "";
 		description = "";
 		// pictureBackground = "";
