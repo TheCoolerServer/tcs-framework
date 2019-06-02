@@ -5,6 +5,8 @@ class CfgRespawnTemplates{
 	#include "tcs\base\TCSRespawnTemplate.hpp"
 
 	#include "tcs\tickets\TicketsRespawnTemplate.hpp"
+	
+	#include "tcs\indTickets\IndTicketsRespawnTemplate.hpp"
 
 	#include "tcs\backToGroup\BTGRespawnTemplate.hpp"
 };
