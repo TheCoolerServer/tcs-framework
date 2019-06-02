@@ -21,3 +21,5 @@ if (TCS_var_enableTriggerDebugMarkers) then {
 if (TCS_var_fireteamMarkersEnabled) then {
 	[] call TCS_fnc_initFireteamMarkers;
 };
+
+mytickets = TCS_var_individualTickets;
