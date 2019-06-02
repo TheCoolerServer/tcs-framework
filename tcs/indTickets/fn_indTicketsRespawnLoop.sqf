@@ -58,7 +58,6 @@ while {!(alive player)} do {
 	
 	//Handle the respawn and exit the loop
 	if(_timeRemaining < 0 && _tickets > 0) exitWith {
-		//[player, playerSide] remoteExec ["TCS_fnc_ticketsPlayerRespawned", 2]; //Tell the server we just respawned
 		myTickets = myTickets - 1;
 
 		//Need to set the respawn time properly after the player has respawned
