@@ -14,7 +14,7 @@ private _start = time;
 
 //This loop is going to be terminated by the respawn event handler
 while {!(alive player)} do {
-	private _tickets = myTickets;
+	private _tickets = TCS_var_individualTickets;
 	private _timeRemaining = _respawnTime - (time - _start);
 
 	//Setup the text to be displayed in the controls
@@ -58,7 +58,7 @@ while {!(alive player)} do {
 	
 	//Handle the respawn and exit the loop
 	if(_timeRemaining < 0 && _tickets > 0) exitWith {
-		myTickets = myTickets - 1;
+		TCS_var_individualTickets = TCS_var_individualTickets - 1;
 
 		//Need to set the respawn time properly after the player has respawned
 		[_respawnTime] spawn {
