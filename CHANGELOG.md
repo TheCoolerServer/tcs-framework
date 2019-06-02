@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-##1.1.6 (2019-06-02)
+## 1.1.6 (2019-06-02)
 ### Added
 * Individual ticket respawn option.
 * Ability to define mission, author, display text, and load picture in description.ext.
