@@ -51,6 +51,7 @@ TCS_var_westTickets = 10;
 TCS_var_eastTickets = 10;
 TCS_var_independentTickets = 10;
 TCS_var_civilianTickets = 10;
+TCS_var_individualTickets = 3;
 
 //===================================== Debug ====================================
 TCS_var_enableTriggerDebugMarkers = false;
