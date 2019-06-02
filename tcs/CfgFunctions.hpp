@@ -78,6 +78,17 @@ class TCS {
     class setTickets {};
     class addTickets {};
   };
+  
+    class individualTickets {
+    file = "tcs\indTickets";
+
+    class indTicketsOnPlayerKilled {};
+    class indTicketsOnPlayerRespawn {};
+
+    class indTicketsRespawnLoop {};
+
+  };
+
 
   class safeStart{
 		file = "tcs\safeStart";
