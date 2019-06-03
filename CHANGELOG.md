@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 * Individual ticket respawn option.
 * Ability to define mission, author, display text, and load picture in description.ext.
+* Option to disable FSM on AI again.
 
 ### Changed
 * Endings 1 and 2 now default to Success and Failure.
