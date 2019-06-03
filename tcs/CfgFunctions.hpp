@@ -127,5 +127,7 @@ class TCS {
 
   class Extra {
     file = "tcs\extra";
+
+    class continuouslyDisableFSM {};
   };
 };
