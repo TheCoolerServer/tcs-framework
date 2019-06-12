@@ -7,6 +7,7 @@
 private _radios = [] call acre_api_fnc_getCurrentRadioList;
 TCS_var_playerRadioSettings = [];
 TCS_var_playerMPTTSettings = ([] call acre_api_fnc_getMultiPushToTalkAssignment) apply {
+	// Strip the ID at the end of the radio name and just get the class name
 	private _radioClass = (_x splitString "_ID") select 0;
 	_radioClass;
 };
