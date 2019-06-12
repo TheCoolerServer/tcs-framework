@@ -58,5 +58,9 @@ TCS_var_disableAIFSM = true;
 TCS_var_disableFSMSides = [east];
 TCS_var_disableFSMInterval = 60;
 
+//=================================== Spectator ==================================
+TCS_var_spectatorAllowFreeCamera = true;
+TCS_var_spectatorAllowThirdPersonCamera = true;
+
 //===================================== Debug ====================================
 TCS_var_enableTriggerDebugMarkers = false;

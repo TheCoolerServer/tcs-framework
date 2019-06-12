@@ -9,9 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Individual ticket respawn option.
 * Ability to define mission, author, display text, and load picture in description.ext.
 * Option to disable FSM on AI again.
+* Options for the mission maker to disable Free and third person spectator camera modes.
 
 ### Changed
 * Endings 1 and 2 now default to Success and Failure.
+
+### Removed
+* Player's ability to see AI when in spectator.
 
 ## 1.1.5 (2019-04-08)
 ### Fixed
