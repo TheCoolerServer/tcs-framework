@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Ability to define mission, author, display text, and load picture in description.ext.
 * Option to disable FSM on AI again.
 * Options for the mission maker to disable Free and third person spectator camera modes.
+* Radio settings are now restored on respawn.
 
 ### Changed
 * Endings 1 and 2 now default to Success and Failure.
