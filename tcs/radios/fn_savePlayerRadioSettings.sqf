@@ -25,6 +25,7 @@ TCS_var_playerMPTTSettings = ([] call acre_api_fnc_getMultiPushToTalkAssignment)
 		[_radio] call acre_api_fnc_getRadioSpatial
 
 		// See issue https://github.com/IDI-Systems/acre2/issues/692
+		// Fixed, will be included in release 2.7.0
 		// [_radio] call acre_api_fnc_getRadioVolume
 	];
 	systemChat format ["Saved radio class %1 for radio %2", _radioClass, _radio];
