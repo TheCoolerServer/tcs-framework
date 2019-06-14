@@ -64,6 +64,12 @@ if (_leader == player) then {
 };
 
 // Set the player's radios settings to what he had them before
+// We need to wait here because the radios we just added will not be initialized yet
+// since they are set on the server
+waitUntil { 
+	uiSleep 0.5;
+	([] call acre_api_fnc_isInitialized);
+};
 if (!isNil "TCS_var_playerRadioSettings") then {
 	{
 		_x params ["_radioClass", "_channel", "_spatialSetting"];
