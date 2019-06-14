@@ -22,7 +22,8 @@ TCS_var_playerMPTTSettings = ([] call acre_api_fnc_getMultiPushToTalkAssignment)
 	TCS_var_playerRadioSettings pushBack [
 		_radioClass,
 		[_radio] call acre_api_fnc_getRadioChannel,
-		[_radio] call acre_api_fnc_getRadioSpatial
+		[_radio] call acre_api_fnc_getRadioSpatial,
+		[_radio] call acre_api_fnc_getRadioVolume
 	];
 	systemChat format ["Saved radio class %1 for radio %2", _radioClass, _radio];
 } forEach _radios;
