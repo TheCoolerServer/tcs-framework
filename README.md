@@ -3,7 +3,7 @@ Mission framework made for TCS based on F3 which currently includes:
 
 * Compositions for: East, West and Independent sides.
 * Side-independent group markers that are only visible to their side. (Configurable)
-* Automatic radio insertion into the player's inventory. (Radios do not come configured with specific channels)
+* Automatic radio insertion into the player's inventory.
 * Proper group names in the role selection screen.
 * Ticked based respawn system.
 
@@ -45,7 +45,7 @@ This respawn template NEEDS a respawn time greater than 0.
 Teleports the player back to his group on respawn. The player will be teleported around 100 meters back of the center of his group. If none of his group are still alive he will be teleported back to where he died.  
 
 ### Adding new groups into the mission
-If you want to add any new groups to the mission, all that is needed for the framework to work is to call the function `TCS_fnc_initGroup` in the groups `init` field. This function takes these arguments:  
+If you want to add any new groups to the mission, all that is needed for the framework to work is to call the function `TCS_fnc_initGroup` in the group's `init` field. This function takes 4 arguments:  
 ```sqf
   0 - (group) The group that should be initialized
   1 - (string) What kind of group this group is (One of the entries in TCS_var_xxxxGroupMarkers)
