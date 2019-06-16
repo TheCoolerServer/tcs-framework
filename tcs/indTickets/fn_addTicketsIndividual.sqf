@@ -17,7 +17,7 @@ if (!isServer) exitWith {};
 
 params ["_id", "_amount"];
 
-[[_amount], {
+[[round _amount], {
 	params ["_amount"];
 
 	TCS_var_individualTickets = TCS_var_individualTickets + _amount;
