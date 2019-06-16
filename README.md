@@ -20,7 +20,7 @@ Mission framework made for TCS based on F3 which currently includes:
 The framework is mostly configured by changing the values in the `fn_configure.sqf` file inside the `tcs` folder. It is divided in multiple sections that make it easier which setting affects what. For more information about each section, which represents a module, please check the wiki page for that specific module.
 
 ### Respawn templates
-Respawn templates modify what happens when a player dies and respawns and are controlled by the `Respawn template` settings in the editor and the `respawnTemplates` setting in `description.ext`. One thing to note is that the respawn templates only work when the mission has respawns enabled, they will not do anything otherwise. If you want to emulate their behaviour you will have to copy their code inside `onPlayerRespawn.sqf` and `onPlayerKilled.sqf`.  
+Respawn templates modify what happens when a player dies and respawns and are controlled by the `Respawn template` settings in the editor and the `respawnTemplates` setting in `description.ext`. One importhat thing is that the respawn templates only work when the mission has respawns enabled, they will not do anything otherwise. If you want to emulate their behaviour you will have to copy their code inside `onPlayerRespawn.sqf` and `onPlayerKilled.sqf`.  
   
 Note: When you open the `description.ext` file to change the respawn templates you'll notice that the "Tickets" options removes the `Counter` template. That is because the tickets template manipulates the respawn timer and it's not nice for the player to see that. So it is not recommended to use the `Counter` template with any of the "Tickets" templates.
 
