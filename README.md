@@ -2,13 +2,9 @@
 Mission framework made for TCS based on F3 which currently includes: 
 
 * Compositions for: East, West and Independent sides.
-
 * Side-independent group markers that are only visible to their side. (Configurable)
-
 * Automatic radio insertion into the player's inventory. (Radios do not come configured with specific channels)
-
 * Proper group names in the role selection screen.
-
 * Ticked based respawn system.
 
 
@@ -19,18 +15,36 @@ Mission framework made for TCS based on F3 which currently includes:
 3. Place any of the compositions into the map.
 
 
-## Configuration
-All configuration options are set in the `tcs/fn_configure.sqf` file, the only ones not self explanatory are:  
+## Quickstart
+### Configuration
+The framework is mostly configured by changing the values in the `fn_configure.sqf` file inside the `tcs` folder. It is divided in multiple sections that make it easier which setting affects what. For more information about each section, which represents a module, please check the wiki page for that specific module.
 
-* `TCS_var_westGroupMarkers`  
-To make it easier to customize and add new groups into the mission the group markers were made independent of the group variable name. For that it was necessary to define somewhere which marker would represent what "kind" of squad. So that mission maker's don't have to remember the exact name of the marker class a translation "table" was created, which is what this variable is.  
-There are "translation tables" for each side, making it possible to have different markers for each side.
+### Respawn templates
+Respawn templates modify what happens when a player dies and respawns and are controlled by the `Respawn template` settings in the editor and the `respawnTemplates` setting in `description.ext`. One thing to note is that the respawn templates only work when the mission has respawns enabled, they will not do anything otherwise. If you want to emulate their behaviour you will have to copy their code inside `onPlayerRespawn.sqf` and `onPlayerKilled.sqf`.  
+  
+Note: When you open the `description.ext` file to change the respawn templates you'll notice that the "Tickets" options removes the `Counter` template. That is because the tickets template manipulates the respawn timer and it's not nice for the player to see that. So it is not recommended to use the `Counter` template with any of the "Tickets" templates.
 
-* `TCS_var_westRadios`  
-This variable contains a definition of which radios should a unit have. It is an array of arrays whose index `0` indicates which radios the leader of the group should have and index `1` contains a list of radios which all of the other units in the group should have.
+The framework comes with 4 respawn templates that offer different behaviours when a player respawns, which are listed below:
 
+#### TCS_Respawn
+The base respawn template for the framework, responsible for the radios module and the spectator screen on death.
 
-## Adding new groups into the mission
+#### TCS_Tickets
+Adds a ticket-based respawn system with a shared pool of tickets per side. When no tickets are availible the player will not respawn until more tickets are awarded.  
+This respawn template NEEDS a respawn time greater than 0.
+
+#### TCS_Tickets
+Adds a ticket-based respawn system with a shared pool of tickets per side. When no tickets are availible the player will not respawn until more tickets are awarded. Incompatible with the `TCS_Individual_Tickets` respawn template.  
+This respawn template NEEDS a respawn time greater than 0.
+
+#### TCS_Individual_Tickets
+Adds a ticket-based respawn system with individual tickets for each person instead of a shared pool. Incompatible with the `TCS_Tickets` respawn template.  
+This respawn template NEEDS a respawn time greater than 0.
+
+#### TCS_BackToGroup
+Teleports the player back to his group on respawn. The player will be teleported around 100 meters back of the center of his group. If none of his group are still alive he will be teleported back to where he died.  
+
+### Adding new groups into the mission
 If you want to add any new groups to the mission, all that is needed for the framework to work is to call the function `TCS_fnc_initGroup` in the groups `init` field. This function takes these arguments:  
 ```sqf
   0 - (group) The group that should be initialized
@@ -44,29 +58,14 @@ Example:
 ```
 Thihs will create a marker on the map that is a `Lead` element being `ASL` whose color will be red.
 
+### Default radio settings
+The variable `TCS_var_westRadios` (which is copied to the other sides) contains a definition of which radios should a unit have. It is an array of arrays whose index `0` indicates which radios the leader of the group should have and index `1` contains a list of radios which all of the other units in the group should have.  
+The default settings say that all group leaders should contain a 343 and a 152 and all other members only a 343. You can change any of those values to any ACRE2 classname, you can also set the array empty to give no radios to the players.
 
-## Switching the default respawn system to the ticket-based one
-To change the mission from having no respawns to a ticket-based respawn is really simple, all that is needed is for respawn to be enabled on the mission (`Attributes -> Multiplayer -> Respawn`) and the respawn template be changed to use the tickets.  
+### Changing the amount of tickets
+For each tickets respawn template there are 2functions that can be called to set/add tickets, both of these functions **MUST** be called on the server, if you are not executing the code in the server, `remoteExec` or `remoteExecCall` the function.  
 
-To change the respawn template to tickets all that is necessary is to change the `respawnTemplates` setting in the `description.ext` to include the `TCS_Tickets` template. For example, this are the default respawn templates:
-```sqf
-respawnTemplates[] = {"TCS_Respawn", "Counter"};
-```
-
-If we want to change this to use tickets, all that we have to do is remove the `Counter` template and add the `TCS_Tickets` one. Which would result in:
-```sqf
-respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"};
-```
-
-After that, the default ticket amount for each side is `10`. That can be changed in the `tcs\fn_configure.sqf` file.
-
-If you are wondering why the `Counter` respawn template was removed, it was because the tickets respawn screen already contains a counter for how long the player has to wait until he respawns and the default one would be wrong since it would always be reset to the default value due to the way how respawns are handled.  
-
-**Note:** The `TCS_Respawn` template is there to provide a smooth transition between death and the spectator screen and calls `BIS_fnc_EGSpectator`. If you don't want that behaviour you can remove that template and it will not affect the tickets. But you will have to call `BIS_fnc_EGSpectator` youself to get the nice spectator screen.
-
-### Changing the amount of tickets of a side
-There are `2` functions that can be called to set/add tickets to a side, both of these functions **MUST** be called on the server, if you are not executing the code in the server, `remoteExecCall` the function.  
-
+For the default tickets template these are the functions:
 * `TCS_fnc_addTickets`  
   Adds an amount of tickets to a side.  
   **Parameters:**
@@ -76,4 +75,16 @@ There are `2` functions that can be called to set/add tickets to a side, both of
   Sets the amount of tickets of a side.  
   **Parameters:**
     * 0 - (side) Whose side you want to set the tickets of.
-    * 1 - (number) The number of tickets that the given side should have. The number is rounded server-side.
+    * 1 - (number) The number of tickets that the given side should have. The number is rounded server-side.  
+
+For the individual tickets template, these are the functions:
+* `TCS_fnc_addTicketsIndividual`  
+  Adds an amount of tickets to a player.  
+  **Parameters:**
+    * 0 - (number) The ID of the player you want to add tickets to. 0 can be used to add tickets to everyone. You can also use negative numbers to add tickets to everyone but that player.
+    * 1 - (number) The amount of tickets you want to add. The number is rounded server-side.
+* `TCS_fnc_setTicketsIndividual`  
+  Sets the amount of tickets of a player.  
+  **Parameters:**
+    * 0 - 0 - (number) The ID of the player you want to add tickets to. 0 can be used to add tickets to everyone. You can also use negative numbers to add tickets to everyone but that player.
+    * 1 - (number) The number of tickets that the player should have. The number is rounded server-side.  
