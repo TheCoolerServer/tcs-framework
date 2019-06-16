@@ -11,9 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Option to disable FSM on AI again.
 * Options for the mission maker to disable Free and third person spectator camera modes.
 * Radio settings are now restored on respawn.
+* Dumbname's ID to the compositions.
 
 ### Changed
 * Endings 1 and 2 now default to Success and Failure.
+
+### Fixed
+* Headless client composition slots not having names.
 
 ### Removed
 * Player's ability to see AI when in spectator.
