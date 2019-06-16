@@ -89,6 +89,7 @@ class TCS {
     class indTicketsRespawnLoop {};
 
     class addTicketsIndividual {};
+    class setTicketsIndividual {};
 
   };
 
