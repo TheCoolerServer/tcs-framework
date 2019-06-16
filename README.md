@@ -63,7 +63,7 @@ The variable `TCS_var_westRadios` (which is copied to the other sides) contains 
 The default settings say that all group leaders should contain a 343 and a 152 and all other members only a 343. You can change any of those values to any ACRE2 classname, you can also set the array empty to give no radios to the players.
 
 ### Changing the amount of tickets
-For each tickets respawn template there are 2functions that can be called to set/add tickets, both of these functions **MUST** be called on the server, if you are not executing the code in the server, `remoteExec` or `remoteExecCall` the function.  
+For each tickets respawn template there are 2 functions that can be called to set/add tickets, both of these functions **MUST** be called on the server, if you are not executing the code in the server, `remoteExec` or `remoteExecCall` the function.  
 
 For the default tickets template these are the functions:
 * `TCS_fnc_addTickets`  
