@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 * Endings 1 and 2 now default to Success and Failure.
+* The readme is now more like a quickstart.
 
 ### Fixed
 * Headless client composition slots not having names.
