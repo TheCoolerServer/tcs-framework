@@ -12731,8 +12731,8 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={226.59766,0,107.41431};
-			angles[]={0,4.7209234,0};
+			position[]={226.59766,0,107.41455};
+			angles[]={0,4.7209239,0};
 		};
 		name="ZEUS_HINGLE";
 		init="this addCuratorEditableObjects [playableUnits,true];";
@@ -12755,7 +12755,7 @@ class items
 								"STRING"
 							};
 						};
-						value="76561193743586276";
+						value="76561198038553572";
 					};
 				};
 			};

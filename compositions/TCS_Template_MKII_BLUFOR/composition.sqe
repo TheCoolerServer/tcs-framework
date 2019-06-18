@@ -392,8 +392,8 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-99.441895,0,105.88232};
-			angles[]={0,4.7209234,0};
+			position[]={-99.441895,0,105.88257};
+			angles[]={0,4.7209239,0};
 		};
 		name="ZEUS_HINGLE";
 		init="this addCuratorEditableObjects [playableUnits,true];";
@@ -416,7 +416,7 @@ class items
 								"STRING"
 							};
 						};
-						value="76561193743586276";
+						value="76561198038553572";
 					};
 				};
 			};
@@ -15002,11 +15002,11 @@ class connections
 {
 	class LinkIDProvider
 	{
-		nextID=17;
+		nextID=34;
 	};
 	class Links
 	{
-		items=17;
+		items=34;
 		class Item0
 		{
 			linkID=0;
@@ -15170,6 +15170,176 @@ class connections
 		class Item16
 		{
 			linkID=16;
+			item0=2622;
+			item1=2620;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item17
+		{
+			linkID=17;
+			item0=2513;
+			item1=2419;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item18
+		{
+			linkID=18;
+			item0=2517;
+			item1=2419;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item19
+		{
+			linkID=19;
+			item0=2521;
+			item1=2419;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item20
+		{
+			linkID=20;
+			item0=2497;
+			item1=2419;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item21
+		{
+			linkID=21;
+			item0=2502;
+			item1=2419;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item22
+		{
+			linkID=22;
+			item0=2509;
+			item1=2419;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item23
+		{
+			linkID=23;
+			item0=2506;
+			item1=2419;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item24
+		{
+			linkID=24;
+			item0=2490;
+			item1=2419;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item25
+		{
+			linkID=25;
+			item0=2491;
+			item1=2419;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item26
+		{
+			linkID=26;
+			item0=2492;
+			item1=2419;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item27
+		{
+			linkID=27;
+			item0=2493;
+			item1=2419;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item28
+		{
+			linkID=28;
+			item0=2428;
+			item1=2420;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item29
+		{
+			linkID=29;
+			item0=2441;
+			item1=2420;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item30
+		{
+			linkID=30;
+			item0=2425;
+			item1=2420;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item31
+		{
+			linkID=31;
+			item0=2454;
+			item1=2420;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item32
+		{
+			linkID=32;
+			item0=2621;
+			item1=2623;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item33
+		{
+			linkID=33;
 			item0=2622;
 			item1=2620;
 			class CustomData
