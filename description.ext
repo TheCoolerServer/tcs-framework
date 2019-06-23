@@ -5,7 +5,7 @@ loadScreen = "load.jpg";
 
 
 //respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
-//respawnTemplates[] = {"TCS_Respawn", "TCS_Ind_Tickets"}; // Individual ticket based respawn
+//respawnTemplates[] = {"TCS_Respawn", "TCS_Individual_Tickets"}; // Individual ticket based respawn
 respawnTemplates[] = {"TCS_Respawn", "Counter"}; //Default respawn
 
 
