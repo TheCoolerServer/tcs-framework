@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Hingle's zeus ID
 * Debug messages were left in fn_savePlayerRadioSettings.sqf.
 * Individual tickets template had the wrong name in description.ext.
+* Duplicate tickets respawn template section.
 
 ## 1.2.0 (2019-06-16)
 ### Added
