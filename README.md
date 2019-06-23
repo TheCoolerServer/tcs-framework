@@ -30,11 +30,7 @@ The framework comes with 4 respawn templates that offer different behaviours whe
 The base respawn template for the framework, responsible for the radios module and the spectator screen on death.
 
 #### TCS_Tickets
-Adds a ticket-based respawn system with a shared pool of tickets per side. When no tickets are availible the player will not respawn until more tickets are awarded.  
-This respawn template NEEDS a respawn time greater than 0.
-
-#### TCS_Tickets
-Adds a ticket-based respawn system with a shared pool of tickets per side. When no tickets are availible the player will not respawn until more tickets are awarded. Incompatible with the `TCS_Individual_Tickets` respawn template.  
+Adds a ticket-based respawn system with a shared pool of tickets per side. When no tickets are available the player will not respawn until more tickets are awarded. Incompatible with the `TCS_Individual_Tickets` respawn template.  
 This respawn template NEEDS a respawn time greater than 0.
 
 #### TCS_Individual_Tickets
