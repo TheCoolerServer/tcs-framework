@@ -68,7 +68,10 @@ class TCS {
   
   class Tickets {
     file = "tcs\tickets";
-
+    
+    class bootstrapTicketsFramework {};
+    class areTicketsEnabled {};
+    
     class ticketsOnPlayerKilled {};
     class ticketsOnPlayerRespawn {};
 

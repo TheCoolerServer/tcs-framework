@@ -61,8 +61,6 @@ while {!(alive player)} do {
 		_ticketsText = parseText (format ["<t alight='right'>Tickets remaining: %1</t>", _tickets]);
 	};
 
-	
-	//Set the text in the controls
 	_ticketsControl ctrlSetStructuredText _ticketsText;
 	_countdownControl ctrlSetStructuredText _countdownText;
 

@@ -22,4 +22,6 @@ if (TCS_var_fireteamMarkersEnabled) then {
 	[] call TCS_fnc_initFireteamMarkers;
 };
 
-mytickets = TCS_var_individualTickets;
+if ([] call TCS_fnc_areTicketsEnabled) then {
+	[] call TCS_fnc_bootstrapTicketsFramework;
+}
