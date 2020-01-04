@@ -19,3 +19,7 @@ if (TCS_var_enableTriggerDebugMarkers) then {
 if (TCS_var_fireteamMarkersEnabled) then {
 	[] call TCS_fnc_initFireteamMarkers;
 };
+
+if ([] call TCS_fnc_areTicketsEnabled) then {
+	[] call TCS_fnc_bootstrapTicketsFramework;
+}
