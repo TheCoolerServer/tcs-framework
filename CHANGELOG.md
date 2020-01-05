@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+### Added
+* Voluntary spectator option.
+
 ### Changed
 * Update group markers even if there is nobody in the group. That way when a player joins that group the marker updates.
 * Tickets dispay now hides with the spectator display.
