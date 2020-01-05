@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Changed
 * Update group markers even if there is nobody in the group. That way when a player joins that group the marker updates.
+* Tickets dispay now hides with the spectator display.
+* Altered the radio module's options.
+
+### Removed
+* Individual tickets duplicate functions.
 
 ## 1.2.1 (2019-06-23)
 ### Added
