@@ -10,9 +10,7 @@
 [] call TCS_fnc_safeStartPlayer;
 
 //Initialize the player's radios
-if (TCS_var_radiosModuleEnabled) then {
-	[] spawn TCS_fnc_initPlayerRadios;
-};
+[] spawn TCS_fnc_initPlayerRadios;
 
 if (TCS_var_enableTriggerDebugMarkers) then {
 	[] call TCS_fnc_createDebugTriggerMarkers;
@@ -21,5 +19,3 @@ if (TCS_var_enableTriggerDebugMarkers) then {
 if (TCS_var_fireteamMarkersEnabled) then {
 	[] call TCS_fnc_initFireteamMarkers;
 };
-
-mytickets = TCS_var_individualTickets;

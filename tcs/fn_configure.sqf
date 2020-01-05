@@ -29,10 +29,9 @@ TCS_var_fireteamMarkersEnabled = true;
 TCS_var_fireteamMarkersUpdateInterval = 3;
 
 //==================================== Radios ====================================
-TCS_var_radiosModuleEnabled = true;
+TCS_var_addRadiosToPlayers = true;
 TCS_var_removeRadiosInInventory = true;
-
-TCS_var_reinitializeRadiosOnRespawn = true;
+TCS_var_saveAndRestoreRadioSettings = true;
 
 //Radios to be given to a unit.
 //The first index are the radios given to the group leader.

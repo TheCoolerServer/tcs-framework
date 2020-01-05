@@ -61,8 +61,12 @@ class TCS {
   class Radios {
     file = "tcs\radios";
 
-    class savePlayerRadioSettings {};
     class initPlayerRadios {};
+    class addConfigurationRadiosToPlayer {};
+    class removePlayerRadios {};
+
+    class savePlayerRadioSettings {};
+    class restoreRadioSettings {};
   };
 
   

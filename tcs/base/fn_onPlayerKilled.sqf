@@ -17,4 +17,6 @@ cutText ["", "BLACK OUT", 5];
 	1 fadeSound 1;
 };
 
-[] call TCS_fnc_savePlayerRadioSettings;
+if (TCS_var_saveAndRestoreRadioSettings) then {
+	[] call TCS_fnc_savePlayerRadioSettings;
+};
