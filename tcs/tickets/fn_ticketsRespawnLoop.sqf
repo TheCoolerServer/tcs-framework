@@ -2,12 +2,9 @@
 	Description:
 		Respawn loop responsible by updating the controls on the top of the screen and respawning the player when the tickets respawn template is used.
 */
-#define SPECTATOR_DISPLAY_ID 60492
-private _spectatorDisplay = findDisplay SPECTATOR_DISPLAY_ID;
 
 private _respawnTime = playerRespawnTime;
 
-//This loop is going to be terminated by the respawn event handler
 while {!(alive player)} do {
 	private _tickets = [] call TCS_fnc_getPlayerTickets;
 	private _timeRemaining = _respawnTime - (time - TCS_var_ticketsDeathTime);
@@ -36,6 +33,3 @@ while {!(alive player)} do {
 
 	sleep 1;
 };
-
-//Fade out the display;
-"TCS_layer_tickets" cutFadeout 1;

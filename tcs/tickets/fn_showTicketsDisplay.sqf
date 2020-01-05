@@ -15,4 +15,4 @@ if (TCS_var_ticketsDisplayVisible) exitWith {};
 
 TCS_var_ticketsDisplayVisible = true;
 
-[] spawn TCS_fnc_ticketsDisplayLoop;
+TCS_var_ticketsDisplayID = [] spawn TCS_fnc_ticketsDisplayLoop;
