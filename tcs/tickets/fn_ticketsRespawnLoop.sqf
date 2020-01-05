@@ -13,11 +13,14 @@ while {!(alive player)} do {
 	setPlayerRespawnTime _respawnTime;
 
 	
-	//Handle the respawn and exit the loop
+	//Handle the respawn and exit
 	if(_timeRemaining < 0 && _tickets > 0) exitWith {
 		if (TCS_var_ticketsMode == TCS_var_ticketsModeShared) then {
 			// We need to tell the server we respawned to subtract the tickets
 			[player, playerSide] remoteExec ["TCS_fnc_ticketsPlayerRespawned", 2];
+		} else {
+			// Otherwise just subtract the individual tickets
+			TCS_var_individualTickets = TCS_var_individualTickets - 1;
 		};
 
 		//Need to set the respawn time properly after the player has respawned
