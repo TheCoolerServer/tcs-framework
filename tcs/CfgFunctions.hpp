@@ -76,10 +76,17 @@ class TCS {
     class bootstrapTicketsFramework {};
     class areTicketsEnabled {};
     
+    class getPlayerTickets {};
     class ticketsOnPlayerKilled {};
     class ticketsOnPlayerRespawn {};
 
+    class spectatorOnKeyPressed {};
+
+    class showTicketsDisplay {};
+    class hideTicketsDisplay {};
+    
     class ticketsRespawnLoop {};
+    class ticketsDisplayLoop {};
 
     class ticketsPlayerRespawned {};
 
