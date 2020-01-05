@@ -5,18 +5,17 @@ private _ticketsControl = (_ticketsDisplay displayCtrl 1100);
 private _countdownControl = (_ticketsDisplay displayCtrl 1101);
 
 private _respawnTime = playerRespawnTime;
-private _start = time;
 
 while {TCS_var_ticketsDisplayVisible} do {
 	private _tickets = [] call TCS_fnc_getPlayerTickets;
-	private _timeRemaining = _respawnTime - (time - _start);
+	private _timeRemaining = _respawnTime - (time - TCS_var_ticketsDeathTime);
 
 	//Setup the text to be displayed in the controls
 	private _countdownText = "";
 	private _ticketsText = "";
 
 	if (_tickets <= 0) then {
-		_countdownText = parseText ("<t align='center'>Respawn in: <t color='#FF0000'>--:--</t></t>");
+		_countdownText = parseText ("<t align='left'>Respawn in: <t color='#FF0000'>--:--</t></t>");
 		_ticketsText = parseText ("<t alight='right'>Tickets remaining: <t color='#FF0000'>0</t></t>");
 	} else {
 		private _minutes = 0;

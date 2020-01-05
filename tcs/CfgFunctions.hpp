@@ -80,6 +80,7 @@ class TCS {
     class ticketsOnPlayerKilled {};
     class ticketsOnPlayerRespawn {};
 
+    class addSpectatorEventHandlers {};
     class spectatorOnKeyPressed {};
 
     class showTicketsDisplay {};
