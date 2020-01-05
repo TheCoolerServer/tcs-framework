@@ -1,4 +1,4 @@
 class TCS_Individual_Tickets {
-  onPlayerKilled = "tcs\indTickets\fn_indTicketsOnPlayerKilled.sqf";
-  onPlayerRespawn = "tcs\indTickets\fn_indTicketsOnPlayerRespawn.sqf";
+  onPlayerKilled = "tcs\tickets\fn_ticketsOnPlayerKilled.sqf";
+  onPlayerRespawn = "tcs\tickets\fn_ticketsOnPlayerRespawn.sqf";
 };

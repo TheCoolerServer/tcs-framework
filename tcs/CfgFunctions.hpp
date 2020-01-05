@@ -84,7 +84,7 @@ class TCS {
 
     class showTicketsDisplay {};
     class hideTicketsDisplay {};
-    
+
     class ticketsRespawnLoop {};
     class ticketsDisplayLoop {};
 
@@ -97,14 +97,8 @@ class TCS {
     class individualTickets {
     file = "tcs\indTickets";
 
-    class indTicketsOnPlayerKilled {};
-    class indTicketsOnPlayerRespawn {};
-
-    class indTicketsRespawnLoop {};
-
     class addTicketsIndividual {};
     class setTicketsIndividual {};
-
   };
 
 
