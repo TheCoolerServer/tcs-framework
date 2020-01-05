@@ -60,6 +60,8 @@ TCS_var_disableFSMInterval = 60;
 //=================================== Spectator ==================================
 TCS_var_spectatorAllowFreeCamera = true;
 TCS_var_spectatorAllowThirdPersonCamera = true;
+TCS_var_allowVoluntarySpectatorAfter = 3600;
+TCS_var_spectatorOptionTimeout = 60;
 
 //===================================== Debug ====================================
 TCS_var_enableTriggerDebugMarkers = false;
