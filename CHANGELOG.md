@@ -16,6 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 * Individual tickets duplicate functions.
 
+### Fixed
+* Ticket's respawn time not aligned properly when there were no tickets left.
+
 ## 1.2.1 (2019-06-23)
 ### Added
 * Added Pliskin's ID to the zeuses.
