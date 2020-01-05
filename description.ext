@@ -4,13 +4,13 @@ OnLoadMission = "Loading text";
 loadScreen = "load.jpg";
 
 
-//respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
-//respawnTemplates[] = {"TCS_Respawn", "TCS_Individual_Tickets"}; // Individual ticket based respawn
+// respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
+// respawnTemplates[] = {"TCS_Respawn", "TCS_Individual_Tickets"}; // Individual ticket based respawn
 respawnTemplates[] = {"TCS_Respawn", "Counter"}; //Default respawn
 
 
-//Do not change this unless you know what you are doing, even if you do read this
-//https://community.bistudio.com/wiki/Description.ext#respawnOnStart
+// Do not change this unless you know what you are doing, even if you do read this
+// https://community.bistudio.com/wiki/Description.ext#respawnOnStart
 respawnOnStart = -1;
 
 #include "tcs\DefaultGCSettings.hpp"
