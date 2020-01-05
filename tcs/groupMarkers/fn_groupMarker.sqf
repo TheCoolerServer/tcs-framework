@@ -32,7 +32,7 @@ _marker setMarkerColorLocal _markerColor;
 _marker setMarkerSizeLocal [0.8, 0.8];
 _marker setMarkerTextLocal _markerText;
 
-while { !isNull _marker } do {
+while { !isNil "_marker" } do {
 	private _leaderPos = getPos leader _group;
 
 	_marker setMarkerPosLocal _leaderPos;

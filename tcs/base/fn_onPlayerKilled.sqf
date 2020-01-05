@@ -10,7 +10,7 @@ cutText ["", "BLACK OUT", 5];
 
 	//Just in case the player respawned immediately, otherwise he will get stuck in the spectator screen
 	if (!alive player) then {
-		["Initialize", [player, [], false, TCS_var_spectatorAllowFreeCamera, TCS_var_spectatorAllowThirdPersonCamera]] call BIS_fnc_EGSpectator;	
+		[] call TCS_fnc_spectate;
 	};
 
 	cutText ["", "BLACK IN", 1];

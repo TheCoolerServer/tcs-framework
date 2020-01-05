@@ -6,3 +6,7 @@
 ["Terminate"] call BIS_fnc_EGSpectator;
 
 [] spawn TCS_fnc_initPlayerRadios;
+
+if (time > TCS_var_allowVoluntarySpectatorAfter) then {
+	[TCS_var_spectatorOptionTimeout] call TCS_fnc_addSpectateAction;
+};

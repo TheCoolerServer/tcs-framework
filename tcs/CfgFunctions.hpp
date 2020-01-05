@@ -143,4 +143,16 @@ class TCS {
 
     class continuouslyDisableFSM {};
   };
+
+  class Spectator {
+    file = "tcs\spectator";
+
+    class initSpectatorServer {};
+    class isPlayerSpectating {};
+    class playerChoseToSpectate {};
+    class playerNowSpectating {};
+    class addSpectateAction {};
+    class moveToSpectator {};
+    class spectate {};
+  };
 };

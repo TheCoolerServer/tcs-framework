@@ -13,6 +13,7 @@
 TCS_var_ticketsModeShared = 0;
 TCS_var_tickesModeIndividual = 1;
 
+TCS_var_ticketsMode = TCS_var_ticketsModeShared;
 TCS_var_ticketsDisplayVisible = false;
 TCS_var_ticketsDeathTime = 0;
 

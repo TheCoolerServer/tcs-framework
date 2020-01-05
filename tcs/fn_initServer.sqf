@@ -5,6 +5,8 @@
 
 [] call TCS_fnc_safeStartServer;
 
+[] call TCS_fnc_initSpectatorServer;
+
 if (TCS_param_preInitFreezeTime > 0) then {
 	[] call TCS_fnc_startFreezeLoop;
 };
@@ -12,3 +14,4 @@ if (TCS_param_preInitFreezeTime > 0) then {
 if (TCS_var_disableAIFSM) then {
 	[] spawn TCS_fnc_continuouslyDisableFSM;
 };
+

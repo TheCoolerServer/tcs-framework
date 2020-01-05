@@ -1,6 +1,7 @@
 /**
 	Initializes everything that is needed by the framework on the player.
 */
+
 [] call TCS_fnc_initParameterVariables;
 
 {_x setSpeaker "NoVoice"} forEach playableUnits;
@@ -21,4 +22,8 @@ if (TCS_var_fireteamMarkersEnabled) then {
 
 if ([] call TCS_fnc_areTicketsEnabled) then {
 	[] call TCS_fnc_bootstrapTicketsFramework;
-}
+};
+
+if ([getPlayerUID player] call TCS_fnc_isPlayerSpectating) then {
+	[] call TCS_fnc_moveToSpectator;
+};
