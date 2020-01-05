@@ -9,7 +9,6 @@
 
 [] call TCS_fnc_safeStartPlayer;
 
-//Initialize the player's radios
 [] spawn TCS_fnc_initPlayerRadios;
 
 if (TCS_var_enableTriggerDebugMarkers) then {
