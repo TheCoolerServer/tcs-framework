@@ -5,4 +5,6 @@
 
 ["Terminate"] call BIS_fnc_EGSpectator;
 
-[] spawn TCS_fnc_initPlayerRadios;
+if (TCS_var_radiosModuleEnabled && TCS_var_reinitializeRadiosOnRespawn) then {
+	[] spawn TCS_fnc_initPlayerRadios;
+};
