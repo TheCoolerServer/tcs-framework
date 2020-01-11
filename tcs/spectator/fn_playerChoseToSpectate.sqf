@@ -13,7 +13,7 @@
 
 if ([] call TCS_fnc_areTicketsEnabled) then {
 	if (TCS_var_ticketsMode == TCS_var_ticketsModeShared) then {
-		[playerSide, 1] remoteExec ["TCS_fnc_addTickets"];
+		[playerSide, 1] remoteExec ["TCS_fnc_addTickets", 2];
 	};
 };
 
