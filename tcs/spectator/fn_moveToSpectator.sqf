@@ -17,7 +17,9 @@ private _group = createGroup playerSide;
 player allowDamage false;
 [player, true] remoteExec ["hideObjectGlobal", 2];
 
-player setPos [0, 0, 0];
+// Might not need to move the player to the corner of the map
+// player setPos [0, 0, 0];
+
 [player, false] remoteExec ["enableSimulationGlobal", 2];
 
 [] call TCS_fnc_spectate;

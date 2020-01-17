@@ -104,9 +104,9 @@ class TCS {
 
 
   class safeStart{
-		file = "tcs\safeStart";
+    file = "tcs\safeStart";
 
-		class toggleSafeStart{};
+    class toggleSafeStart{};
 
     class safeStartLoop {};
 
