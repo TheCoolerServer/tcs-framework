@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 * Changed default value of the option for the switch to spectator option to appear to 1h 30 minutes.
+* Changed text of the spectator option to "Switch to spectator" from of "Spectate".
+* Changed for the spectator option to no longer appear in the middle of the screen when players respawn.
 
 ## 1.3.0 (2020-02-23)
 ### Added
