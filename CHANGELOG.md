@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Added
 * Server FPS monitor for admins.
+* Group type, name and color are now saved in the group.
 
 ## 1.3.0 (2020-02-23)
 ### Added
