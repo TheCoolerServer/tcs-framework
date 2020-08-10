@@ -6,11 +6,13 @@
 
 {_x setSpeaker "NoVoice"} forEach playableUnits;
 
-[] spawn TCS_fnc_createBriefing;
+[] call TCS_fnc_createBriefing;
 
 [] call TCS_fnc_safeStartPlayer;
 
 [] spawn TCS_fnc_initPlayerRadios;
+
+[] spawn TCS_fnc_adminInit;
 
 if (TCS_var_enableTriggerDebugMarkers) then {
 	[] call TCS_fnc_createDebugTriggerMarkers;

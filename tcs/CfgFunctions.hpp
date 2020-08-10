@@ -24,6 +24,9 @@ class TCS {
     class mpEndReceiver {};
 
     class initParameterVariables {};
+
+    class serverFpsLoop {};
+    class adminInit {};
   };
 
   class Briefings {

@@ -15,3 +15,4 @@ if (TCS_var_disableAIFSM) then {
 	[] spawn TCS_fnc_continuouslyDisableFSM;
 };
 
+[] spawn TCS_fnc_serverFpsLoop; 
