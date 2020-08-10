@@ -14,7 +14,7 @@ params ["_timeout"];
 
 private _actionID = [
 	player, // Target
-	"Spectate", // Title
+	"Switch to spectator", // Title
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forceRespawn_ca.paa", // Idle icon
 	"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forceRespawn_ca.paa", // Progress icon
 	"true", // Condition show
@@ -29,7 +29,8 @@ private _actionID = [
 	10, // Duration
 	nil, // Priority
 	true, // Remove completed
-	false // Show unconscious
+	false, // Show unconscious
+	false // Show on screen, if false action needs to be selected from action menu to appear on screen
 ] call BIS_fnc_holdActionAdd;
 
 [_timeout, _actionID] spawn {

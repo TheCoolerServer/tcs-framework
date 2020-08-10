@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Added
 * Server FPS monitor for admins.
+* Group type, name and color are now saved in the group.
+
+### Changed
+* Changed default value of the option for the switch to spectator option to appear to 90 minutes.
+* Changed text of the spectator option to "Switch to spectator" from "Spectate".
+* Changed for the spectator option to no longer appear in the middle of the screen when players respawn.
 
 ## 1.3.0 (2020-02-23)
 ### Added
