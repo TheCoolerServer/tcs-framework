@@ -1,6 +1,6 @@
 //==================================== General ===================================
 TCS_var_allZeusesGetAdminBriefing = true;
-TCS_var_fpsMarkerUpdateIterval = 5;
+TCS_var_fpsMarkerUpdateInterval = 5;
 
 //================================= Group markers ================================
 TCS_var_groupMarkersEnabled = true;

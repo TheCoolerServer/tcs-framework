@@ -20,5 +20,5 @@ while {true} do {
 	} count allGroups;
 
 	["TCS_evt_serverFPSUpdate", [_fps, _localUnitCount, _localGroupCount]] call CBA_fnc_globalEvent;
-	sleep TCS_var_fpsMarkerUpdateIterval;
+	sleep TCS_var_fpsMarkerUpdateInterval;
 };
