@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Fixed
 * Fixed typo in the fps marker update interval variable.
+* Fixed admin briefing not appearing for admins and zeuzes, only for the logged in admin.
+
+### Changed
+* Moved the server FPS marker to be handled by the server.
 
 ## 1.3.1 (2020-08-09)
 ### Added
