@@ -37,13 +37,22 @@ class cfgNotifications{
 		priority = 1;
 	};
 
-	// Notification for the F3 Mapclick Teleport component
-	class MapClickTeleport {
-		title= "NOTE";
+	// Notification for the Rapid Deployment Teleport component
+	class RapidDeploymentSystemReady {
+		title= "RAPID DEPLOYMENT SYSTEM";
+		description= "%1";
+		iconPicture = "\A3\ui_f\data\map\markers\military\start_ca.paa";
+		color[] = {0,1,0,1};
+		duration = 5;
+		priority = 15;
+	};
+
+	class RapidDeploymentSystemActive {
+		title= "RAPID DEPLOYMENT SYSTEM";
 		description= "%1";
 		iconPicture = "\A3\ui_f\data\map\markers\military\start_ca.paa";
 		duration = 3;
-		priority = 5;
+		priority = 15;
 	};
 
 	// Notification for the F3 JIP Component
