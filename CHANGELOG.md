@@ -19,10 +19,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Changed Safe Start default from 3 minutes to 15 minutes to avoid prematurely losing the Rapid Deployment System in certain scenarios. Safe Start can still be manually turned off at any time.
 
 ### Fixed
+* Moved the server FPS marker to be handled by the server.
 * "TCS_var_fpsMarkerUpdateInterval" was misspelled in two files.
 * Fireteam marker spelling error in the OPFOR group composition.
 * Removed deprecated ACE modules from group compositions.
 * Removed extra rifleman in the INDEP group composition.
+* Fixed admin briefing not appearing for admins and zeuzes, only for the logged in admin.
 
 ## 1.3.1 (2020-08-09)
 ### Added

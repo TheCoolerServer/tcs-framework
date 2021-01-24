@@ -5,9 +5,7 @@ private _playerSide = side player;
 [] call TCS_fnc_loadoutNotes;
 
 //================================ Admin briefing ================================
-if (serverCommandAvailable "#kick") then {
-	[] call TCS_fnc_briefing_admin;
-};
+// Admin briefing is added on TCS_fnc_adminInit;
 
 //============================ West briefing (BLUFOR) ============================
 if (_playerSide == west) exitwith {
