@@ -98,7 +98,7 @@ class TCS {
     class addTickets {};
   };
   
-    class individualTickets {
+  class individualTickets {
     file = "tcs\indTickets";
 
     class addTicketsIndividual {};
@@ -157,5 +157,42 @@ class TCS {
     class addSpectateAction {};
     class moveToSpectator {};
     class spectate {};
+  };
+  
+  class KilledBy {
+    file = "tcs\killedBy";
+
+    class killedBy {};
+  };
+  
+  class OneLife {
+    file = "tcs\oneLife";
+
+    class oneLife_onPlayerKilled {};
+  	class oneLife_onPlayerRespawn {};
+	  class oneLife_respawnDialog {};
+  };
+
+  class RapidDeployment {
+    file = "tcs\rapidDeployment";
+
+    class mapClickTeleportAction {};
+  	class mapClickTeleportGroup {};
+	  class mapClickTeleportUnit {};
+    class rdMapOnOpenClose {};
+    class rdMapOnSingleClick {};
+    class rdSetupEventHandlers {};
+  };
+
+  class FTMemberColors {
+    file = "tcs\FTMemberColors";
+
+    class assignTeamColors {};
+  };
+
+  class SlingLocality {
+    file = "tcs\slingLocality";
+
+    class localizeSling {};
   };
 };

@@ -5,7 +5,11 @@ Mission framework made for TCS based on F3 which currently includes:
 * Side-independent group markers that are only visible to their side. (Configurable)
 * Automatic radio insertion into the player's inventory.
 * Proper group names in the role selection screen.
-* Ticked based respawn system.
+* Ticket based respawn systems.
+* Players informed who and what killed them.
+* One-life mission rejoin.
+* Automatic fireteam color assignments.
+* Deployment system that allows players to start in different designated areas of the map or teleport back to their team after a one-life mission rejoin.
 
 
 ## Installation
@@ -20,11 +24,11 @@ Mission framework made for TCS based on F3 which currently includes:
 The framework is mostly configured by changing the values in the `fn_configure.sqf` file inside the `tcs` folder. It is divided in multiple sections that make it easier which setting affects what. For more information about each section, which represents a module, please check the wiki page for that specific module.
 
 ### Respawn templates
-Respawn templates modify what happens when a player dies and respawns and are controlled by the `Respawn template` settings in the editor and the `respawnTemplates` setting in `description.ext`. One importhat thing is that the respawn templates only work when the mission has respawns enabled, they will not do anything otherwise. If you want to emulate their behaviour you will have to copy their code inside `onPlayerRespawn.sqf` and `onPlayerKilled.sqf`.  
+Respawn templates modify what happens when a player dies and respawns and are controlled by the `Respawn template` settings in the editor and the `respawnTemplates` setting in `description.ext`. One importhat thing is that the respawn templates only work when the mission has respawns enabled, they will not do anything otherwise. If you want to emulate their behaviour you will have to copy their code inside `onPlayerRespawn.sqf` and `onPlayerKilled.sqf`.
   
 Note: When you open the `description.ext` file to change the respawn templates you'll notice that the "Tickets" options removes the `Counter` template. That is because the tickets template manipulates the respawn timer and it's not nice for the player to see that. So it is not recommended to use the `Counter` template with any of the "Tickets" templates.
 
-The framework comes with 4 respawn templates that offer different behaviours when a player respawns, which are listed below:
+The framework comes with 5 respawn templates that offer different behaviours when a player respawns, which are listed below:
 
 #### TCS_Respawn
 The base respawn template for the framework, responsible for the radios module and the spectator screen on death.
@@ -39,6 +43,9 @@ This respawn template NEEDS a respawn time greater than 0.
 
 #### TCS_BackToGroup
 Teleports the player back to his group on respawn. The player will be teleported around 100 meters back of the center of his group. If none of his group are still alive he will be teleported back to where he died.  
+
+#### TCS_OneLife
+Does not respawn the player upon death. However in case of an unfair death (friendly fire, being glitched, etc) the player can rejoin the game and teleport back to their team.
 
 ### Adding new groups into the mission
 If you want to add any new groups to the mission, all that is needed for the framework to work is to call the function `TCS_fnc_initGroup` in the group's `init` field. This function takes 4 arguments:  

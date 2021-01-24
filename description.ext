@@ -3,11 +3,10 @@ OnLoadName = "Operation Name";
 OnLoadMission = "Loading text";
 loadScreen = "load.jpg";
 
-
+// respawnTemplates[] = {"TCS_OneLife"}; // One life respawn
 // respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
 // respawnTemplates[] = {"TCS_Respawn", "TCS_Individual_Tickets"}; // Individual ticket based respawn
-respawnTemplates[] = {"TCS_Respawn", "Counter"}; //Default respawn
-
+respawnTemplates[] = {"TCS_Respawn", "Counter"}; // Default respawn
 
 // Do not change this unless you know what you are doing, even if you do read this
 // https://community.bistudio.com/wiki/Description.ext#respawnOnStart
@@ -15,13 +14,12 @@ respawnOnStart = -1;
 
 #include "tcs\DefaultGCSettings.hpp"
 
-
 class Params{
   class TCS_param_safeStart_Time {
     title = "Safe start time";
     values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15};
     texts[] = {"Off", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "15"};
-    default = 3;
+    default = 15;
   };
 
   class TCS_param_preInitFreeze_Time {
@@ -32,7 +30,6 @@ class Params{
   };
 };
 
-
 #include "CfgDebriefing.hpp"
 
 #include "CfgFunctions.hpp"
@@ -42,8 +39,3 @@ class Params{
 #include "CfgRespawnTemplates.hpp"
 
 #include "RscTitles.hpp"
-
-
-
-
-

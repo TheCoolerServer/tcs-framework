@@ -5,12 +5,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
-### Fixed
-* Fixed typo in the fps marker update interval variable.
-* Fixed admin briefing not appearing for admins and zeuzes, only for the logged in admin.
+
+## 1.4.0 (2021-01-24)
+### Added
+* One-life respawn template (allows rejoin if death was unfair).
+* Inform players of who and what killed them in the chat.
+* Rapid Deployment System. Allows leaders to teleport their groups to different parts of the map before Safe Start is turned off to allow different start scenarios designed by the mission-maker. Exclusively used by the one-life respawn template to allow players rejoining to quickly teleport back to their team.
+* Automatic fireteam color assignments for further squad cohesion/organization.
+* Spectator for either just the player's side or for every playable side.
+* Hardcoded locality function to prevent sling loaded objects from breaking ropes.
 
 ### Changed
+* Changed Safe Start default from 3 minutes to 15 minutes to avoid prematurely losing the Rapid Deployment System in certain scenarios. Safe Start can still be manually turned off at any time.
+
+### Fixed
 * Moved the server FPS marker to be handled by the server.
+* "TCS_var_fpsMarkerUpdateInterval" was misspelled in two files.
+* Fireteam marker spelling error in the OPFOR group composition.
+* Removed deprecated ACE modules from group compositions.
+* Removed extra rifleman in the INDEP group composition.
+* Fixed admin briefing not appearing for admins and zeuzes, only for the logged in admin.
 
 ## 1.3.1 (2020-08-09)
 ### Added
