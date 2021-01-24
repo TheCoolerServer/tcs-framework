@@ -18,4 +18,3 @@ if ([] call TCS_fnc_areTicketsEnabled) then {
 };
 
 [] call TCS_fnc_moveToSpectator;
-

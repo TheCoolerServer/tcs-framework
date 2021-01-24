@@ -14,7 +14,7 @@
  */
 
 
-while {true} do {
+while {TCS_var_disableAIFSM} do {
 	{	
 		private _group = _x;
 

@@ -38,4 +38,10 @@ while {TCS_param_safeStartTime > 0} do {
 if (TCS_param_safeStartTime == 0) then {
 		["SafeStartMissionStarting", ["Mission starting now!"]] remoteExec ["bis_fnc_showNotification", 0];
 		[false] remoteExec ["TCS_fnc_toggleSafeStart", playableUnits + switchableUnits];
+		
+		// Remove Rapid Deployment action
+		if (TCS_var_rapidDeploymentEnabled) then
+		{
+			player removeAction TCS_mapClickTeleportAction;
+		};
 };

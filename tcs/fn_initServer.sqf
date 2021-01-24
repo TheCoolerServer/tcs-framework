@@ -16,3 +16,5 @@ if (TCS_var_disableAIFSM) then {
 };
 
 [] spawn TCS_fnc_serverFpsLoop; 
+
+[] call TCS_fnc_localizeSling;

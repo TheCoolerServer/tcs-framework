@@ -1,8 +1,8 @@
 //==================================== General ===================================
 TCS_var_allZeusesGetAdminBriefing = true;
-TCS_var_fpsMarkerUpdateIterval = 5;
+TCS_var_fpsMarkerUpdateInterval = 5;
 
-//================================= Group markers ================================
+//================================= Group Markers ================================
 TCS_var_groupMarkersEnabled = true;
 TCS_var_showMarkersOfOtherSides = false;
 TCS_var_groupMarkerUpdateInterval = 5;
@@ -25,9 +25,22 @@ TCS_var_eastGroupMarkers = TCS_var_westGroupMarkers;
 TCS_var_independentGroupMarkers = TCS_var_westGroupMarkers;
 TCS_var_civilianGroupMarkers = TCS_var_westGroupMarkers;
 
-//=============================== Fireteam markers ===============================
+//=============================== Fireteam Markers ===============================
 TCS_var_fireteamMarkersEnabled = true;
 TCS_var_fireteamMarkersUpdateInterval = 3;
+
+//=============================== Fireteam Colors ===============================
+TCS_var_autoAssignFireteams = true;
+TCS_var_FTColors = [
+	["RED", "GREEN"],	// A1
+ 	["BLUE", "YELLOW"],	// A2
+	["RED", "GREEN"],	// B1
+ 	["BLUE", "YELLOW"],	// B2
+	["RED", "GREEN"],	// C1
+ 	["BLUE", "YELLOW"],	// C2
+	["RED", "GREEN"],	// D1
+ 	["BLUE", "YELLOW"]	// D2
+];
 
 //==================================== Radios ====================================
 TCS_var_addRadiosToPlayers = true;
@@ -61,8 +74,15 @@ TCS_var_disableFSMInterval = 60;
 //=================================== Spectator ==================================
 TCS_var_spectatorAllowFreeCamera = true;
 TCS_var_spectatorAllowThirdPersonCamera = true;
-TCS_var_allowVoluntarySpectatorAfter = 5400;
+TCS_var_spectatorAllowOtherPlayerSides = false;
+TCS_var_allowVoluntarySpectatorAfter = 5400; // 90 minutes
 TCS_var_spectatorOptionTimeout = 90;
+
+//=================================== Killed By ==================================
+TCS_var_showKilledByMessage = true;
+
+//=============================== Rapid Deployment ===============================
+TCS_var_rapidDeploymentEnabled = true;
 
 //===================================== Debug ====================================
 TCS_var_enableTriggerDebugMarkers = false;

@@ -9,4 +9,6 @@ class CfgRespawnTemplates{
 	#include "tcs\indTickets\IndTicketsRespawnTemplate.hpp"
 
 	#include "tcs\backToGroup\BTGRespawnTemplate.hpp"
+	
+	#include "tcs\oneLife\OneLifeRespawnTemplate.hpp"
 };
