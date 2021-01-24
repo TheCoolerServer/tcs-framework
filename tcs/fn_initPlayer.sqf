@@ -32,6 +32,8 @@ if (TCS_var_fireteamMarkersEnabled) then {
 
 if (TCS_var_rapidDeploymentEnabled) then {
 	TCS_var_mapClickTeleport_Rejoin = false;
+	
+	[] call TCS_fnc_rdSetupEventHandlers;
 	[true] call TCS_fnc_mapClickTeleportAction;
 };
 

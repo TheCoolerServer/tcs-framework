@@ -82,7 +82,7 @@ TCS_var_spectatorOptionTimeout = 90;
 TCS_var_showKilledByMessage = true;
 
 //=============================== Rapid Deployment ===============================
-TCS_var_rapidDeploymentEnabled = false;
+TCS_var_rapidDeploymentEnabled = true;
 
 //===================================== Debug ====================================
 TCS_var_enableTriggerDebugMarkers = false;

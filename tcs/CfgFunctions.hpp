@@ -179,6 +179,9 @@ class TCS {
     class mapClickTeleportAction {};
   	class mapClickTeleportGroup {};
 	  class mapClickTeleportUnit {};
+    class rdMapOnOpenClose {};
+    class rdMapOnSingleClick {};
+    class rdSetupEventHandlers {};
   };
 
   class FTMemberColors {

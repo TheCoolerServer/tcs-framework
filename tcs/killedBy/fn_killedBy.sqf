@@ -1,7 +1,6 @@
 // Informs the player in systemChat who and what killed them.
 
-player addEventHandler ["killed",
-{
+player addEventHandler ["killed", {
 	params ["_player", "_killer", "_instigator"];
 	
 	// Set killer's variables
@@ -15,43 +14,33 @@ player addEventHandler ["killed",
 	_killerSide = side _killer;
 	_killerSideString = "";
 
-	switch (_killerSide) do
-	{
-		case west:
-		{
+	switch (_killerSide) do {
+		case west: {
 			_killerSideString = "BLUFOR";
 		};
 		
-		case east:
-		{
+		case east: {
 			_killerSideString = "OPFOR";
 		};
 		
-		case resistance:
-		{
+		case resistance: {
 			_killerSideString = "INDFOR";
 		};
 		
-		case civilian:
-		{
+		case civilian: {
 			_killerSideString = "CIVILIAN";
 		};
 		
-		case sideEnemy:
-		{
+		case sideEnemy: {
 			_killerSideString = "RENEGADE";
 		};
 	};
 
 	// Execute killedBy message in systemChat
-	if (_killerName != "Error: No vehicle") then
-	{
-		if (_killerSide == playerSide) then
-		{
+	if (_killerName != "Error: No vehicle") then {
+		if (_killerSide == playerSide) then {
 			systemChat format ["Killed by [%1] %2 - %3: %4m with %5 (Friendly Fire)", _killerSideString, _killerName, _killerType, _killerRoundDistance, _killerWeapon];
-		}
-		else
-		{
+		} else {
 			systemChat format ["Killed by [%1] %2 - %3: %4m with %5", _killerSideString, _killerName, _killerType, _killerRoundDistance, _killerWeapon];
 		};
 	};

@@ -12,16 +12,12 @@
 		[] call TCS_fnc_mapClickTeleportGroup;
 */
 
-// DECLARE VARIABLES AND FUNCTIONS
-
-// private ["_pos","_units"];
-
 // ====================================================================================
 
 // SET KEY VARIABLES
 
-_unit = _this select 0;
-_pos = _this select 1;
+private _unit = _this select 0;
+private _pos = _this select 1;
 
 // ====================================================================================
 
@@ -40,4 +36,6 @@ if !(local _unit) exitWith {};
 _unit setPos [((_pos select 0) + 3 + random 3),((_pos select 1) + 3 + random 3),(_pos select 2)];
 
 // Display a notification for players
-if (_unit == vehicle player) then {["RapidDeploymentSystemActive",["Deployed To Your Leader"]] call BIS_fnc_showNotification};
+if (_unit == vehicle player) then {
+	["RapidDeploymentSystemActive", ["Deployed To Your Leader"]] call BIS_fnc_showNotification
+};

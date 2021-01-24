@@ -69,10 +69,8 @@ switch (_enableSafeStart) do {
 		player allowDamage true;
 
 		// Remove Rapid Deployment action
-		if (TCS_var_rapidDeploymentEnabled) then
-		{
-			if !(isNil "TCS_mapClickTeleportAction") then
-			{
+		if (TCS_var_rapidDeploymentEnabled) then {
+			if !(isNil "TCS_mapClickTeleportAction") then {
 				player removeAction TCS_mapClickTeleportAction;
 			};
 		};
