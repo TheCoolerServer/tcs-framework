@@ -21,7 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 * "TCS_var_fpsMarkerUpdateInterval" was misspelled in two files.
 * Fireteam marker spelling error in the OPFOR group composition.
-* Removed depricated ACE modules from group compositions.
+* Removed deprecated ACE modules from group compositions.
 * Removed extra rifleman in the INDEP group composition.
 
 ## 1.3.1 (2020-08-09)
