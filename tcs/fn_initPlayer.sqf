@@ -22,10 +22,6 @@ if (TCS_var_autoAssignFireteams) then {
 	[] call TCS_fnc_assignTeamColors;
 };
 
-if (TCS_var_enableTriggerDebugMarkers) then {
-	[] call TCS_fnc_createDebugTriggerMarkers;
-};
-
 if (TCS_var_fireteamMarkersEnabled) then {
 	[] call TCS_fnc_initFireteamMarkers;
 };

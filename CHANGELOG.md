@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 * Fixed add zeus method not working properly.
 
+### Changed
+* Changed debug trigger markers option to run on the server and update for everyone.
+
+### Added
+* Added a local version of the debug trigger markers that doesn't keep track of trigger states.
+
 ## 1.4.0 (2021-01-24)
 ### Added
 * One-life respawn template (allows rejoin if death was unfair).

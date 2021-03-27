@@ -122,6 +122,7 @@ class TCS {
     file = "tcs\debug";
 
     class createDebugTriggerMarkers {};
+    class createLocalDebugTriggerMarkers {};
   };
 
   class PreInitFreeze {

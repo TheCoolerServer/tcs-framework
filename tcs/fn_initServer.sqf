@@ -15,6 +15,10 @@ if (TCS_var_disableAIFSM) then {
 	[] spawn TCS_fnc_continuouslyDisableFSM;
 };
 
+if (TCS_var_enableTriggerDebugMarkers) then {
+	[] call TCS_fnc_createDebugTriggerMarkers;
+};
+
 [] spawn TCS_fnc_serverFpsLoop; 
 
 [] call TCS_fnc_localizeSling;

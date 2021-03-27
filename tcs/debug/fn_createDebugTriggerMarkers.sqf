@@ -22,58 +22,58 @@
 	private _triggerPos = getPos _trigger;
 
 	private _markerName = format ["marker_%1_%2_%3_%4", _triggerPos # 0, _triggerPos # 1, _triggerPos # 2, random 99999];
-	private _marker = createMarkerLocal [_markerName,  _triggerPos];
-	private _markerWithText = createMarkerLocal [_markerName + "_text", _triggerPos];
+	private _marker = createMarker [_markerName,  _triggerPos];
+	private _markerWithText = createMarker [_markerName + "_text", _triggerPos];
 	
 	if (_triggerArea select 3) then { //isRectangle
-		_marker setMarkerShapeLocal "RECTANGLE";
+		_marker setMarkerShape "RECTANGLE";
 	} else {
-		_marker setMarkerShapeLocal "ELLIPSE";
+		_marker setMarkerShape "ELLIPSE";
 	};
 
-	_marker setMarkerSizeLocal [(_triggerArea select 0), (_triggerArea select 1)];
-	_marker setMarkerBrushLocal "GRID";
-	_marker setMarkerAlphaLocal 0.5;
+	_marker setMarkerSize [(_triggerArea select 0), (_triggerArea select 1)];
+	_marker setMarkerBrush "GRID";
+	_marker setMarkerAlpha 0.5;
 
-	_markerWithText setMarkerTypeLocal "hd_dot";
-	_markerWithText setMarkerColorLocal "ColorBlack";
+	_markerWithText setMarkerType "hd_dot";
+	_markerWithText setMarkerColor "ColorBlack";
 
 	private _triggerActivationBy = _triggerActivation select 0;
 	private _markerText = format["%1 %2", _triggerActivationBy, (_triggerActivation select 1)];
 
 	switch (_triggerActivationBy) do {
 		case "EAST": {
-			_marker setMarkerColorLocal "ColorRed";
-			_markerWithText setMarkerColorLocal "ColorRed";
+			_marker setMarkerColor "ColorRed";
+			_markerWithText setMarkerColor "ColorRed";
 		};
 		case "WEST": {
-			_marker setMarkerColorLocal "ColorBlue";
-			_markerWithText setMarkerColorLocal "ColorBlue";
+			_marker setMarkerColor "ColorBlue";
+			_markerWithText setMarkerColor "ColorBlue";
 		};
 		case "GUER": {
-			_marker setMarkerColorLocal "ColorGreen";
-			_markerWithText setMarkerColorLocal "ColorGreen";
+			_marker setMarkerColor "ColorGreen";
+			_markerWithText setMarkerColor "ColorGreen";
 		};
 
 		case "ANYPLAYER": {
-			_marker setMarkerColorLocal "ColorPink";
-			_markerWithText setMarkerColorLocal "ColorPink";
+			_marker setMarkerColor "ColorPink";
+			_markerWithText setMarkerColor "ColorPink";
 		};
 
 		case "NONE": {
-			_marker setMarkerColorLocal "ColorYellow";
-			_markerWithText setMarkerColorLocal "ColorYellow";
+			_marker setMarkerColor "ColorYellow";
+			_markerWithText setMarkerColor "ColorYellow";
 			_markerText = str ((triggerStatements _trigger) select 0);
 		};
 
 		default {
-			_marker setMarkerColorLocal "ColorYellow";
-			_markerWithText setMarkerColorLocal "ColorYellow";
+			_marker setMarkerColor "ColorYellow";
+			_markerWithText setMarkerColor "ColorYellow";
 		};
 	};
 
-	_markerWithText setMarkerTextLocal _markerText;
-	_marker setMarkerDirLocal (_triggerArea select 2);
+	_markerWithText setMarkerText _markerText;
+	_marker setMarkerDir (_triggerArea select 2);
 
 	[_trigger, _marker, _markerWithText] spawn {
 		params ["_trigger", "_marker", "_markerWithText"];
@@ -86,13 +86,13 @@
 
 		while {_continueWaitingForTrigger} do {
 			if (triggerActivated _trigger) then {
-				_markerWithText setMarkerTextLocal "Triggered";
-				_markerWithText setMarkerColorLocal "ColorWhite";
-				_marker setMarkerColorLocal "ColorBlack";
-				_marker setMarkerAlphaLocal 0.3;
+				_markerWithText setMarkerText "Triggered";
+				_markerWithText setMarkerColor "ColorWhite";
+				_marker setMarkerColor "ColorBlack";
+				_marker setMarkerAlpha 0.3;
 
 				private _triggerActivation = triggerActivation _trigger;
-				_markerWithText setMarkerTextLocal (format["%1 %2 - TRIGGERED", (_triggerActivation select 0), (_triggerActivation select 1)]);
+				_markerWithText setMarkerText (format["%1 %2 - TRIGGERED", (_triggerActivation select 0), (_triggerActivation select 1)]);
 
 				if (!_triggerRepeats) then {
 					_continueWaitingForTrigger = false;
@@ -101,11 +101,11 @@
 				if (_triggerRepeats) then {
 					private _triggerActivation = triggerActivation _trigger;
 
-					_markerWithText setMarkerTextLocal (format["%1 %2", (_triggerActivation select 0), (_triggerActivation select 1)]);
-					_markerWithText setMarkerColorLocal _originalMarkerColor;
+					_markerWithText setMarkerText (format["%1 %2", (_triggerActivation select 0), (_triggerActivation select 1)]);
+					_markerWithText setMarkerColor _originalMarkerColor;
 
-					_marker setMarkerColorLocal _originalMarkerColor;
-					_marker setMarkerAlphaLocal _originalMarkerAlpha;
+					_marker setMarkerColor _originalMarkerColor;
+					_marker setMarkerAlpha _originalMarkerAlpha;
 				};
 			};
 
