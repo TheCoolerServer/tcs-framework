@@ -24,6 +24,7 @@ class TCS {
     class mpEndReceiver {};
 
     class initParameterVariables {};
+    class addSurgicalKit {};
 
     class serverFpsLoop {};
     class adminInit {};

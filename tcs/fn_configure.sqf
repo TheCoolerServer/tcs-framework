@@ -1,6 +1,7 @@
 //==================================== General ===================================
 TCS_var_allZeusesGetAdminBriefing = true;
 TCS_var_fpsMarkerUpdateInterval = 5;
+TCS_var_addSurgicalKitsToMedics = true;
 
 //================================= Group Markers ================================
 TCS_var_groupMarkersEnabled = true;

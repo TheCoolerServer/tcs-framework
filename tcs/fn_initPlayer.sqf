@@ -14,6 +14,14 @@
 
 [] spawn TCS_fnc_adminInit;
 
+if (TCS_var_addSurgicalKitsToMedics) then {
+	private _isMedic = [player] call ACE_common_fnc_isMedic;
+
+	if (_isMedic) then {
+		[] call TCS_fnc_addSurgicalKit;
+	};
+};
+
 if (TCS_var_showKilledByMessage) then {
 	[] spawn TCS_fnc_killedBy;
 };
