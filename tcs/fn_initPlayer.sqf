@@ -10,6 +10,10 @@
 
 [] call TCS_fnc_safeStartPlayer;
 
+if (TCS_var_saveAndRestoreLoadouts) then {
+	TCS_var_playerLoadout = getUnitLoadout player;
+};
+
 [] spawn TCS_fnc_initPlayerRadios;
 
 [] spawn TCS_fnc_adminInit;

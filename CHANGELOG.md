@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 * Added a local version of the debug trigger markers that doesn't keep track of trigger states.
 * Added option to automatically add surgical kits to medics if they don't have one.
+* Added option to save/load loadouts so there is a consistent order in which they are loaded to prevent radios from duplicating.
 
 ## 1.4.0 (2021-01-24)
 ### Added
