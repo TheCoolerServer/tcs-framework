@@ -16,7 +16,7 @@ while {TCS_var_ticketsDisplayVisible} do {
 
 	if (_tickets <= 0) then {
 		_countdownText = parseText ("<t align='left'>Respawn in: <t color='#FF0000'>--:--</t></t>");
-		_ticketsText = parseText ("<t alight='right'>Tickets remaining: <t color='#FF0000'>0</t></t>");
+		_ticketsText = parseText ("<t>Tickets remaining: <t color='#FF0000'>0</t></t>");
 	} else {
 		private _minutes = 0;
 		private _seconds = 0;
@@ -37,7 +37,7 @@ while {TCS_var_ticketsDisplayVisible} do {
 		};
 
 		_countdownText = parseText (format["<t align='left'>Respawn in: %1:%2</t>", _minutes, _seconds]);
-		_ticketsText = parseText (format ["<t alight='right'>Tickets remaining: %1</t>", _tickets]);
+		_ticketsText = parseText (format ["<t>Tickets remaining: %1</t>", _tickets]);
 	};
 
 	_ticketsControl ctrlSetStructuredText _ticketsText;
