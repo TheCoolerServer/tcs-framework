@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 * Changed debug trigger markers option to run on the server and update for everyone.
+* Changed back the radio functions to also save and restore the volume.
 
 ### Added
 * Added a local version of the debug trigger markers that doesn't keep track of trigger states.
