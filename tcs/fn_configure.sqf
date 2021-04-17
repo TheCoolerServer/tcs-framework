@@ -88,3 +88,5 @@ TCS_var_disableFSMSides = [east];
 TCS_var_disableFSMInterval = 60;
 
 TCS_var_enableTriggerDebugMarkers = false;
+
+TCS_var_enableCutGrassAction = true;

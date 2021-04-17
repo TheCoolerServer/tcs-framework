@@ -50,6 +50,10 @@ if ([] call TCS_fnc_areTicketsEnabled) then {
 	[] call TCS_fnc_bootstrapTicketsFramework;
 };
 
+if (TCS_var_enableCutGrassAction) then {
+	[] call TCS_fnc_createCutGrassAction;
+};
+
 if ([getPlayerUID player] call TCS_fnc_isPlayerSpectating) then {
 	[] call TCS_fnc_moveToSpectator;
 };
