@@ -1,0 +1,10 @@
+version=54;
+name="TCS_Template_MKII_OPFOR_Supports";
+author="Pliskin";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"A3_Characters_F",
+	"ace_explosives",
+	"A3_Characters_F_Exp"
+};
