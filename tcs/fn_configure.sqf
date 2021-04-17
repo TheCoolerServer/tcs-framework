@@ -46,7 +46,6 @@ TCS_var_FTColors = [
 
 //==================================== Radios ====================================
 TCS_var_addRadiosToPlayers = true;
-TCS_var_removeRadiosInInventory = true;
 TCS_var_saveAndRestoreRadioSettings = true;
 
 //Radios to be given to a unit.
@@ -69,9 +68,7 @@ TCS_var_civilianTickets = 10;
 TCS_var_individualTickets = 3;
 
 //====================================== AI ======================================
-TCS_var_disableAIFSM = false;
-TCS_var_disableFSMSides = [east];
-TCS_var_disableFSMInterval = 60;
+
 
 //=================================== Spectator ==================================
 TCS_var_spectatorAllowFreeCamera = true;
@@ -80,11 +77,14 @@ TCS_var_spectatorAllowOtherPlayerSides = false;
 TCS_var_allowVoluntarySpectatorAfter = 5400; // 90 minutes
 TCS_var_spectatorOptionTimeout = 90;
 
-//=================================== Killed By ==================================
-TCS_var_showKilledByMessage = true;
-
 //=============================== Rapid Deployment ===============================
 TCS_var_rapidDeploymentEnabled = false;
 
-//===================================== Debug ====================================
+//===================================== Extra ====================================
+TCS_var_showKilledByMessage = true;
+
+TCS_var_disableAIFSM = false;
+TCS_var_disableFSMSides = [east];
+TCS_var_disableFSMInterval = 60;
+
 TCS_var_enableTriggerDebugMarkers = false;

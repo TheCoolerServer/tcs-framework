@@ -10,14 +10,7 @@
 
 [] call TCS_fnc_safeStartPlayer;
 
-if (TCS_var_saveAndRestoreLoadouts) then {
-	TCS_var_playerLoadout = getUnitLoadout player;
-};
-
-[] spawn TCS_fnc_initPlayerRadios;
-
-[] spawn TCS_fnc_adminInit;
-
+// Add the surgical kit first so the saved loadout already has it
 if (TCS_var_addSurgicalKitsToMedics) then {
 	private _isMedic = [player] call ACE_common_fnc_isMedic;
 
@@ -25,6 +18,14 @@ if (TCS_var_addSurgicalKitsToMedics) then {
 		[] call TCS_fnc_addSurgicalKit;
 	};
 };
+
+if (TCS_var_saveAndRestoreLoadouts) then {
+	TCS_var_playerLoadout = getUnitLoadout player;
+};
+
+[] spawn TCS_fnc_initPlayerRadios;
+
+[] spawn TCS_fnc_adminInit;
 
 if (TCS_var_showKilledByMessage) then {
 	[] spawn TCS_fnc_killedBy;
