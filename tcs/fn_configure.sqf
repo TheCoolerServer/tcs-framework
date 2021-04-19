@@ -67,9 +67,6 @@ TCS_var_independentTickets = 10;
 TCS_var_civilianTickets = 10;
 TCS_var_individualTickets = 3;
 
-//====================================== AI ======================================
-
-
 //=================================== Spectator ==================================
 TCS_var_spectatorAllowFreeCamera = true;
 TCS_var_spectatorAllowThirdPersonCamera = true;
