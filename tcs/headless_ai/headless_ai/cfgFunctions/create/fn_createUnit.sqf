@@ -95,6 +95,7 @@ if !(_olsenGearType isEqualTo "") then {
 
 [_unit,_unitIsPersistent] call FUNC(setPersistent);
 _unit call _unitInit;
+_unit call FUNC(setunitskill);
 
 if (_vehicleAssigned) then {
     if (isNull _veh) then {
