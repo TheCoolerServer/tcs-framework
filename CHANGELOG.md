@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Added option to automatically add surgical kits to medics if they don't have one.
 * Added option to save/load loadouts so there is a consistent order in which they are loaded to prevent radios from duplicating.
 * Added the "Cut grass" self-interaction.
+* Jimmie added the headless client AI module from the Kobold framework.
 
 ### Removed
 * Removed the option to remove the radios from the loadout when setting the radios.

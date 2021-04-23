@@ -30,6 +30,10 @@ class Params{
   };
 };
 
+#define description
+  #include "tcs\headless_ai\loadAI.sqf"
+#undef description
+
 #include "CfgDebriefing.hpp"
 
 #include "CfgFunctions.hpp"
@@ -39,3 +43,15 @@ class Params{
 #include "CfgRespawnTemplates.hpp"
 
 #include "RscTitles.hpp"
+
+#define description_XEH_PreInit
+
+class Extended_PreInit_EventHandlers {
+	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
+};
+
+#undef description_XEH_PreInit
+
+#define description_XEH_FiredMan_CAManBase
+	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
+#undef description_XEH_FiredMan_CAManBase
