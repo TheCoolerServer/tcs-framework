@@ -6,6 +6,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 1.5.0 (2021-04-25)
+### Fixed
+* Fixed add zeus method not working properly.
+* Sherman fixed the stuttering with the tickets display when players died.
+
+### Changed
+* Changed debug trigger markers option to run on the server and update for everyone.
+* Changed back the radio functions to also save and restore the volume.
+* Pliskin updated the compositions to include a delta squad. Compositions are also now split into squads, support teams and zeus slots.
+
+### Added
+* Added a local version of the debug trigger markers that doesn't keep track of trigger states.
+* Added option to automatically add surgical kits to medics if they don't have one.
+* Added option to save/load loadouts so there is a consistent order in which they are loaded to prevent radios from duplicating.
+* Added the "Cut grass" self-interaction.
+* Jimmie added the headless client AI module from the Kobold framework.
+
+### Removed
+* Removed the option to remove the radios from the loadout when setting the radios.
+
 ## 1.4.0 (2021-01-24)
 ### Added
 * One-life respawn template (allows rejoin if death was unfair).

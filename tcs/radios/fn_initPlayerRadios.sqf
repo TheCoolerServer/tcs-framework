@@ -18,17 +18,9 @@ waitUntil {
 	[] call acre_api_fnc_isInitialized;
 };
 
-if (TCS_var_removeRadiosInInventory) then {
-	private _radiosToRemove = [] call acre_api_fnc_getCurrentRadioList;
-	
-	[_radiosToRemove] call TCS_fnc_removePlayerRadios;
-};
-
-
 if (TCS_var_addRadiosToPlayers) then {
 	[] call TCS_fnc_addConfigurationRadiosToPlayer;
 };
-
 
 if (TCS_var_saveAndRestoreRadioSettings) then {
 	// We need to wait here because the radios we just added will not be initialized yet

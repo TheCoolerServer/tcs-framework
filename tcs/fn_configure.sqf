@@ -1,6 +1,8 @@
 //==================================== General ===================================
 TCS_var_allZeusesGetAdminBriefing = true;
 TCS_var_fpsMarkerUpdateInterval = 5;
+TCS_var_addSurgicalKitsToMedics = true;
+TCS_var_saveAndRestoreLoadouts = true;
 
 //================================= Group Markers ================================
 TCS_var_groupMarkersEnabled = true;
@@ -44,7 +46,6 @@ TCS_var_FTColors = [
 
 //==================================== Radios ====================================
 TCS_var_addRadiosToPlayers = true;
-TCS_var_removeRadiosInInventory = true;
 TCS_var_saveAndRestoreRadioSettings = true;
 
 //Radios to be given to a unit.
@@ -66,11 +67,6 @@ TCS_var_independentTickets = 10;
 TCS_var_civilianTickets = 10;
 TCS_var_individualTickets = 3;
 
-//====================================== AI ======================================
-TCS_var_disableAIFSM = false;
-TCS_var_disableFSMSides = [east];
-TCS_var_disableFSMInterval = 60;
-
 //=================================== Spectator ==================================
 TCS_var_spectatorAllowFreeCamera = true;
 TCS_var_spectatorAllowThirdPersonCamera = true;
@@ -78,11 +74,16 @@ TCS_var_spectatorAllowOtherPlayerSides = false;
 TCS_var_allowVoluntarySpectatorAfter = 5400; // 90 minutes
 TCS_var_spectatorOptionTimeout = 90;
 
-//=================================== Killed By ==================================
+//=============================== Rapid Deployment ===============================
+TCS_var_rapidDeploymentEnabled = false;
+
+//===================================== Extra ====================================
 TCS_var_showKilledByMessage = true;
 
-//=============================== Rapid Deployment ===============================
-TCS_var_rapidDeploymentEnabled = true;
+TCS_var_disableAIFSM = false;
+TCS_var_disableFSMSides = [east];
+TCS_var_disableFSMInterval = 60;
 
-//===================================== Debug ====================================
 TCS_var_enableTriggerDebugMarkers = false;
+
+TCS_var_enableCutGrassAction = true;

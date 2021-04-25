@@ -1,0 +1,9 @@
+version=54;
+name="TCS_Template_MKII_INDFOR_Supports";
+author="Pliskin";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"A3_Characters_F",
+	"ace_explosives"
+};

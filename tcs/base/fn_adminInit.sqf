@@ -44,25 +44,3 @@ while {(time - _start) < 10} do {
 if (_isAdmin) exitWith {
 	[] call TCS_fnc_briefing_admin;
 };
-
-// Setup the server FPS debug marker
-
-
-["TCS_evt_serverFPSUpdate", {
-	params ["_fps", "_localUnitCount", "_localGroupCount"];
-	private _markerType = "mil_circle";
-	private _markerColor = "ColorGreen";
-
-	if (_fps < 30) then {
-		_markerType = "mil_warning";
-		_markerColor = "ColorYellow";
-	};
-
-	if (_fps < 15) then {
-		_markerColor = "ColorRed";
-	};
-
-	TCS_var_serverFPSMarker setMarkerColorLocal _markerColor;
-	TCS_var_serverFPSMarker setMarkerTypeLocal _markerType;
-	TCS_var_serverFPSMarker setMarkerTextLocal format ["FPS: %1, %2 local groups, %3 local units", _fps, _localGroupCount, _localUnitCount];
-}] call CBA_fnc_addEventHandler;

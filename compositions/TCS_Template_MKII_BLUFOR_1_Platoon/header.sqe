@@ -1,0 +1,46 @@
+version=54;
+name="TCS_Template_MKII_BLUFOR_1_Platoon";
+author="Pliskin";
+category="EdSubcat_Default";
+requiredAddons[]=
+{
+	"A3_Characters_F",
+	"A3_Weapons_F_Rifles_MX",
+	"ace_realisticnames",
+	"ace_scopes",
+	"ace_ballistics",
+	"A3_Weapons_F_Acc",
+	"ace_laserpointer",
+	"A3_Weapons_F",
+	"ace_smallarms",
+	"A3_Weapons_F_Pistols_P07",
+	"ace_goggles",
+	"ace_nightvision",
+	"acre_sys_prc343",
+	"ace_medical_treatment",
+	"ace_flashlights",
+	"ace_maptools",
+	"ace_captives",
+	"acre_sys_prc152",
+	"ace_microdagr",
+	"A3_Sounds_F",
+	"A3_Sounds_F_Enoch",
+	"ace_ai",
+	"ace_optics",
+	"A3_Weapons_F_Exp",
+	"A3_Weapons_F_Mark_Acc",
+	"A3_Weapons_F_Mark",
+	"ace_laser",
+	"A3_Weapons_F_Machineguns_M200",
+	"A3_Weapons_F_Mark_Machineguns_M200",
+	"A3_Weapons_F_Enoch_Machineguns_M200",
+	"cba_jam",
+	"ace_overheating",
+	"A3_Weapons_F_Launchers_Titan",
+	"ace_javelin",
+	"ace_trenches",
+	"ace_reload",
+	"ace_tripod",
+	"A3_Characters_F_Mark",
+	"A3_Weapons_F_Mark_Machineguns_MMG_02"
+};

@@ -59,7 +59,10 @@ if !(isPlayer _unit) exitWith {
 };
 
 //Create a new curator module and assign it to the player with the correct addons
-_curator = (createGroup sideLogic) createUnit ["ModuleCurator_F", [0,0,0], [], 0, "NONE"];
+"ModuleCurator_F" createUnit [[0,0,0], (createGroup sideLogic), 
+	"newCurator = this; this setVariable ['BIS_fnc_initModules_disableAutoActivation', false, true];"
+];
+private _curator = newCurator;
 
 _unit assignCurator _curator;
 [_curator,_addons] spawn TCS_fnc_zeusAddAddons;

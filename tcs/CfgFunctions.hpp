@@ -24,6 +24,7 @@ class TCS {
     class mpEndReceiver {};
 
     class initParameterVariables {};
+    class addSurgicalKit {};
 
     class serverFpsLoop {};
     class adminInit {};
@@ -122,6 +123,7 @@ class TCS {
     file = "tcs\debug";
 
     class createDebugTriggerMarkers {};
+    class createLocalDebugTriggerMarkers {};
   };
 
   class PreInitFreeze {
@@ -145,6 +147,9 @@ class TCS {
     file = "tcs\extra";
 
     class continuouslyDisableFSM {};
+
+    class createCutGrassAction {};
+    class cutGrassAction {};
   };
 
   class Spectator {

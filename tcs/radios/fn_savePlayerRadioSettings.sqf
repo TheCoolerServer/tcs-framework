@@ -28,10 +28,7 @@ TCS_var_playerMPTTSettings = ([] call acre_api_fnc_getMultiPushToTalkAssignment)
 	TCS_var_playerRadioSettings pushBack [
 		_radioClass,
 		[_radio] call acre_api_fnc_getRadioChannel,
-		[_radio] call acre_api_fnc_getRadioSpatial
-
-		// See issue https://github.com/IDI-Systems/acre2/issues/692
-		// Fixed, will be included in release 2.7.0
-		// [_radio] call acre_api_fnc_getRadioVolume
+		[_radio] call acre_api_fnc_getRadioSpatial,
+		[_radio] call acre_api_fnc_getRadioVolume
 	];
 } forEach _radios;
