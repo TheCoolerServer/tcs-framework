@@ -1,6 +1,6 @@
 version=54;
 name="TCS_Template_MKII_BLUFOR_1_Platoon";
-author="gkovalechyn";
+author="Pliskin";
 category="EdSubcat_Default";
 requiredAddons[]=
 {
@@ -14,7 +14,6 @@ requiredAddons[]=
 	"A3_Weapons_F",
 	"ace_smallarms",
 	"A3_Weapons_F_Pistols_P07",
-	"DSA_Spooks",
 	"ace_goggles",
 	"ace_nightvision",
 	"acre_sys_prc343",
