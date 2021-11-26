@@ -17,6 +17,9 @@
 */
 if (!isServer) exitWith {};
 
+["", "", TCS_var_ocapMissionType] call ocap_fnc_exportData;
+sleep 3;
+
 if (isNil "TCS_var_EndingTriggered") then {
 	_this remoteExec ["TCS_fnc_mpEndReceiver", 0];
 };
