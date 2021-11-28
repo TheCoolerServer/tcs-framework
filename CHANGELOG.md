@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 1.5.1 (2021-11-28)
+### Added
+* Lucas added the automatic export of the OCAP recording.
+* Added support for saving and restoring PRC-77's frequencies.
+
+### Fixed
+* Lucas fixed the endings not being triggered as success or failure properly.
+
+### Changed
+* Lucas updated the compositions with the new moderadors.
+
 ## 1.5.0 (2021-04-25)
 ### Fixed
 * Fixed add zeus method not working properly.

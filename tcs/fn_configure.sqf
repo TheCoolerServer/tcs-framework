@@ -77,6 +77,10 @@ TCS_var_spectatorOptionTimeout = 90;
 //=============================== Rapid Deployment ===============================
 TCS_var_rapidDeploymentEnabled = false;
 
+//===================================== OCAP =====================================
+TCS_var_ocapMissionType = "PvE";
+// TCS_var_ocapMissionType = "PvP";
+
 //===================================== Extra ====================================
 TCS_var_showKilledByMessage = true;
 

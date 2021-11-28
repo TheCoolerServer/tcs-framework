@@ -50,7 +50,7 @@ switch (_ending) do{
 
 //Grab the ending from CfgDebriefings based on the passed ending and end the mission
 _ending = format ["end%1", _ending];
-[_ending, _state] spawn BIS_fnc_endMission;
+_ending spawn BIS_fnc_endMission;
 
 // Clients just "hang" if the mission has ended but are still inside the
 // spectator script. Therefore we need to close any open dialogs.
