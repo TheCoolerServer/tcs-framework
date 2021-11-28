@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Added
 * Lucas added the automatic export of the OCAP recording.
+* Added support for saving and restoring PRC-77's frequencies.
 
 ### Fixed
 * Lucas fixed the endings not being triggered as success or failure properly.
