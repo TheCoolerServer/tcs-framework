@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 * Lucas added the automatic export of the OCAP recording.
 
+### Fixed
+* Lucas fixed the endings not being triggered as success or failure properly.
+
+### Changed
+* Lucas updated the compositions with the new moderadors.
+
 ## 1.5.0 (2021-04-25)
 ### Fixed
 * Fixed add zeus method not working properly.
