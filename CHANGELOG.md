@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 1.5.2 (2021-12-05)
+### Fixed
+* Lucas fixed the OCAP recording not being exported.
+
 ## 1.5.1 (2021-11-28)
 ### Added
 * Lucas added the automatic export of the OCAP recording.
