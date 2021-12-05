@@ -18,7 +18,7 @@
 if (!isServer) exitWith {};
 
 if !(isNil "ocap_fnc_exportData") then {
-	["", "", TCS_var_ocapMissionType] call ocap_fnc_exportData;
+	[sideUnknown, "", TCS_var_ocapMissionType] call ocap_fnc_exportData;
 	sleep 3;
 };
 
