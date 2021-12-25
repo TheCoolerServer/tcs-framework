@@ -53,7 +53,7 @@ SETVAR(_group,Waypoints,_waypoints);
 SETVAR(_group,forceLights,_fl);
 SETVAR(_group,surrender,_surrender);
 SETVAR(_group,Spawned,true);
-_group setVariable ["lambs_danger_disableGroupAI", true];
+_group setVariable ["lambs_danger_disableGroupAI", true,true];
 _group deleteGroupWhenEmpty true;
 
 //_group call CBA_fnc_clearWaypoints;
