@@ -27,7 +27,7 @@ GVAR(AreaMarkerArray) = [];
         ["_withdrawalEnabled",true,[true]],
         ["_resourceUse",true,[true]],
         ["_preferredTypes",["Infantry", "Snipers", "Motorized", "Mechanized", "Armor"],[[]]],
-        ["_terrainMode","AUTO",[""]],
+        ["_terrainMode","Auto",[""]],
         ["_importance",_foreachIndex,[0]],
         ["_assignedAssets",[],[[]]],
         ["_control",0,[0]]
@@ -60,11 +60,11 @@ GVAR(AreaMarkerArray) = [];
         ERROR_2("%1 preferredTypes value empty! preferredTypes: %2",_marker,_preferredTypes);
         _preferredTypes = ["ALL"];
     };
-    if !(_terrainMode in ["URBAN","COAST","FOREST HILL","FOREST","HILL","OPEN","AUTO"]) then {
+    if !(_terrainMode in ["URBAN","COAST","FOREST HILL","FOREST","HILL","OPEN","Auto"]) then {
         ERROR_2("%1 invalid terrainMode: %2",_marker,_terrainMode);
-        _terrainMode = "AUTO";
+        _terrainMode = "Auto";
     };
-    if (_terrainMode isEqualTo "AUTO") then {
+    if (_terrainMode isEqualTo "Auto") then {
         private _markerPos = getMarkerPos _marker;
         private _markerSize = (getMarkerSize _marker) select 0;
         private _buildings =  _markerPos nearObjects ["House", _markerSize];

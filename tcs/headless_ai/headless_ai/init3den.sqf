@@ -4,7 +4,7 @@ PZAI_fnc_StanceToInit = {
 	params ["_object"];
 	private _init = (_object get3DENAttribute "init") select 0;
 	private _stance = (_object get3DENAttribute "unitpos") select 0;
-	private _unitstance = ["UP","MIDDLE","DOWN","AUTO"] select _stance;
+	private _unitstance = ["UP","MIDDLE","DOWN","Auto"] select _stance;
 	private _stanceInit = format ["this setUnitPos '%1'; this setvariable ['unitpos','%1',true];",_unitstance];
 	if (_init isEqualTo "") then {
 		_init = format ["call{%1}",_stanceInit];
@@ -19,8 +19,8 @@ PZAI_fnc_StanceToInit = {
 					if !((_init find "DOWN") isEqualto -1) then {
 						_init = [_init,"DOWN",_unitstance] call CBA_fnc_replace;
 					} else {
-						if !((_init find "AUTO") isEqualto -1) then {
-							_init = [_init,"AUTO",_unitstance] call CBA_fnc_replace;
+						if !((_init find "Auto") isEqualto -1) then {
+							_init = [_init,"Auto",_unitstance] call CBA_fnc_replace;
 						} else {
 							_init = _init select [0,((count _init) - 2)];
 							_init = _init + "; " + _stanceInit + "};"

@@ -17,7 +17,7 @@ if ((random 100) < 5) then {
 [{
     params ["_Unit","_unCon"];
     _Unit setVariable [QGVAR(GHit),false];
-    _Unit setUnitPos "AUTO";
+    _Unit setUnitPos "Auto";
     if (_unCon) then {
         _Unit setUnconscious false;
     };

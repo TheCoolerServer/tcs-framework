@@ -8,11 +8,11 @@ of reinforcements or subsequent AOs.
 
 // Array objects
 // eg: ["mainEnemy", "patrol_1", "patrol_2", "patrol_3"]
-GVAR(ArrayObjects) = ["spawn_1","spawn_2","spawn_3"];
+GVAR(ArrayObjects) = ["spawn_1","spawn_2","spawn_3","spawn_4","spawn_5","spawn_6","spawn_7","spawn_8","spawn_9","spawn_10","spawn_11","spawn_12","test"];
 
 // Initial spawns are spawned upon init, at the start of the mission.
 // eg: ["mainEnemy"]
-GVAR(InitialSpawn) = ["hc_spawn"];
+GVAR(InitialSpawn) = ["test"];
 
 // Initial random spawns are randomly selected upon init, at the start of the mission according to their weight value.
 // Array is structured with array object name and random selection weight.
@@ -103,4 +103,3 @@ GVAR(WaypointDistance) = 300;
 #include "settings\bunker.hpp"
 #include "settings\skill.hpp"
 #include "settings\sight.hpp"
-

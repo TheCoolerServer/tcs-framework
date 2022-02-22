@@ -1235,7 +1235,7 @@ class FSM
                          "_unit enableAI ""AIMINGERROR"";" \n
                          "_unit enableAI ""FSM"";" \n
                          "_unit forcespeed -1;" \n
-                         "_unit setunitposWeak ""AUTO"";" \n
+                         "_unit setunitposWeak ""Auto"";" \n
                          "_releaseTime = CBA_MissionTime;" \n
                          "if (leader group _unit isEqualTo _unit) then {" \n
                          "	[group _unit, position _unit, 20, ""SAD"", ""COMBAT"", ""RED""] call CBA_fnc_addWaypoint;" \n
