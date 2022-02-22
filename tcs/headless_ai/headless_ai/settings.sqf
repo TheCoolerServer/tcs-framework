@@ -7,11 +7,12 @@ of reinforcements or subsequent AOs.
 */
 
 // Array objects
-// eg: ["spawn_1","spawn_2","spawn_3","spawn_4","SOV_HELI","SOV_PLANE","USA_PLANE","MECH_ASSAULT","DEFENSE"]
-GVAR(ArrayObjects) =  ["spawn_1","spawn_2","spawn_3","spawn_4","SOV_HELI","SOV_PLANE","USA_PLANE","MECH_ASSAULT","DEFENSE"];
+// eg: ["mainEnemy", "patrol_1", "patrol_2", "patrol_3"]
+GVAR(ArrayObjects) = ["spawn_1","spawn_2","spawn_3","spawn_4","spawn_5","spawn_6","spawn_7","spawn_8","spawn_9","spawn_10","spawn_11","spawn_12","test"];
+
 // Initial spawns are spawned upon init, at the start of the mission.
 // eg: ["mainEnemy"]
-GVAR(InitialSpawn) = [];
+GVAR(InitialSpawn) = ["test"];
 
 // Initial random spawns are randomly selected upon init, at the start of the mission according to their weight value.
 // Array is structured with array object name and random selection weight.
@@ -23,13 +24,14 @@ GVAR(InitialRandomSpawnsCount) = 0;
 // Custom viewdistance for the AI
 GVAR(AIViewDistance) = 2500;
 // Forces Time on the HC to simulate better AI at night [HOUR,MINUTE]
-GVAR(ForceTimeEnable) = true;
+GVAR(ForceTimeEnable) = false;
 GVAR(ForceTime) = [12,00];
 
 // Debug message settings
 GVAR(Debug) = false;
 GVAR(VerboseDebug) = false;
 GVAR(GroupDebug) = false;
+GVAR(CommanderDebug) = false;
 // Turn on map markers that track AI movement
 GVAR(UseMarkers) = false;
 
@@ -45,8 +47,7 @@ GVAR(HearingDistance) = 2000;
 // How revealed an enemy is from a gunshot report
 GVAR(HearingMinIncrease) = 1;
 // Distance AI will respond to call of help from each other
-GVAR(RadioDistance) = 1000;
-GVAR(RadioWait) = 30;
+GVAR(RadioDistance) = 1200;
 // Whether or not AI need ACRE radios to broadcast info to other groups
 GVAR(RadioNeedRadio) = false;
 // Distance the AI will patrol to by default
@@ -63,10 +64,12 @@ GVAR(QRF_Distance) = 2500;
 GVAR(MountStatics) = true;
 // Distance AI will mount empty statics from - maximum of 100m
 GVAR(MountStaticsDistance) = 50;
+// Should we let AI use flanking manuevers? false means they can flank
+GVAR(REINFORCE) = false;
 // Should AI use smoke grenades? Besides default A3 behavior?
-GVAR(USESMOKE) =true;
+GVAR(USESMOKE) = false;
 // Percentage chance of AI using grenades
-GVAR(GRENADECHANCE) = 80;
+GVAR(GRENADECHANCE) = 75;
 // AI will automatically disembark from vehicles when in combat.
 GVAR(AIDisembark) = true;
 // How low should an AI's mag count be for them to consider finding more ammo? This DOES NOT include the mag loaded in the gun already.
@@ -100,4 +103,3 @@ GVAR(WaypointDistance) = 300;
 #include "settings\bunker.hpp"
 #include "settings\skill.hpp"
 #include "settings\sight.hpp"
-

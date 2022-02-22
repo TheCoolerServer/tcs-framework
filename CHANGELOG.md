@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 1.5.4 (2021-02-21)
+### Fixed
+* Jimmie Rustler fixed some more errors with the headless client and headless AI module.
+
+### Changed
+* Jimmie Rustler changed the `AUTO`command to `Auto` for the headless AI module.
+
 ## 1.5.3 (2021-12-20)
 ### Fixed
 * Jimmie Rustler fixed some errors with the headless client and headless AI module.
