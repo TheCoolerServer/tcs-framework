@@ -27,9 +27,11 @@ player addEventHandler ["FiredMan",{
 		private _revealValue = linearConversion [200,GVAR(HearingDistance),_distance,4,GVAR(HearingMinIncrease)];
 		LOG_5("%1 got revealed to %2 at %3m, %4 seconds, %5 reveal value.",_firer,_x,_distance,_travelTime,_revealValue);
 		[{
-			params ["_firer",
-"_AIunit",
-"_revealValue"];
+			params [
+                "_firer",
+                "_AIunit",
+                "_revealValue"
+            ];
 			_AIunit reveal [_firer,_revealValue];
 		}, [_firer,_x,_distance,_revealValue], _travelTime] call CBA_fnc_waitAndExecute;
 	};
