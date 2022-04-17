@@ -1,6 +1,6 @@
-const core = require("@actions/core");
 const fs = require("fs");
 const readline = require("readline");
+const os = require("os");
 
 async function main() {
 	try {
@@ -39,9 +39,11 @@ async function main() {
 			}
 		}
 
-		core.setOutput("version", `${major}.${minor}.${patch}`);
+		process.stdout.write(os.EOL)
+		process.stdout.write(`::set-output name=version::${major}.${minor}.${patch}`);
 	} catch (error) {
-		core.setFailed(error.message);
+		process.exitCode = 1;
+		process.stderr.write(error.message);
 	}
 }
 
