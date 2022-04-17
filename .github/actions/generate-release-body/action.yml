@@ -1,0 +1,7 @@
+name: Generate release body
+description: Generates the latest release body from CHANGELOG.md
+author: gkovalechyn
+
+runs:
+  using: node16
+  main: action.js
