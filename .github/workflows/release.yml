@@ -16,6 +16,9 @@ jobs:
         uses: ./.github/actions/get-framework-version
         id: get_framework_version
 
+      - name: Generate release body
+        uses: ./.github/actions/generate-release-body
+
       - name: Zip artifacts
         run: |
           zip -r compositions.zip compositions/*
