@@ -1,0 +1,11 @@
+name: Get framework version
+description: Returns the framework version from the FrameworkVersion.hpp file
+author: gkovalechyn
+
+outputs:
+  version:
+    description: Framework version in major.minor.patch format
+
+runs:
+  using: node16
+  main: action.js

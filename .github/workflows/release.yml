@@ -1,0 +1,30 @@
+name: Release
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Get framework version
+        uses: ./.github/actions/get-framework-version
+        id: get_framework_version
+
+      - name: Zip artifacts
+        run: |
+          zip -r compositions.zip compositions/*
+          zip -r framework.zip *.hpp *.ext *.sqf tcs
+
+      - name: Create release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "framework.zip,compositions.zip"
+          artifactErrorsFailBuild: true
+          bodyFile: "CHANGELOG.md"
+          tag: "v${{ steps.get_framework_version.outputs.version }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
