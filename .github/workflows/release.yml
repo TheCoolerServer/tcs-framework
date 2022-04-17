@@ -26,5 +26,5 @@ jobs:
           artifacts: "framework.zip,compositions.zip"
           artifactErrorsFailBuild: true
           bodyFile: "CHANGELOG.md"
-          tag: "v${{ steps.get_framework_version.version }}"
+          tag: "v${{ steps.get_framework_version.outputs.version }}"
           token: ${{ secrets.GITHUB_TOKEN }}
