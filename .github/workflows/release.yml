@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Get framework version
-        uses: ./github/actions/get-framework-version
+        uses: ./.github/actions/get-framework-version
         id: get_framework_version
 
       - name: Zip artifacts
