@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - "master"
+      - "dev"
 
 jobs:
   release:
@@ -20,8 +21,18 @@ jobs:
           zip -r compositions.zip compositions/*
           zip -r framework.zip *.hpp *.ext *.sqf tcs
 
+      - uses: actions/upload-artifact@v3
+        if: github.ref_name == "dev"
+        with:
+          name: outputs
+          if-no-files-found: error
+          path: |
+            framework.zip
+            compositions.zip
+
       - name: Create release
         uses: ncipollo/release-action@v1
+        if: github.ref_name == "master"
         with:
           artifacts: "framework.zip,compositions.zip"
           artifactErrorsFailBuild: true
