@@ -52,6 +52,11 @@ class Extended_PreInit_EventHandlers {
 
 #undef description_XEH_PreInit
 
+
+#define description_other
+  #include "tcs\headless_ai\loadAI.sqf"
+#undef description_other
+
 #define description_XEH_FiredMan_CAManBase
 	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
 #undef description_XEH_FiredMan_CAManBase
