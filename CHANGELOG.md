@@ -5,8 +5,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
-### Fixed:
+### Fixed
 * Fixed the cut grass action not creating the module on animation end.
+
+### Changed
+* rgomezer updated the compositions with the new moderators.
+
+### Added
+* rgomezer added the vehicle respawn scripts.
+* rgomezer the headless client disable flag for ActionBuilder.
 
 ## 1.5.4 (2021-02-21)
 ### Fixed
