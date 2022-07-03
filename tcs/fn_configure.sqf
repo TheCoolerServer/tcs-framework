@@ -92,4 +92,4 @@ TCS_var_enableTriggerDebugMarkers = false;
 
 TCS_var_enableCutGrassAction = true;
 
-TCS_var_preventGrassDisable = false;
+TCS_var_preventGrassDisable = true;
