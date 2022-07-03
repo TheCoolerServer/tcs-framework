@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 * rgomezer updated the compositions with the new moderators.
+* Lucas changed default setting for free camera to off.
 
 ### Added
 * rgomezer added the vehicle respawn scripts.
