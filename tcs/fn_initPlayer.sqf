@@ -57,3 +57,7 @@ if (TCS_var_enableCutGrassAction) then {
 if ([getPlayerUID player] call TCS_fnc_isPlayerSpectating) then {
 	[] call TCS_fnc_moveToSpectator;
 };
+
+if (TCS_var_preventGrassDisable) then {
+	P_PREVENT_GRASS_DISABLE = TRUE;
+};

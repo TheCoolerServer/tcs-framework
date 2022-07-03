@@ -46,6 +46,8 @@ class Params{
 
 #define description_XEH_PreInit
 
+#include "VehicleRespawn\CfgFunctions.hpp"
+
 class Extended_PreInit_EventHandlers {
 	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
 };

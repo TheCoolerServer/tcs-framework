@@ -21,7 +21,7 @@ private _animEH = player addEventHandler ["AnimDone", {
 player playMove "AinvPknlMstpSlayWrflDnon_medic";
 
 
-[{mis_macheteDone}, {
+[{TCS_var_cutGrassAnimDone}, {
 	params ["_animEH"];
 
 	createVehicle ["ClutterCutter_small_EP1", [getposATL player, 1, getDir player] call BIS_fnc_relPos, [], 0, "CAN_COLLIDE"];

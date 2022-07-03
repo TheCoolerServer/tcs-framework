@@ -6,7 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-## 1.5.4 (2021-02-21)
+## 1.6.0 (2022-07-03)
+### Fixed
+* Fixed the cut grass action not creating the module on animation end.
+
+### Changed
+* rgomezer updated the compositions with the new moderators.
+* Lucas changed default setting for free camera to off.
+
+### Added
+* rgomezer added the vehicle respawn scripts.
+* rgomezer added the headless client disable flag for ActionBuilder.
+* Lucas added a toggle to prevent grass from being disabled.
+
+## 1.5.4 (2022-02-21)
 ### Fixed
 * Jimmie Rustler fixed some more errors with the headless client and headless AI module.
 

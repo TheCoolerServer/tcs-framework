@@ -9,5 +9,12 @@
 		None
 */
 
-private _cutGrassAction = ["cut-grass", "Cut grass", "", TCS_fnc_cutGrassAction, {stance player == "CROUCH"}] call ace_interact_menu_fnc_createAction;
+private _cutGrassAction = [
+	"cut-grass",
+	"Cut grass",
+	"",
+	TCS_fnc_cutGrassAction,
+	{stance player == "CROUCH"}
+] call ace_interact_menu_fnc_createAction;
+
 [player, 1, ["ACE_SelfActions"], _cutGrassAction] call ace_interact_menu_fnc_addActionToObject;
