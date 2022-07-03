@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 * rgomezer added the vehicle respawn scripts.
-* rgomezer the headless client disable flag for ActionBuilder.
+* rgomezer added the headless client disable flag for ActionBuilder.
 * Lucas added a toggle to prevent grass from being disabled.
 
 ## 1.5.4 (2021-02-21)
