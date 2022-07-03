@@ -91,3 +91,5 @@ TCS_var_disableFSMInterval = 60;
 TCS_var_enableTriggerDebugMarkers = false;
 
 TCS_var_enableCutGrassAction = true;
+
+TCS_var_preventGrassDisable = false;
