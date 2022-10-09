@@ -81,6 +81,26 @@ TCS_var_rapidDeploymentEnabled = false;
 TCS_var_ocapMissionType = "PvE";
 // TCS_var_ocapMissionType = "PvP";
 
+//=================================== Dress Up ===================================
+TCS_var_enableDressUp = false;
+
+set_generic = [];
+set_rifleman = [];
+// uncomment this line to add everything from generic to rifleman (good for facewear etc)
+// set_rifleman append set_generic; 
+set_lead = [];
+
+// Fill this array with the roles (as seen on the slotting screen) and their arsenal loadouts.
+// Generic will be given to players that do not match other roles.
+// You can get the loadout arrays by filling an ACE arsenal in the editor and pressing 'export'.
+TCS_var_arsenalMap = createHashMapFromArray [
+	["Rifleman", set_rifleman],
+	["Team Leader", set_lead],
+	["Squad Leader", set_lead],
+	["generic", set_generic] 
+];
+
+
 //===================================== Extra ====================================
 TCS_var_showKilledByMessage = true;
 

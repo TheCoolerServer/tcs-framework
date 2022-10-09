@@ -147,7 +147,7 @@ class TCS {
     file = "tcs\extra";
 
     class continuouslyDisableFSM {};
-
+	class createDressUp {};
     class createCutGrassAction {};
     class cutGrassAction {};
   };
