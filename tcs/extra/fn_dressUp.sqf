@@ -14,7 +14,7 @@ params ["_caller"];
 _plr = _this select 0;
 //get player's role and use regex to remove anything after "@"
 _role = roleDescription _plr;
-_cleanrole = _role regexReplace ["@.*", ""]
+_cleanrole = _role regexReplace ["@.*", ""];
 // Make an invisible heli pad (this is so each player can have their own arsenal
 _temp = "HeliHEmpty" createVehicle position _plr;
 // Store the helipad in the player's namespace
