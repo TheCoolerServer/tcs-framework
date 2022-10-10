@@ -2,7 +2,7 @@
 	Description:
 		ACE action handler that plays an animation and places the clear cutter module where the player is.
 
-	Paramters: 
+	Parameters: 
 		None
 
 	Returns:
