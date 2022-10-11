@@ -12,9 +12,9 @@ jobs:
       - name: Validate dev requirements
         if: { github.github.base_ref } == 'dev'
         run: |
-          echo 'Succeeded'
+          echo 'No validations required'
 
       - name: Validate master requirements
         if: { github.github.base_ref } == 'master'
         run: |
-          "if [ { github.ref_name } != 'dev' ]; then echo 'Pull requests to the master branch must only be made from the dev branch; exit 1; fi;"
+          "if [ { github.ref_name } != 'dev' ]; then echo 'Pull requests to the master branch must only be made from the dev branch'; exit 1; fi;"
