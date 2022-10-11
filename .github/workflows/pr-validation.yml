@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Validate dev branch requirements
-        if: { github.github.base_ref } == 'dev'
+        if: github.github.base_ref == 'dev'
         run: |
           echo 'No validations required'
 
       - name: Validate master branch requirements
-        if: { github.github.base_ref } == 'master'
+        if: github.github.base_ref == 'master'
         run: |
           "if [ { github.ref_name } != 'dev' ]; then echo 'Pull requests to the master branch must only be made from the dev branch'; exit 1; fi;"
