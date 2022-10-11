@@ -1,8 +1,8 @@
-$HasChangelog = False
+$HasChangelog = $false
 
 foreach ($file in $Env:CHANGED_FILES) {
 	if ($file -eq "CHANGELOG.md") {
-		$HasChangelog = true
+		$HasChangelog = $true
 	}
 }
 
