@@ -17,4 +17,4 @@ jobs:
       - name: Validate master requirements
         if: { github.github.base_ref } == 'master'
         run: |
-          "if [ { github.ref_name } != 'dev' ]; then echo 'Merge requests to the master branch must only be made from the dev branch; exit 1; fi;"
+          "if [ { github.ref_name } != 'dev' ]; then echo 'Pull requests to the master branch must only be made from the dev branch; exit 1; fi;"
