@@ -11,16 +11,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v32
+        with:
+          separator: ","
+
+      - name: Common validations
+        shell: pwsh
+        run: >
+          ./.github/scripts/common-validations.ps1
+          -ChangedFiles ${{ steps.changed-files.outputs.all_changed_files }}
 
       - name: Validate dev branch requirements
         if: github.base_ref == 'dev'
-        shell: bash
-        run: |
-          echo 'No validations required'
+        shell: pwsh
+        run: Write-Output 'Succeeded'
+        
 
       - name: Validate master branch requirements
         if: github.base_ref == 'master'
-        shell: bash
-        run: ./.github/scripts/master-pr-validations.sh
-        env:
-          SOURCE_BRANCH: ${{ github.head_ref }}
+        shell: pwsh
+        run: > 
+          ./.github/scripts/master-pr-validations.ps1
+          -SourceBranch ${{ github.head_ref }}
+          -ChangedFiles ${{ steps.changed-files.outputs.all_changed_files }}
+          
