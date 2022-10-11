@@ -1,4 +1,5 @@
+Param($SourceBranch)
 
-if (!$Env:SOURCE_BRANCH -eq "dev" ) { 
+if (!$SourceBranch -eq "dev" ) { 
 	Throw "Pull requests to the master branch must only be made from the dev branch";
 }

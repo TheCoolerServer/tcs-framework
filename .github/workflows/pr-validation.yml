@@ -18,9 +18,9 @@ jobs:
 
       - name: Common validations
         shell: pwsh
-        run: ./.github/scripts/common-validations.ps1
-        env:
-          CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        run: >
+          ./.github/scripts/common-validations.ps1
+          -ChangedFiles ${{ steps.changed-files.outputs.all_changed_files }}
 
       - name: Validate dev branch requirements
         if: github.base_ref == 'dev'
@@ -31,7 +31,7 @@ jobs:
       - name: Validate master branch requirements
         if: github.base_ref == 'master'
         shell: pwsh
-        run: ./.github/scripts/master-pr-validations.ps1
-        env:
-          SOURCE_BRANCH: ${{ github.head_ref }}
-          CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        run: > 
+          ./.github/scripts/master-pr-validations.ps1
+          -SourceBranch ${{ github.head_ref }}
+          

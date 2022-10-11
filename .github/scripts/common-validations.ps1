@@ -2,7 +2,9 @@ Param($ChangedFiles)
 
 $HasChangelog = $false
 
-foreach ($file in $Env:CHANGED_FILES) {
+foreach ($file in $ChangedFiles) {
+	Write-Host "Changed file: $file";
+
 	if ($file -eq "CHANGELOG.md") {
 		$HasChangelog = $true
 	}
