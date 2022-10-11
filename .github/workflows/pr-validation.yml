@@ -6,7 +6,7 @@ on:
       - dev
 
 jobs:
-  release:
+  validation:
     runs-on: ubuntu-latest
     steps:
       - name: Validate dev branch requirements
