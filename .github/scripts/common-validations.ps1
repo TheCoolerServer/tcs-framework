@@ -1,3 +1,5 @@
+Param($ChangedFiles)
+
 $HasChangelog = $false
 
 foreach ($file in $Env:CHANGED_FILES) {
