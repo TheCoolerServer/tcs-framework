@@ -1,11 +1,11 @@
-Param($ChangedFiles)
+Param([string[]] $ChangedFiles)
 
 $HasChangelog = $false
 
 foreach ($file in $ChangedFiles) {
 	Write-Host "Changed file: $file";
 
-	if ($file -eq "CHANGELOG.md") {
+	if ($file -match "CHANGELOG.md$") {
 		$HasChangelog = $true
 	}
 }
