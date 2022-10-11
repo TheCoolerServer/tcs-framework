@@ -11,10 +11,12 @@ jobs:
     steps:
       - name: Validate dev branch requirements
         if: github.base_ref == 'dev'
+        shell: bash
         run: |
           echo 'No validations required'
 
       - name: Validate master branch requirements
         if: github.base_ref == 'master'
+        shell: bash
         run: |
           "if [ '${{ github.head_ref }}' != 'dev' ]; then echo 'Pull requests to the master branch must only be made from the dev branch'; exit 1; fi;"
