@@ -3,12 +3,12 @@ OnLoadName = "MISSION NAME";
 OnLoadMission = "MISSION DESCRIPTION";
 loadScreen = "load.jpg";
 
-enableDebugConsole[] = {"76561199020930438"};
+
 
 // respawnTemplates[] = {"TCS_OneLife"}; // One life respawn
- respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
+//respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
 //respawnTemplates[] = {"TCS_Respawn", "TCS_Individual_Tickets"}; // Individual ticket based respawn
-// respawnTemplates[] = {"TCS_Respawn", "Counter"}; // Default respawn
+respawnTemplates[] = {"TCS_Respawn", "Counter"}; // Default respawn
 
 // Do not change this unless you know what you are doing, if you do you will need to fix all the respawn templates
 // https://community.bistudio.com/wiki/Description.ext#respawnOnStart
