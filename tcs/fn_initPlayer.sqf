@@ -61,3 +61,7 @@ if ([getPlayerUID player] call TCS_fnc_isPlayerSpectating) then {
 if (TCS_var_preventGrassDisable) then {
 	P_PREVENT_GRASS_DISABLE = TRUE;
 };
+
+if (TCS_var_enableDressUp) then {
+	[] call TCS_fnc_createDressUp;
+}
