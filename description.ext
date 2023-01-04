@@ -1,7 +1,7 @@
 author = "AUTHOR NAME";
-OnLoadName = "MISSION NAME";
+OnLoadName = "Operation Name";
 OnLoadMission = "MISSION DESCRIPTION";
-loadScreen = "load.jpg";
+loadScreen = "Loading text";
 
 
 
