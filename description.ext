@@ -1,16 +1,19 @@
 author = "AUTHOR NAME";
 OnLoadName = "Operation Name";
-OnLoadMission = "Loading text";
-loadScreen = "load.jpg";
+OnLoadMission = "MISSION DESCRIPTION";
+loadScreen = "Loading text";
+
+
 
 // respawnTemplates[] = {"TCS_OneLife"}; // One life respawn
-// respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
-// respawnTemplates[] = {"TCS_Respawn", "TCS_Individual_Tickets"}; // Individual ticket based respawn
+//respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
+//respawnTemplates[] = {"TCS_Respawn", "TCS_Individual_Tickets"}; // Individual ticket based respawn
 respawnTemplates[] = {"TCS_Respawn", "Counter"}; // Default respawn
 
 // Do not change this unless you know what you are doing, if you do you will need to fix all the respawn templates
 // https://community.bistudio.com/wiki/Description.ext#respawnOnStart
 respawnOnStart = -1;
+
 
 #include "tcs\DefaultGCSettings.hpp"
 
@@ -30,13 +33,8 @@ class Params{
   };
 };
 
-#define description
-  #include "tcs\headless_ai\loadAI.sqf"
-#undef description
-
 #include "CfgDebriefing.hpp"
 
-#include "CfgFunctions.hpp"
 
 #include "CfgNotifications.hpp"
 
@@ -44,16 +42,52 @@ class Params{
 
 #include "RscTitles.hpp"
 
-#define description_XEH_PreInit
+#define description
+  #include "tcs\headless_ai\loadAI.sqf"
 
-#include "VehicleRespawn\CfgFunctions.hpp"
+#undef description
+
+
 
 class Extended_PreInit_EventHandlers {
+	#define description_XEH_PreInit
 	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
+	#undef description_XEH_PreInit
 };
 
-#undef description_XEH_PreInit
+#define description_XEH_PostInit
+
+class Extended_PostInit_EventHandlers  {
+	#define description_XEH_PostInit
+	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
+	#undef description_XEH_PostInit
+};
+
+class Extended_InitPost_EventHandlers {
+	class CAManBase {
+		#define description_XEH_InitPost_CAManBase
+			#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
+		#undef description_XEH_InitPost_CAManBase
+	};
+};
+
+
+
+
+
+
+#undef description_XEH_PostInit
+
+#define description_other
+  #include "tcs\headless_ai\loadAI.sqf"
+#undef description_other
 
 #define description_XEH_FiredMan_CAManBase
 	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
 #undef description_XEH_FiredMan_CAManBase
+
+#include "CfgFunctions.hpp"
+
+#define description_sounds
+
+#undef description_sounds
