@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Changed
 * Github PR validations
+* Updated deprecated github action outpu.
 * Headless AI forced stances fixed, performance improvements, and new UGL/AT setting
 
 ## 1.6.0 (2022-07-03)

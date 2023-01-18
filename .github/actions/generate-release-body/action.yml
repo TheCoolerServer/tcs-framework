@@ -3,5 +3,5 @@ description: Generates the latest release body from CHANGELOG.md
 author: gkovalechyn
 
 runs:
-  using: node16
+  using: node18
   main: action.js

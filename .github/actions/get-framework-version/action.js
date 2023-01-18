@@ -39,8 +39,8 @@ async function main() {
 			}
 		}
 
-		process.stdout.write(os.EOL)
-		process.stdout.write(`::set-output name=version::${major}.${minor}.${patch}`);
+
+		await fs.appendFile(process.env.GITHUB_OUTPUT, `${os.EOL}version=${major}.${minor}.${patch}`);
 	} catch (error) {
 		process.exitCode = 1;
 		process.stderr.write(error.message);
