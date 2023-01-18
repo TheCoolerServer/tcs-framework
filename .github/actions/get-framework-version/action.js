@@ -40,7 +40,7 @@ async function main() {
 		}
 
 
-		await fs.appendFile(process.env.GITHUB_OUTPUT, `${os.EOL}version=${major}.${minor}.${patch}`);
+		fs.appendFileSync(process.env.GITHUB_OUTPUT, `${os.EOL}version=${major}.${minor}.${patch}`);
 	} catch (error) {
 		process.exitCode = 1;
 		process.stderr.write(error.message);
