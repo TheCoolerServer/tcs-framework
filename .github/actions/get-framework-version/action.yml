@@ -7,5 +7,5 @@ outputs:
     description: Framework version in major.minor.patch format
 
 runs:
-  using: node18
+  using: node16
   main: action.js
