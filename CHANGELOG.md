@@ -7,7 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Changed
 * Github PR validations
+* Updated github action version.
 * Headless AI forced stances fixed, performance improvements, and new UGL/AT setting
+
+### Fixed
+* Master PR validation script paramters.
 
 ## 1.6.0 (2022-07-03)
 ### Fixed

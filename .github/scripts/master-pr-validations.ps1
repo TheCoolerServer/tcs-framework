@@ -1,5 +1,7 @@
-Param($SourceBranch)
-Param([string[]] $ChangedFiles)
+Param(
+	[string] $SourceBranch, 
+	[string[]] $ChangedFiles
+)
 
 if (!$SourceBranch -eq "dev" ) { 
 	Throw "Pull requests to the master branch must only be made from the dev branch";
