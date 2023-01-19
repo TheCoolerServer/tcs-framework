@@ -44,6 +44,8 @@ _groupSet params [
 createCenter _side;
 private _group = createGroup _side;
 
+_group setVariable ["lambs_danger_disableGroupAI", true];
+
 if (_name isNotEqualTo "") then {
     private _uniqueName = [_name] call FUNC(findUniqueName);
     missionNamespace setVariable [_uniqueName, _group, true];

@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 * Github PR validations
 * Headless AI forced stances fixed, performance improvements, and new UGL/AT setting
+* Headless state machines updates.
+
 
 ## 1.6.0 (2022-07-03)
 ### Fixed
