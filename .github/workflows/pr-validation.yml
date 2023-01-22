@@ -37,4 +37,9 @@ jobs:
           ./.github/scripts/master-pr-validations.ps1
           -SourceBranch ${{ github.head_ref }}
           -ChangedFiles ${{ steps.changed-files.outputs.all_changed_files }}
+
+      - name: Validate PR task checklist
+        uses: kentaro-m/task-completed-checker-action@v0.1.0
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
           
