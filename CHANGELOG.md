@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 * Master PR validation script paramters.
 
+### Added
+* Added Pull Request template.
+
 ## 1.6.0 (2022-07-03)
 ### Fixed
 * Fixed the cut grass action not creating the module on animation end.
