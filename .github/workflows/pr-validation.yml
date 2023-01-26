@@ -11,12 +11,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       
       - name: Get changed files
         id: changed-files
-        uses: tj-actions/changed-files@v35.4.3
+        uses: tj-actions/changed-files@v35.4.4
         with:
           separator: ","
+          since_last_remote_commit: true
+          write_output_files: true
 
       - name: Common validations
         shell: pwsh
