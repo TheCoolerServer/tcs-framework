@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 * Master PR validation script paramters.
+* Changed files not working properly for pull requests.
 
 ### Added
 * Added Pull Request template.
