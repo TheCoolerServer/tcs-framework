@@ -14,7 +14,8 @@ jobs:
       
       - name: Get changed files
         run: |
-            changed_files = git diff --name-only -r ${{ github.base_ref }} HEAD | paste -s -d ","
+            changed_files=`git diff --name-only -r ${{ github.base_ref }} HEAD | paste -s -d ","`
+            echo "Changed files: {changed_files"}
             echo "changed_files={changed_files}" >> $GITHUB_OUTPUT
 
       - name: Common validations
