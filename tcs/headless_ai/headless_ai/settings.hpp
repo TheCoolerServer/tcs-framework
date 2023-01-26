@@ -21,11 +21,11 @@ initialRandomSpawns[] = {};
 initialRandomSpawnsCount = 0;
 
 // Debug message settings
-debug = true;
+debug = false;
 verboseDebug = false;
 groupDebug = false;
 // Turn on map markers that track AI movement
-useMarkers = true;
+useMarkers = false;
 
 // Custom viewdistance for the AI
 AIViewDistance = 2500;
