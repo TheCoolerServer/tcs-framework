@@ -19,7 +19,6 @@ jobs:
         uses: tj-actions/changed-files@v35.4.4
         with:
           separator: ","
-          since_last_remote_commit: true
           write_output_files: true
 
       - name: Common validations
