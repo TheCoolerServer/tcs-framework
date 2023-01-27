@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Updated deprecated github action output.
 * Updated github action version.
 * Headless AI forced stances fixed, performance improvements, and new UGL/AT setting
+* Headless state machines updates.
+
 
 ### Fixed
 * Master PR validation script paramters.

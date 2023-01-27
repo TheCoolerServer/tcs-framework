@@ -7,7 +7,7 @@ of reinforcements or subsequent AOs.
 
 // Array objects
 // eg: ["mainEnemy", "patrol_1", "patrol_2", "patrol_3"]
-arrayObjects[] = {"hc1", "hc2"};
+arrayObjects[] = {"hc1"};
 
 // Initial spawns are spawned upon init, at the start of the mission.
 // eg: ["mainEnemy"]
@@ -21,11 +21,11 @@ initialRandomSpawns[] = {};
 initialRandomSpawnsCount = 0;
 
 // Debug message settings
-debug = true;
+debug = false;
 verboseDebug = false;
 groupDebug = false;
 // Turn on map markers that track AI movement
-useMarkers = true;
+useMarkers = false;
 
 // Custom viewdistance for the AI
 AIViewDistance = 2500;

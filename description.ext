@@ -1,7 +1,7 @@
 author = "AUTHOR NAME";
 OnLoadName = "Operation Name";
-OnLoadMission = "MISSION DESCRIPTION";
-loadScreen = "Loading text";
+OnLoadMission = "Loading text";
+loadScreen = "load.jpg";
 
 
 
@@ -47,6 +47,10 @@ class Params{
 
 #undef description
 
+#define description_other
+  #include "tcs\headless_ai\loadAI.sqf"
+#undef description_other
+
 
 
 class Extended_PreInit_EventHandlers {
@@ -78,9 +82,6 @@ class Extended_InitPost_EventHandlers {
 
 #undef description_XEH_PostInit
 
-#define description_other
-  #include "tcs\headless_ai\loadAI.sqf"
-#undef description_other
 
 #define description_XEH_FiredMan_CAManBase
 	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE

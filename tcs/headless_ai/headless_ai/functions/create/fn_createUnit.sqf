@@ -38,6 +38,7 @@ private _unit = _group createUnit [_class, _pos, [], 0, _placeMode];
 [_unit] joinSilent _group;
 _unit disableAI "Path";
 _unit setPosATL _pos;
+_unit setVariable ["lambs_danger_disableAI", true];
 
 if (_gear isEqualType "") then {
     [_unit, _gear] call EFUNC(FW,gearScript);
