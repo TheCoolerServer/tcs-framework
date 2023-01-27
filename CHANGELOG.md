@@ -7,9 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Changed
 * Github PR validations
+* Updated deprecated github action output.
+* Updated github action version.
 * Headless AI forced stances fixed, performance improvements, and new UGL/AT setting
 * Headless state machines updates.
 
+
+### Fixed
+* Master PR validation script paramters.
+* Changed files not working properly for pull requests.
+
+### Added
+* Added Pull Request template.
+* Added PR checklist validation.
 
 ## 1.6.0 (2022-07-03)
 ### Fixed
