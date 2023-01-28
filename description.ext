@@ -6,8 +6,8 @@ loadScreen = "load.jpg";
 
 
 // respawnTemplates[] = {"TCS_OneLife"}; // One life respawn
-//respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
-//respawnTemplates[] = {"TCS_Respawn", "TCS_Individual_Tickets"}; // Individual ticket based respawn
+// respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
+// respawnTemplates[] = {"TCS_Respawn", "TCS_Individual_Tickets"}; // Individual ticket based respawn
 respawnTemplates[] = {"TCS_Respawn", "Counter"}; // Default respawn
 
 // Do not change this unless you know what you are doing, if you do you will need to fix all the respawn templates
@@ -41,6 +41,8 @@ class Params{
 #include "CfgRespawnTemplates.hpp"
 
 #include "RscTitles.hpp"
+
+#include "tcs\richPresence\TCS_CfgDiscordRichPresence.hpp"
 
 #define description
   #include "tcs\headless_ai\loadAI.sqf"

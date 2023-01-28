@@ -201,4 +201,11 @@ class TCS {
 
     class localizeSling {};
   };
+
+    class RichPresence {
+    file = "tcs\richPresence";
+
+    class initPlayerRichPresence {};
+    class updatePlayerRPTicketCount {};
+  };
 };
