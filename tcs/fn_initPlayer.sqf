@@ -19,13 +19,14 @@ if (TCS_var_addSurgicalKitsToMedics) then {
 	};
 };
 
-if (TCS_var_saveAndRestoreLoadouts) then {
-	_loadout = getUnitLoadout player;
-	_loadout = [_loadout] call acre_api_fnc_filterUnitLoadout;
-	TCS_var_playerLoadout = _loadout;
-};
+// Add any radios from the framework, and wait until that is done.
+_radioInit = [] spawn TCS_fnc_initPlayerRadios;
+waitUntil {scriptDone _radioInit};
 
-[] spawn TCS_fnc_initPlayerRadios;
+if (TCS_var_saveAndRestoreLoadouts) then {
+	// Filter any ACRE radios with IDs, replacing with the base class.
+	TCS_var_playerLoadout = [getUnitLoadout player] call acre_api_fnc_filterUnitLoadout;
+};
 
 [] spawn TCS_fnc_adminInit;
 

@@ -22,9 +22,7 @@ _id =  ["ace_arsenal_displayClosed",
 	[player, "ACE_NoVoice"] remoteExec ["setSpeaker"];
 	
 	//Get the player's loadout and replace ACRE radios with their base class.
-	_loadout = getUnitLoadout player;
-	_loadout = [_loadout] call acre_api_fnc_filterUnitLoadout;
-	TCS_var_playerLoadout = _loadout;
+	TCS_var_playerLoadout = [getUnitLoadout player] call acre_api_fnc_filterUnitLoadout;
 	
 	// Delete the invisible helipad (the actual arsenal)
 	_abox = player getVariable "_arsenal";
