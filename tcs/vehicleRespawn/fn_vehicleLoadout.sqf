@@ -15,7 +15,7 @@
 				- Array of items/magazines/weapons/backpacks.
 	
 	Example:
-		nul = [this, [[["Medikit","Toolkit"], [1, 2]],[],[],[]]] call FRED_fnc_vehicleLoadout
+		nul = [this, [[["Medikit","Toolkit"], [1, 2]],[],[],[]]] call TCS_fnc_vehicleLoadout
 */
 if (!isServer) exitWith {};
 private ["_itemArray", "_magazineArray", "_weaponArray", "_backpackArray"];
