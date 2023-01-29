@@ -20,8 +20,10 @@ if (TCS_var_addSurgicalKitsToMedics) then {
 };
 
 // Add any radios from the framework, and wait until that is done.
-_radioInit = [] spawn TCS_fnc_initPlayerRadios;
-waitUntil {scriptDone _radioInit};
+if (TCS_var_addRadiosToPlayers) then {
+	_radioInit = [] call TCS_fnc_addConfigurationRadiosToPlayer;
+	//waitUntil {scriptDone _radioInit};
+};
 
 if (TCS_var_saveAndRestoreLoadouts) then {
 	// Filter any ACRE radios with IDs, replacing with the base class.
