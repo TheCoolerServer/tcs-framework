@@ -21,8 +21,7 @@ if (TCS_var_addSurgicalKitsToMedics) then {
 
 // Add any radios from the framework, and wait until that is done.
 if (TCS_var_addRadiosToPlayers) then {
-	_radioInit = [] call TCS_fnc_addConfigurationRadiosToPlayer;
-	//waitUntil {scriptDone _radioInit};
+	[] call TCS_fnc_addConfigurationRadiosToPlayer;
 };
 
 if (TCS_var_saveAndRestoreLoadouts) then {
