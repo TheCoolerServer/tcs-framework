@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Headless AI forced stances fixed, performance improvements, and new UGL/AT setting
 * Headless state machines updates.
 * Added support for the Discord Rich Presence mod
+* Moved the VehicleRespawn folder to fix the release build
 
 
 ### Fixed

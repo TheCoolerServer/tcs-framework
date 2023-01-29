@@ -208,4 +208,12 @@ class TCS {
     class initPlayerRichPresence {};
     class updatePlayerRPTicketCount {};
   };
+
+  class VehicleRespawn {
+		file = "tcs\vehicleRespawn";
+
+		class vehicleLoadout {};
+		class vehicleMonitor {};
+		class vehicleRespawn {};
+	};
 };
