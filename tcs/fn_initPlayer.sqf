@@ -20,7 +20,9 @@ if (TCS_var_addSurgicalKitsToMedics) then {
 };
 
 if (TCS_var_saveAndRestoreLoadouts) then {
-	TCS_var_playerLoadout = getUnitLoadout player;
+	_loadout = getUnitLoadout player;
+	_loadout = [_loadout] call acre_api_fnc_filterUnitLoadout;
+	TCS_var_playerLoadout = _loadout;
 };
 
 [] spawn TCS_fnc_initPlayerRadios;
