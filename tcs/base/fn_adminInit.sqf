@@ -12,13 +12,15 @@
 
 private _start = time;
 private _adminIds = [
-	"76561198038553572", // Hingle
-	"76561198028549221", // Lucas
-	"76561197992043612", // Science
-	"76561197981421300", // Metkill
-	"76561197997429145", // M16
+	"76561198037776313", // BearMilitia
 	"76561197982851011", // Dumbname
-	"76561198042629560" // Pliskin
+	"76561198074598707", // FableChaser
+	"76561193743586276", // Hingle
+	"76561198028549221", // Lucas
+	"76561197997429145", // M16
+	"76561198064974942", // MexterInfinite
+	"76561197992043612", // Science
+	"76561198052584606"  // Zapper
 ];
 private _isAdmin = (serverCommandAvailable "#kick") || ((getPlayerUID player) in _adminIds);
 
