@@ -51,7 +51,7 @@ while {true} do {
 				_newVehicle setPosASL _position;
 				_newVehicle setDir _direction;
 
-				if _loadout then {[_newVehicle, _inventory] call FRED_fnc_vehicleLoadout};
+				if _loadout then {[_newVehicle, _inventory] call TCS_fnc_vehicleLoadout};
 				if _savePaint then {[_newVehicle, _paint, _parts] call BIS_fnc_initVehicle};
 				
 				if _limitEnabled then {

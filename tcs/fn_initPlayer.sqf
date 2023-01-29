@@ -68,4 +68,6 @@ if (TCS_var_preventGrassDisable) then {
 
 if (TCS_var_enableDressUp) then {
 	[] call TCS_fnc_createDressUp;
-}
+};
+
+[] call TCS_fnc_initPlayerRichPresence;

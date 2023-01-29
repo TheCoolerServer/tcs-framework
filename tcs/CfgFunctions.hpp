@@ -201,4 +201,19 @@ class TCS {
 
     class localizeSling {};
   };
+
+    class RichPresence {
+    file = "tcs\richPresence";
+
+    class initPlayerRichPresence {};
+    class updatePlayerRPTicketCount {};
+  };
+
+  class VehicleRespawn {
+		file = "tcs\vehicleRespawn";
+
+		class vehicleLoadout {};
+		class vehicleMonitor {};
+		class vehicleRespawn {};
+	};
 };

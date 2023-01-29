@@ -5,7 +5,6 @@ LOG("HC Client Pre Init");
 private _version = "0.2.6";
 
 
-
 //[QGVAR(ClientEvent), {
 //
 //}] call CBA_fnc_addEventHandler;

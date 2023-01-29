@@ -1,13 +1,13 @@
 author = "AUTHOR NAME";
 OnLoadName = "Operation Name";
-OnLoadMission = "MISSION DESCRIPTION";
-loadScreen = "Loading text";
+OnLoadMission = "Loading text";
+loadScreen = "load.jpg";
 
 
 
 // respawnTemplates[] = {"TCS_OneLife"}; // One life respawn
-//respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
-//respawnTemplates[] = {"TCS_Respawn", "TCS_Individual_Tickets"}; // Individual ticket based respawn
+// respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
+// respawnTemplates[] = {"TCS_Respawn", "TCS_Individual_Tickets"}; // Individual ticket based respawn
 respawnTemplates[] = {"TCS_Respawn", "Counter"}; // Default respawn
 
 // Do not change this unless you know what you are doing, if you do you will need to fix all the respawn templates
@@ -42,10 +42,16 @@ class Params{
 
 #include "RscTitles.hpp"
 
+#include "tcs\richPresence\TCS_CfgDiscordRichPresence.hpp"
+
 #define description
   #include "tcs\headless_ai\loadAI.sqf"
 
 #undef description
+
+#define description_other
+  #include "tcs\headless_ai\loadAI.sqf"
+#undef description_other
 
 
 
@@ -78,9 +84,6 @@ class Extended_InitPost_EventHandlers {
 
 #undef description_XEH_PostInit
 
-#define description_other
-  #include "tcs\headless_ai\loadAI.sqf"
-#undef description_other
 
 #define description_XEH_FiredMan_CAManBase
 	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
