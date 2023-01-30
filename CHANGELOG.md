@@ -6,21 +6,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 ### Changed
-* Github PR validations
+* Github PR validations.
 * Updated deprecated github action output.
 * Updated github action version.
-* Headless AI forced stances fixed, performance improvements, and new UGL/AT setting
+* Headless AI forced stances fixed, performance improvements, and new UGL/AT setting.
 * Headless state machines updates.
+* Updated fn_adminInit.sqf with new Mods and Admins.
 
 ### Fixed
 * Master PR validation script paramters.
 * Changed files not working properly for pull requests.
-* Moved the VehicleRespawn folder to fix the release build
+* Moved the VehicleRespawn folder to fix the release build.
 
 ### Added
 * Added Pull Request template.
 * Added PR checklist validation.
 * Added support for the Discord Rich Presence mod.
+* Added Debug Console for all Mods and Admins.
 
 ## 1.6.0 (2022-07-03)
 ### Fixed
