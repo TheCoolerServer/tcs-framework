@@ -31,7 +31,7 @@
 					(Default: true)
 	
 	Example:
-		[this, 5, {_this allowDamage false;}, false] call FRED_fnc_vehicleRespawn;
+		[this, 5, {_this allowDamage false;}] call TCS_fnc_vehicleRespawn;
 */
 if (!isServer) exitWith {};
 private ["_inventory", "_paint", "_parts", "_vehicleData"];
@@ -76,7 +76,7 @@ _vehicleData = [
 
 if (isNil "VRMonitor") then {
 	TotalVRArray = [];
-	[] spawn FRED_fnc_vehicleMonitor;
+	[] spawn TCS_fnc_vehicleMonitor;
 	VRMonitor = 1;
 };
 

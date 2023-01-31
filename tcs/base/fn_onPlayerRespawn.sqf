@@ -22,3 +22,5 @@ if ((TCS_var_addRadiosToPlayers) and (not TCS_var_saveAndRestoreLoadouts)) then 
 if (CBA_missionTime > TCS_var_allowVoluntarySpectatorAfter) then {
 	[TCS_var_spectatorOptionTimeout] call TCS_fnc_addSpectateAction;
 };
+
+[] call TCS_fnc_updatePlayerRPTicketCount;
