@@ -19,7 +19,6 @@ if (TCS_var_addSurgicalKitsToMedics) then {
 	};
 };
 
-// Add any radios from the framework, and wait until that is done.
 if (TCS_var_addRadiosToPlayers) then {
 	[] call TCS_fnc_addConfigurationRadiosToPlayer;
 };
