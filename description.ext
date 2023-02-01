@@ -14,6 +14,18 @@ respawnTemplates[] = {"TCS_Respawn", "Counter"}; // Default respawn
 // https://community.bistudio.com/wiki/Description.ext#respawnOnStart
 respawnOnStart = -1;
 
+// Enables the debug console for all Mods and Admins as well as the currently logged in Admin
+enableDebugConsole[] = {
+	"76561198037776313", // BearMilitia
+	"76561197982851011", // Dumbname
+	"76561198074598707", // FableChaser
+	"76561193743586276", // Hingle
+	"76561198028549221", // Lucas
+	"76561197997429145", // M16
+	"76561198064974942", // MexterInfinite
+	"76561197992043612", // Science
+	"76561198052584606"  // Zapper
+};
 
 #include "tcs\DefaultGCSettings.hpp"
 

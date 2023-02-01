@@ -15,17 +15,17 @@ jobs:
           fetch-depth: 0
       
       - name: Get changed files
-        id: changed-files
-        uses: tj-actions/changed-files@v35.4.4
+        id: get-changed-files
+        uses: ./.github/actions/get-changed-files
         with:
-          separator: ","
-          write_output_files: true
+          pr-id: ${{ github.event.pull_request.number }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Common validations
         shell: pwsh
         run: >
           ./.github/scripts/common-validations.ps1
-          -ChangedFiles ${{ steps.changed-files.outputs.all_changed_files }}
+          -ChangedFiles ${{ steps.get-changed-files.outputs.changed-files }}
 
       - name: Validate dev branch requirements
         if: github.base_ref == 'dev'
@@ -39,5 +39,5 @@ jobs:
         run: > 
           ./.github/scripts/master-pr-validations.ps1
           -SourceBranch ${{ github.head_ref }}
-          -ChangedFiles ${{ steps.changed-files.outputs.all_changed_files }}
+          -ChangedFiles ${{ steps.get-changed-files.outputs.changed-files }}
           
