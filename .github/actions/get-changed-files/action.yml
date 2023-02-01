@@ -13,11 +13,13 @@ inputs:
 outputs:
   changed-files:
     description: A comma-separated list of changed files
+    value: ${{ steps.get-changes.outputs.changed-files }}
 
 runs:
   using: composite
   steps:
     - run: ${{ github.action_path }}/action.ps1 -Pr ${{ inputs.pr-id }}
       shell: pwsh
+      id: get-changes
       env:
         GITHUB_TOKEN: ${{ inputs.github-token }}

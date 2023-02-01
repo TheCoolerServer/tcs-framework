@@ -17,5 +17,5 @@ Write-Output "Writing output: $CommaSeparatedFiles"
 
 "changed-files=$CommaSeparatedFiles" | Out-File -Append -Encoding "utf8" $Env:GITHUB_OUTPUT
 
-Write-Output "Output file:"
-Write-Output (Get-Content -Path $Env:GITHUB_OUTPUT)
+# Write-Output "Output file:"
+# Write-Output (Get-Content -Path $Env:GITHUB_OUTPUT)
