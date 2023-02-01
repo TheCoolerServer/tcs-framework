@@ -3,11 +3,8 @@ Param(
 )
 
 $RawAPIReponse = gh api `
--H "Accept: application/vnd.github+json" `
-"/repos/TheCoolerServer/tcs-framework/pulls/$Pr/files"
-
-Write-Output "Received API response: $RawAPIReponse"
-
+	-H "Accept: application/vnd.github+json" `
+	"/repos/TheCoolerServer/tcs-framework/pulls/$Pr/files?per_page=100"
 $ApiResponse = ConvertFrom-Json $RawAPIReponse
 
 $FileNames = $ApiResponse.ForEach({ $_.filename })
