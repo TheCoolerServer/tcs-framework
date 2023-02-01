@@ -25,7 +25,7 @@ jobs:
         shell: pwsh
         run: >
           ./.github/scripts/common-validations.ps1
-          -ChangedFiles ${{ steps.changed-files.outputs.all_changed_files }}
+          -ChangedFiles ${{ steps.changed-files.outputs.changed-files }}
 
       - name: Validate dev branch requirements
         if: github.base_ref == 'dev'
@@ -39,5 +39,5 @@ jobs:
         run: > 
           ./.github/scripts/master-pr-validations.ps1
           -SourceBranch ${{ github.head_ref }}
-          -ChangedFiles ${{ steps.changed-files.outputs.all_changed_files }}
+          -ChangedFiles ${{ steps.changed-files.outputs.changed-files }}
           

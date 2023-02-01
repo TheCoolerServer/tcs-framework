@@ -8,6 +8,10 @@ $ApiResponse = ConvertFrom-Json (
 		"/repos/TheCoolerServer/tcs-framework/pulls/$Pr/files"
 )
 
-$Files = ($ApiResponse.ForEach({ $_.filename })) -join ","
+$FileNames = $ApiResponse.ForEach({ $_.filename })
 
-"changed-files=$Files" >> $GITHUB_OUTPUT
+Write-Output ("Foud changed files:" -f ($FileNames -join "`n"))
+
+$CommaSeparatedFiles = $FileNames -join ","
+
+"changed-files=$CommaSeparatedFiles" >> $GITHUB_OUTPUT
