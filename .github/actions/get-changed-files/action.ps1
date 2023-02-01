@@ -13,8 +13,10 @@ $FileNames = $ApiResponse.ForEach({ $_.filename })
 
 Write-Output "File names: $FileNames"
 
-Write-Output ("Found changed files:" -f ($FileNames -join "`n"))
+Write-Output ("Found changed files: {0}" -f ($FileNames -join "`n"))
 
 $CommaSeparatedFiles = $FileNames -join ","
+
+Write-Output "Writing output: $CommaSeparatedFiles"
 
 "changed-files=$CommaSeparatedFiles" >> $GITHUB_OUTPUT
