@@ -17,7 +17,7 @@ jobs:
       - name: Get changed files
         id: changed-files
         uses: ./.github/actions/get-changed-files
-        inputs:
+        with:
           pr-id: ${{ github.event.pull_request.number }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
