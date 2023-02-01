@@ -16,10 +16,10 @@ jobs:
       
       - name: Get changed files
         id: changed-files
-        uses: tj-actions/changed-files@v35.4.4
-        with:
-          separator: ","
-          write_output_files: true
+        uses: ./.github/actions/get-changed-files
+        inputs:
+          pr-id: ${{ github.event.pull_request.number }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Common validations
         shell: pwsh
