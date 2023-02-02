@@ -18,7 +18,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Master PR validation script paramters.
 * Changed files not working properly for pull requests.
 * Moved the VehicleRespawn folder to fix the release build
-* Moved the VehicleRespawn folder to fix the release build.
 * Modified dress-up to work with editor-added radios.
 
 ### Added
