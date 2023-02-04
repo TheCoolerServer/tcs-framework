@@ -39,4 +39,4 @@ $AllChangesString = ($AllChanges.Foreach({ $_.filename })) -Join ","
 "all-files=$AllChangesString`n" | Out-File -Append -Encoding "utf8" $Env:GITHUB_OUTPUT
 
 Write-Host "Output file:"
-Write-Host (Get-Content -Path $Env:GITHUB_OUTPUT)
+Write-Host (Get-Content -Raw -Path $Env:GITHUB_OUTPUT)
