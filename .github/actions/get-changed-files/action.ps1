@@ -3,7 +3,7 @@ Param(
 )
 
 
-$HasReachedEnd = False
+$HasReachedEnd = $False
 $CurrentPage = 1
 $AllChanges = @()
 
