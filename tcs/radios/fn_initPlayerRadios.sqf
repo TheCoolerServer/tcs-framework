@@ -18,9 +18,6 @@ waitUntil {
 	[] call acre_api_fnc_isInitialized;
 };
 
-if (TCS_var_addRadiosToPlayers) then {
-	[] call TCS_fnc_addConfigurationRadiosToPlayer;
-};
 
 if (TCS_var_saveAndRestoreRadioSettings) then {
 	// We need to wait here because the radios we just added will not be initialized yet

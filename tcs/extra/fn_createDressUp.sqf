@@ -21,19 +21,8 @@ _id =  ["ace_arsenal_displayClosed",
 	// It needs to be remoteExec because this has to run on all clients 
 	[player, "ACE_NoVoice"] remoteExec ["setSpeaker"];
 	
-	//Next remove the radios before saving the loadout (otherwise ID overlap issues)
-	_radioList = [] call acre_api_fnc_getCurrentRadioList;
-	[_radioList] call TCS_fnc_removePlayerRadios;
-	
-	// Save the voiceless, radioless loadout to TCS variable
-	TCS_var_playerLoadout = getUnitLoadout player;
-	
-	// Give the player's radios back
-	{
-		(uniformContainer player) addItemCargoGlobal [_x, 1];
-	} forEach TCS_var_playerRadios;
-	
-	[] spawn TCS_fnc_initPlayerRadios;
+	//Get the player's loadout and replace ACRE radios with their base class.
+	TCS_var_playerLoadout = [getUnitLoadout player] call acre_api_fnc_filterUnitLoadout;
 	
 	// Delete the invisible helipad (the actual arsenal)
 	_abox = player getVariable "_arsenal";

@@ -12,11 +12,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Headless AI forced stances fixed, performance improvements, and new UGL/AT setting.
 * Headless state machines updates.
 * Updated fn_adminInit.sqf with new Mods and Admins.
+* Re-ordered initPlayer to give framework radios before saving loadout, and to replace ACRE radios with their base classes.
 
 ### Fixed
 * Master PR validation script paramters.
 * Changed files not working properly for pull requests.
-* Moved the VehicleRespawn folder to fix the release build.
+* Moved the VehicleRespawn folder to fix the release build
+* Modified dress-up to work with editor-added radios.
 
 ### Added
 * Added Pull Request template.
