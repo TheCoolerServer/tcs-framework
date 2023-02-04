@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+
+## 1.7.0 (2023-01-04)
 ### Changed
 * Github PR validations.
 * Updated deprecated github action output.
@@ -17,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 * Master PR validation script paramters.
 * Changed files not working properly for pull requests.
-* Moved the VehicleRespawn folder to fix the release build
+* Moved the VehicleRespawn folder to fix the release build.
 * Modified dress-up to work with editor-added radios.
 
 ### Added
