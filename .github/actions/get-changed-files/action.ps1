@@ -10,7 +10,7 @@ $AllChanges = @()
 do {
 	$RawAPIReponse = gh api `
 		-H "Accept: application/vnd.github+json" `
-		"/repos/TheCoolerServer/tcs-framework/pulls/$Pr/files?per_page=100?page=$CurrentPage"
+		"/repos/TheCoolerServer/tcs-framework/pulls/$Pr/files?per_page=1?page=$CurrentPage"
 
 	$ApiResponse = ConvertFrom-Json $RawAPIReponse
 	$AllChanges += $ApiResponse
@@ -27,11 +27,11 @@ foreach($Change in $AllChanges) {
 	Write-Host ("Found change: {0} ({1})" -f $Change.filename, $Change.status)
 }
 
-$ChangedFilesString = ($AllFiles.Foreach({ $_.filename }) -Join ","
-$AddedFilesString = ($AddedFiles.Foreach({ $_.filename }) -Join ","
-$RemovedFilesString = ($RemovedFiles.Foreach({ $_.filename }) -Join ","
-$OtherFilesString = ($OtherChanges.Foreach({ $_.filename }) -Join ","
-$AllChangesString = ($AllChanges.Foreach({ $_.filename }) -Join ","
+$ChangedFilesString = ($AllFiles.Foreach({ $_.filename })) -Join ","
+$AddedFilesString = ($AddedFiles.Foreach({ $_.filename })) -Join ","
+$RemovedFilesString = ($RemovedFiles.Foreach({ $_.filename })) -Join ","
+$OtherFilesString = ($OtherChanges.Foreach({ $_.filename })) -Join ","
+$AllChangesString = ($AllChanges.Foreach({ $_.filename })) -Join ","
 
 
 "changed-files=$ChangedFilesString`n" | Out-File -Append -Encoding "utf8" $Env:GITHUB_OUTPUT
