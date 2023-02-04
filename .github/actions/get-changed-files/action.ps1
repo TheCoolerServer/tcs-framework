@@ -7,19 +7,14 @@ $HasReachedEnd = $False
 $CurrentPage = 1
 $AllChanges = @()
 
-do {
-	$RawAPIReponse = gh api `
+$RawAPIReponse = gh api `
 		-H "Accept: application/vnd.github+json" `
-		"/repos/TheCoolerServer/tcs-framework/pulls/$Pr/files?per_page=1?page=$CurrentPage"
+		"/repos/TheCoolerServer/tcs-framework/pulls/$Pr/files"
+		--paginate
+$ApiResponse = ConvertFrom-Json $RawAPIReponse
+$AllChanges = $ApiResponse
 
-	$ApiResponse = ConvertFrom-Json $RawAPIReponse
-	
-	$AllChanges += $ApiResponse
-	$HasReachedEnd = $ApiResponse.Count -eq 0
-	$CurrentPage += 1
-	
-	Write-Host ("Received {0} records for page {1}" -f $ApiResponse.Count, $CurrentPage)
-} while (-Not $HasReachedEnd)
+Write-Host ("Found {0} changes in the PR" -f $AllChanges.Count)
 
 $ChangedFiles = $AllChanges | Where { $_.status -eq "changed" }
 $AddedFiles = $AllChanges | Where { $_.status -eq "added" }
