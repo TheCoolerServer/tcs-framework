@@ -25,7 +25,7 @@ foreach($Change in $AllChanges) {
 	Write-Host ("Found change: {0} ({1})" -f $Change.filename, $Change.status)
 }
 
-$ChangedFilesString = ($AllFiles.Foreach({ $_.filename })) -Join ","
+$ChangedFilesString = ($ChangedFiles.Foreach({ $_.filename })) -Join ","
 $AddedFilesString = ($AddedFiles.Foreach({ $_.filename })) -Join ","
 $RemovedFilesString = ($RemovedFiles.Foreach({ $_.filename })) -Join ","
 $OtherFilesString = ($OtherChanges.Foreach({ $_.filename })) -Join ","
