@@ -13,10 +13,12 @@ do {
 		"/repos/TheCoolerServer/tcs-framework/pulls/$Pr/files?per_page=1?page=$CurrentPage"
 
 	$ApiResponse = ConvertFrom-Json $RawAPIReponse
-	$AllChanges += $ApiResponse
 	
+	$AllChanges += $ApiResponse
 	$HasReachedEnd = $ApiResponse.Count -eq 0
 	$CurrentPage += 1
+	
+	Write-Host ("Received {0} records for page {1}" -f ApiResponse.Count, $CurrentPage)
 } while (-Not $HasReachedEnd)
 
 $ChangedFiles = $AllChanges | Where { $_.status -eq "changed" }
