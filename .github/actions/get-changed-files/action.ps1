@@ -16,7 +16,7 @@ $AllChanges = $ApiResponse
 
 Write-Host ("Found {0} changes in the PR" -f $AllChanges.Count)
 
-$ChangedFiles = $AllChanges | Where { $_.status -eq "changed" }
+$ChangedFiles = $AllChanges | Where { $_.status -eq "modified" }
 $AddedFiles = $AllChanges | Where { $_.status -eq "added" }
 $RemovedFiles = $AllChanges | Where { $_.status -eq "removed" }
 $OtherChanges = $AllChanges | Where { (($_ -NotIn $ChangedFiles) -And ($_ -NotIn $AddedFiles)) -And ($_ -NotIn $RemovedFiles) }
