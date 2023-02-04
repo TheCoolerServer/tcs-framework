@@ -9,7 +9,7 @@ $AllChanges = @()
 
 $RawAPIReponse = gh api `
 		-H "Accept: application/vnd.github+json" `
-		"/repos/TheCoolerServer/tcs-framework/pulls/$Pr/files"
+		"/repos/TheCoolerServer/tcs-framework/pulls/$Pr/files" `
 		--paginate
 $ApiResponse = ConvertFrom-Json $RawAPIReponse
 $AllChanges = $ApiResponse
