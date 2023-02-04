@@ -16,6 +16,7 @@ do {
 	$AllChanges += $ApiResponse
 	
 	$HasReachedEnd = $ApiResponse.Count -eq 0
+	$CurrentPage += 1
 } while (-Not $HasReachedEnd)
 
 $ChangedFiles = $AllChanges | Where { $_.status -eq "changed" }
