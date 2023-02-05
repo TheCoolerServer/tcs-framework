@@ -11,15 +11,7 @@
 */
 
 private _start = time;
-private _adminIds = [
-	"76561198038553572", // Hingle
-	"76561198028549221", // Lucas
-	"76561197992043612", // Science
-	"76561197981421300", // Metkill
-	"76561197997429145", // M16
-	"76561197982851011", // Dumbname
-	"76561198042629560" // Pliskin
-];
+private _adminIds = getArray (missionConfig >> "enableDebugConsole");
 private _isAdmin = (serverCommandAvailable "#kick") || ((getPlayerUID player) in _adminIds);
 
 // systemChat format ["Server command available?: %1", (serverCommandAvailable "#kick")];

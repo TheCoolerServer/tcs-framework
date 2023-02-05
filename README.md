@@ -91,3 +91,10 @@ For the individual tickets template, these are the functions:
   **Parameters:**
     * 0 - 0 - (number) The ID of the player you want to add tickets to. 0 can be used to add tickets to everyone. You can also use negative numbers to add tickets to everyone but that player.
     * 1 - (number) The number of tickets that the player should have. The number is rounded server-side.  
+	
+### Dress Up
+The variable `TCS_var_enableDressUp` enables the Dress Up feature, which allows players to access an arsenal during safe-start to customize their loadout. 
+
+If enabled, you must configure what items are available to which roles. First, fill the arrays such as `set_generic` and `set_rifleman` which the items for their respective classes. You can add more arrays if needed. The easiest way to generate the array is to fill an ACE arsenal in the in-game editor and then hit the 'export' button, and paste that into the array. 
+
+Next you must fill the hashmap `TCS_var_arsenalMap` which matches the arrays with the player roles as seen on the slotting screen. Note that anything after "@" in the player role will be filtered, so if you add the entry `["Squad Leader", set_lead]`, then the SL of all four squads will have the items in `set_lead` available to them.

@@ -497,7 +497,7 @@ class FSM
                          "	_this setVariable [""PZAI_shooting"", nil];" \n
                          "	_this spawn {" \n
                          "		sleep 2;" \n
-                         "		if !(_this getVariable [""PZAI_shooting"", false]) then {_this setunitPosWeak ""Auto""};" \n
+                         "		if !(_this getVariable [""PZAI_shooting"", false]) then {_this setunitPosWeak ""AUTO""};" \n
                          "	};" \n
                          "};"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -529,7 +529,7 @@ class FSM
                          "	_this setVariable [""PZAI_shooting"", nil];" \n
                          "	_this spawn {" \n
                          "		sleep 2;" \n
-                         "		if !(_this getVariable [""PZAI_shooting"", false]) then {_this setunitPosWeak ""Auto""};" \n
+                         "		if !(_this getVariable [""PZAI_shooting"", false]) then {_this setunitPosWeak ""AUTO""};" \n
                          "	};" \n
                          "};"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;

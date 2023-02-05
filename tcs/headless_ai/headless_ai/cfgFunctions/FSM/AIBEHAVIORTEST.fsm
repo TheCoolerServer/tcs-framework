@@ -798,7 +798,7 @@ class FSM
                                         to="Temp_Halt";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
                                         condition=/*%FSM<CONDITION""">*/"diag_fps < PZAI_FPSFreeze || " \n
-                                         "(!(_MyNearestEnemy isEqualTo [0,0,0]) && {(_MyNearestEnemy distance _Unit > PZAI_DisableDistance)} && {!((behaviour _Unit) isEqualTo ""COMBAT"")})"/*%FSM</CONDITION""">*/;
+                                         "((_MyNearestEnemy isNotEqualTo [0,0,0]) && {(_MyNearestEnemy distance _Unit > PZAI_DisableDistance)} && {!((behaviour _Unit) isEqualTo ""COMBAT"")})"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/"_unit disableAI ""ALL"";" \n
                                          "_unit forcespeed 0;"/*%FSM</ACTION""">*/;
                                 };
@@ -1135,7 +1135,7 @@ class FSM
                          "_EnemyArray = [];" \n
                          "_EnemyInRange = [];" \n
                          "_EnemyArray = _Unit call PZAI_fnc_EnemyArray;" \n
-                         "if !(_EnemyArray isEqualTo []) then {" \n
+                         "if (_EnemyArray isNotEqualTo []) then {" \n
                          "	_EnemyInRange = _EnemyArray select {((vehicle _unit) distance2d _x) < _Distance};" \n
                          "};" \n
                          "if (PZAI_VerboseDebug) then {" \n
@@ -1164,7 +1164,7 @@ class FSM
                                         priority = 2.000000;
                                         to="Check_Nearby_Ene";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"!(_EnemyInRange isEqualTo [])"/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(_EnemyInRange isNotEqualTo [])"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -1235,7 +1235,7 @@ class FSM
                          "_unit enableAI ""AIMINGERROR"";" \n
                          "_unit enableAI ""FSM"";" \n
                          "_unit forcespeed -1;" \n
-                         "_unit setunitposWeak ""Auto"";" \n
+                         "_unit setunitposWeak ""AUTO"";" \n
                          "_releaseTime = CBA_MissionTime;" \n
                          "if (leader group _unit isEqualTo _unit) then {" \n
                          "	[group _unit, position _unit, 20, ""SAD"", ""COMBAT"", ""RED""] call CBA_fnc_addWaypoint;" \n
@@ -1263,7 +1263,7 @@ class FSM
                 {
                         name = "Remove_Cantsee_";
                         itemno = 44;
-                        init = /*%FSM<STATEINIT""">*/"if !(_EnemyInRange isEqualTo []) then {" \n
+                        init = /*%FSM<STATEINIT""">*/"if (_EnemyInRange isNotEqualTo []) then {" \n
                          "    _EnemyInRange = _EnemyInRange - [_NearestEnemyBunker];" \n
                          "    _NearestEnemyBunker = [_EnemyInRange,(vehicle _unit),true] call PZAI_fnc_ClosestObject;" \n
                          "};" \n
@@ -1292,7 +1292,7 @@ class FSM
                                         priority = 2.000000;
                                         to="Check_LOS";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"!(_EnemyInRange isEqualTo [])"/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(_EnemyInRange isNotEqualTo [])"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -1330,7 +1330,7 @@ class FSM
                          "_laserTarget setposASL _laserPos;" \n
                          "[_unit,_laserTarget,_laserTarget] call PZAI_fnc_WatchEnemy;" \n
                          "private _invisibleTarget = (_unit getvariable [""PZAI_InvisibleTarget"",objnull]);" \n
-                         "if !(_invisibleTarget isEqualTo objnull) then {" \n
+                         "if (_invisibleTarget isNotEqualTo objnull) then {" \n
                          "    _invisibleTarget setPosASL [0,0,0];" \n
                          "};" \n
                          "" \n
@@ -1923,7 +1923,7 @@ class FSM
                                         priority = 4.000000;
                                         to="Leader_Check";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"(_InitialWaypointSet) && (!(_currentmission isEqualto ""NONE""))"/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(_InitialWaypointSet) && ((_currentmission isNotEqualTo ""NONE""))"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -2048,7 +2048,7 @@ class FSM
                                         priority = 2.000000;
                                         to="Radio_Check";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"(!(_currentTarget isEqualto objnull))"/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"((_currentTarget isNotEqualTo objnull))"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/"if (PZAI_VerboseDebug) then {" \n
                                          "	diag_log format [""_target set for: %1"",_group];" \n
                                          "};"/*%FSM</ACTION""">*/;

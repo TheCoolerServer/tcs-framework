@@ -1,0 +1,43 @@
+name: PR Validation
+on:
+  pull_request:
+    branches:
+      - master
+      - dev
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Get changed files
+        id: get-changed-files
+        uses: ./.github/actions/get-changed-files
+        with:
+          pr-id: ${{ github.event.pull_request.number }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Common validations
+        shell: pwsh
+        run: >
+          ./.github/scripts/common-validations.ps1
+          -ChangedFiles ${{ steps.get-changed-files.outputs.changed-files }}
+
+      - name: Validate dev branch requirements
+        if: github.base_ref == 'dev'
+        shell: pwsh
+        run: Write-Output 'Succeeded'
+        
+
+      - name: Validate master branch requirements
+        if: github.base_ref == 'master'
+        shell: pwsh
+        run: > 
+          ./.github/scripts/master-pr-validations.ps1
+          -SourceBranch ${{ github.head_ref }}
+          -ChangedFiles ${{ steps.get-changed-files.outputs.changed-files }}
+          

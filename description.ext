@@ -3,6 +3,8 @@ OnLoadName = "Operation Name";
 OnLoadMission = "Loading text";
 loadScreen = "load.jpg";
 
+
+
 // respawnTemplates[] = {"TCS_OneLife"}; // One life respawn
 // respawnTemplates[] = {"TCS_Respawn", "TCS_Tickets"}; // Ticket based respawn
 // respawnTemplates[] = {"TCS_Respawn", "TCS_Individual_Tickets"}; // Individual ticket based respawn
@@ -11,6 +13,19 @@ respawnTemplates[] = {"TCS_Respawn", "Counter"}; // Default respawn
 // Do not change this unless you know what you are doing, if you do you will need to fix all the respawn templates
 // https://community.bistudio.com/wiki/Description.ext#respawnOnStart
 respawnOnStart = -1;
+
+// Enables the debug console for all Mods and Admins as well as the currently logged in Admin
+enableDebugConsole[] = {
+	"76561198037776313", // BearMilitia
+	"76561197982851011", // Dumbname
+	"76561198074598707", // FableChaser
+	"76561193743586276", // Hingle
+	"76561198028549221", // Lucas
+	"76561197997429145", // M16
+	"76561198064974942", // MexterInfinite
+	"76561197992043612", // Science
+	"76561198052584606"  // Zapper
+};
 
 #include "tcs\DefaultGCSettings.hpp"
 
@@ -30,13 +45,8 @@ class Params{
   };
 };
 
-#define description
-  #include "tcs\headless_ai\loadAI.sqf"
-#undef description
-
 #include "CfgDebriefing.hpp"
 
-#include "CfgFunctions.hpp"
 
 #include "CfgNotifications.hpp"
 
@@ -44,16 +54,55 @@ class Params{
 
 #include "RscTitles.hpp"
 
-#define description_XEH_PreInit
+#include "tcs\richPresence\TCS_CfgDiscordRichPresence.hpp"
 
-#include "VehicleRespawn\CfgFunctions.hpp"
+#define description
+  #include "tcs\headless_ai\loadAI.sqf"
+
+#undef description
+
+#define description_other
+  #include "tcs\headless_ai\loadAI.sqf"
+#undef description_other
+
+
 
 class Extended_PreInit_EventHandlers {
+	#define description_XEH_PreInit
 	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
+	#undef description_XEH_PreInit
 };
 
-#undef description_XEH_PreInit
+#define description_XEH_PostInit
+
+class Extended_PostInit_EventHandlers  {
+	#define description_XEH_PostInit
+	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
+	#undef description_XEH_PostInit
+};
+
+class Extended_InitPost_EventHandlers {
+	class CAManBase {
+		#define description_XEH_InitPost_CAManBase
+			#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
+		#undef description_XEH_InitPost_CAManBase
+	};
+};
+
+
+
+
+
+
+#undef description_XEH_PostInit
+
 
 #define description_XEH_FiredMan_CAManBase
 	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
 #undef description_XEH_FiredMan_CAManBase
+
+#include "CfgFunctions.hpp"
+
+#define description_sounds
+
+#undef description_sounds

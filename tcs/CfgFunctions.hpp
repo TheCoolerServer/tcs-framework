@@ -147,7 +147,8 @@ class TCS {
     file = "tcs\extra";
 
     class continuouslyDisableFSM {};
-
+	class dressUp {};
+	class createDressUp {};
     class createCutGrassAction {};
     class cutGrassAction {};
   };
@@ -200,4 +201,19 @@ class TCS {
 
     class localizeSling {};
   };
+
+    class RichPresence {
+    file = "tcs\richPresence";
+
+    class initPlayerRichPresence {};
+    class updatePlayerRPTicketCount {};
+  };
+
+  class VehicleRespawn {
+		file = "tcs\vehicleRespawn";
+
+		class vehicleLoadout {};
+		class vehicleMonitor {};
+		class vehicleRespawn {};
+	};
 };

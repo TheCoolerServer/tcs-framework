@@ -19,11 +19,14 @@ if (TCS_var_addSurgicalKitsToMedics) then {
 	};
 };
 
-if (TCS_var_saveAndRestoreLoadouts) then {
-	TCS_var_playerLoadout = getUnitLoadout player;
+if (TCS_var_addRadiosToPlayers) then {
+	[] call TCS_fnc_addConfigurationRadiosToPlayer;
 };
 
-[] spawn TCS_fnc_initPlayerRadios;
+if (TCS_var_saveAndRestoreLoadouts) then {
+	// Filter any ACRE radios with IDs, replacing with the base class.
+	TCS_var_playerLoadout = [getUnitLoadout player] call acre_api_fnc_filterUnitLoadout;
+};
 
 [] spawn TCS_fnc_adminInit;
 
@@ -61,3 +64,9 @@ if ([getPlayerUID player] call TCS_fnc_isPlayerSpectating) then {
 if (TCS_var_preventGrassDisable) then {
 	P_PREVENT_GRASS_DISABLE = TRUE;
 };
+
+if (TCS_var_enableDressUp) then {
+	[] call TCS_fnc_createDressUp;
+};
+
+[] call TCS_fnc_initPlayerRichPresence;
