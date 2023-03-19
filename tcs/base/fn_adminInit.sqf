@@ -11,7 +11,7 @@
 */
 
 private _start = time;
-private _adminIds = getArray (missionConfig >> "enableDebugConsole");
+private _adminIds = getArray (missionConfigFile >> "enableDebugConsole");
 private _isAdmin = (serverCommandAvailable "#kick") || ((getPlayerUID player) in _adminIds);
 
 // systemChat format ["Server command available?: %1", (serverCommandAvailable "#kick")];

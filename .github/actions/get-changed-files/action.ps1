@@ -2,20 +2,41 @@ Param(
 	[string] $Pr
 )
 
+
+$HasReachedEnd = $False
+$CurrentPage = 1
+$AllChanges = @()
+
 $RawAPIReponse = gh api `
-	-H "Accept: application/vnd.github+json" `
-	"/repos/TheCoolerServer/tcs-framework/pulls/$Pr/files?per_page=100"
+		-H "Accept: application/vnd.github+json" `
+		"/repos/TheCoolerServer/tcs-framework/pulls/$Pr/files" `
+		--paginate
 $ApiResponse = ConvertFrom-Json $RawAPIReponse
+$AllChanges = $ApiResponse
 
-$FileNames = $ApiResponse.ForEach({ $_.filename })
+Write-Host ("Found {0} changes in the PR" -f $AllChanges.Count)
 
-Write-Output ("Found changed files: `n{0}" -f ($FileNames -join "`n"))
+$ChangedFiles = $AllChanges | Where { $_.status -eq "modified" }
+$AddedFiles = $AllChanges | Where { $_.status -eq "added" }
+$RemovedFiles = $AllChanges | Where { $_.status -eq "removed" }
+$OtherChanges = $AllChanges | Where { (($_ -NotIn $ChangedFiles) -And ($_ -NotIn $AddedFiles)) -And ($_ -NotIn $RemovedFiles) }
 
-$CommaSeparatedFiles = $FileNames -join ","
+foreach($Change in $AllChanges) {
+	Write-Host ("Found change: {0} ({1})" -f $Change.filename, $Change.status)
+}
 
-Write-Output "Writing output: $CommaSeparatedFiles"
+$ChangedFilesString = ($ChangedFiles.Foreach({ $_.filename })) -Join ","
+$AddedFilesString = ($AddedFiles.Foreach({ $_.filename })) -Join ","
+$RemovedFilesString = ($RemovedFiles.Foreach({ $_.filename })) -Join ","
+$OtherFilesString = ($OtherChanges.Foreach({ $_.filename })) -Join ","
+$AllChangesString = ($AllChanges.Foreach({ $_.filename })) -Join ","
 
-"changed-files=$CommaSeparatedFiles" | Out-File -Append -Encoding "utf8" $Env:GITHUB_OUTPUT
 
-# Write-Output "Output file:"
-# Write-Output (Get-Content -Path $Env:GITHUB_OUTPUT)
+"changed-files=$ChangedFilesString`n" | Out-File -Append -Encoding "utf8" $Env:GITHUB_OUTPUT
+"added-files=$AddedFilesString`n" | Out-File -Append -Encoding "utf8" $Env:GITHUB_OUTPUT
+"removed-files=$RemovedFilesString`n" | Out-File -Append -Encoding "utf8" $Env:GITHUB_OUTPUT
+"other-files=$OtherFilesString`n" | Out-File -Append -Encoding "utf8" $Env:GITHUB_OUTPUT
+"all-files=$AllChangesString`n" | Out-File -Append -Encoding "utf8" $Env:GITHUB_OUTPUT
+
+Write-Host "Output file:"
+Write-Host (Get-Content -Raw -Path $Env:GITHUB_OUTPUT)

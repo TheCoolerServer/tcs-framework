@@ -14,6 +14,18 @@ outputs:
   changed-files:
     description: A comma-separated list of changed files
     value: ${{ steps.get-changes.outputs.changed-files }}
+  added-files:
+    description: A comma-separated list of changed files
+    value: ${{ steps.get-changes.outputs.added-files }}
+  removed-files:
+    description: A comma-separated list of changed files
+    value: ${{ steps.get-changes.outputs.removed-files }}
+  other-files:
+    description: A comma-separated list of changed files
+    value: ${{ steps.get-changes.outputs.other-files }}
+  all-files:
+    description: A comma-separated list of changed files
+    value: ${{ steps.get-changes.outputs.all-files }}
 
 runs:
   using: composite
