@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Fixed adminInit "missionConfig" error.
 * Fixed get-changed-files action returning deleted files as changed.
 * Fixed Rich Presence error when loading mission in Single Player.
+* Fixed TCS_var_preventGrassDisable after CHVD was added to repo.
 
 ## 1.7.0 (2023-01-04)
 ### Changed
