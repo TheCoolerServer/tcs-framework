@@ -22,5 +22,3 @@ if (TCS_var_enableTriggerDebugMarkers) then {
 [] spawn TCS_fnc_serverFpsLoop; 
 
 [] call TCS_fnc_localizeSling;
-
-RHNET_AB_L_DISABLE_HC_SUPPORT = true;
