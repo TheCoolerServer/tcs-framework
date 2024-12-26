@@ -43,6 +43,7 @@ class TCS {
     class briefing_zeus {};
 
     class loadoutNotes {};
+    class orbatNotes {};
   };
 
   class GroupMarkers {

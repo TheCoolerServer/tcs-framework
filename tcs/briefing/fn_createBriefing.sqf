@@ -2,6 +2,7 @@ if (!hasInterface) exitWith {};
 
 private _playerSide = side player;
 
+[] call TCS_fnc_orbatNotes;
 [] call TCS_fnc_loadoutNotes;
 
 //================================ Admin briefing ================================
