@@ -5,5 +5,6 @@ category="EdSubcat_Default";
 requiredAddons[]=
 {
 	"A3_Characters_F",
+	"A3_Data_F_Curator_Virtual",
 	"A3_Modules_F_Curator_Curator"
 };
