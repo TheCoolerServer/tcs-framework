@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 1.7.3 (2024-12-26)
+### Changed
+* Added ORBAT Framework to briefing by MexterInfinite.
+
+## 1.7.2 (2024-11-03)
+### Changed
+* Removed code specific to Action Builder.
+* Added 8 man squad compositions from MexterInfinite.
+* Added RivalHelicopter to TCS Staff composition and Debug Console
+* Renamed HC variable names to work with HBQ Spawn System
+
 ## 1.7.1 (2023-03-19)
 ### Fixed
 * Fixed adminInit "missionConfig" error.
