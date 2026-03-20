@@ -54,51 +54,6 @@ class Params{
 
 #include "tcs\richPresence\TCS_CfgDiscordRichPresence.hpp"
 
-#define description
-  #include "tcs\headless_ai\loadAI.sqf"
-
-#undef description
-
-#define description_other
-  #include "tcs\headless_ai\loadAI.sqf"
-#undef description_other
-
-
-
-class Extended_PreInit_EventHandlers {
-	#define description_XEH_PreInit
-	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
-	#undef description_XEH_PreInit
-};
-
-#define description_XEH_PostInit
-
-class Extended_PostInit_EventHandlers  {
-	#define description_XEH_PostInit
-	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
-	#undef description_XEH_PostInit
-};
-
-class Extended_InitPost_EventHandlers {
-	class CAManBase {
-		#define description_XEH_InitPost_CAManBase
-			#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
-		#undef description_XEH_InitPost_CAManBase
-	};
-};
-
-
-
-
-
-
-#undef description_XEH_PostInit
-
-
-#define description_XEH_FiredMan_CAManBase
-	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
-#undef description_XEH_FiredMan_CAManBase
-
 #include "CfgFunctions.hpp"
 
 #define description_sounds
