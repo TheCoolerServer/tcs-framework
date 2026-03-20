@@ -68,8 +68,6 @@ TCS_var_civilianTickets = 10;
 TCS_var_individualTickets = 3;
 
 //=================================== Spectator ==================================
-TCS_var_spectatorAllowFreeCamera = false;
-TCS_var_spectatorAllowThirdPersonCamera = true;
 TCS_var_spectatorAllowOtherPlayerSides = false;
 TCS_var_allowVoluntarySpectatorAfter = 5400; // 90 minutes
 TCS_var_spectatorOptionTimeout = 90;
