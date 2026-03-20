@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 1.8.0 (2026-03-19)
+### Changed
+* Updated github action version.
+* Default Garbage Collection settings.
+* Updated admin and mod list in description.ext.
+* Removed old HC AI code.
+
+### Added
+* ACE Spectator
+  - Replaced old vanilla spectaor system with ACE Spectator, this required changing some calls and options in fn_configure.hpp. Make sure to set the new setting accordingly.
+
 ## 1.7.3 (2024-12-26)
 ### Changed
 * Added ORBAT Framework to briefing by MexterInfinite.

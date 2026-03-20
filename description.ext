@@ -17,9 +17,7 @@ respawnOnStart = -1;
 // Enables the debug console for all Mods and Admins as well as the currently logged in Admin
 enableDebugConsole[] = {
 	"76561198037776313", // BearMilitia
-	"76561197982851011", // Dumbname
 	"76561198074598707", // FableChaser
-	"76561193743586276", // Hingle
 	"76561197997429145", // M16
 	"76561198064974942", // MexterInfinite
 	"76561197992043612", // Science
@@ -41,7 +39,7 @@ class Params{
     title = "Pre-init freeze time";
     values[] = {0, 5, 10, 15, 20, 25, 30};
     texts[] = {"Off", "5", "10", "15", "20", "25", "30"};
-    default = 20;
+    default = 10;
   };
 };
 
@@ -55,51 +53,6 @@ class Params{
 #include "RscTitles.hpp"
 
 #include "tcs\richPresence\TCS_CfgDiscordRichPresence.hpp"
-
-#define description
-  #include "tcs\headless_ai\loadAI.sqf"
-
-#undef description
-
-#define description_other
-  #include "tcs\headless_ai\loadAI.sqf"
-#undef description_other
-
-
-
-class Extended_PreInit_EventHandlers {
-	#define description_XEH_PreInit
-	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
-	#undef description_XEH_PreInit
-};
-
-#define description_XEH_PostInit
-
-class Extended_PostInit_EventHandlers  {
-	#define description_XEH_PostInit
-	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
-	#undef description_XEH_PostInit
-};
-
-class Extended_InitPost_EventHandlers {
-	class CAManBase {
-		#define description_XEH_InitPost_CAManBase
-			#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
-		#undef description_XEH_InitPost_CAManBase
-	};
-};
-
-
-
-
-
-
-#undef description_XEH_PostInit
-
-
-#define description_XEH_FiredMan_CAManBase
-	#include "tcs\headless_ai\loadAI.sqf" //DO NOT REMOVE
-#undef description_XEH_FiredMan_CAManBase
 
 #include "CfgFunctions.hpp"
 

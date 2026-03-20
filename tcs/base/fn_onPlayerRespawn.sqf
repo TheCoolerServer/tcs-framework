@@ -3,7 +3,7 @@
 		Event handler for the onPlayerRespawn of the TCS_Respawn respawn template.
 */
 
-["Terminate"] call BIS_fnc_EGSpectator;
+[false] call ace_spectator_fnc_setSpectator;
 
 if (TCS_var_saveAndRestoreLoadouts) then {
 	player setUnitLoadout TCS_var_playerLoadout;

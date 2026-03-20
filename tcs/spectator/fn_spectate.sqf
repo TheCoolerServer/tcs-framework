@@ -11,9 +11,11 @@
 
 if (TCS_var_spectatorAllowOtherPlayerSides == false) then
 {
-	["Initialize", [player, [playerSide], false, TCS_var_spectatorAllowFreeCamera, TCS_var_spectatorAllowThirdPersonCamera]] call BIS_fnc_EGSpectator;
+	[true] call ace_spectator_fnc_setSpectator;
+	[[TCS_var_spectator_side], [west,east,independent,civilian]] call ace_spectator_fnc_updateSides;
 }
 else
 {
-	["Initialize", [player, [], false, TCS_var_spectatorAllowFreeCamera, TCS_var_spectatorAllowThirdPersonCamera]] call BIS_fnc_EGSpectator;
+	[true] call ace_spectator_fnc_setSpectator;
+	[[west,east,independent,civilian]] call ace_spectator_fnc_updateSides;
 };

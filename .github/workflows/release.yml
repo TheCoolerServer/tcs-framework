@@ -28,7 +28,7 @@ jobs:
           zip -r compositions.zip compositions/*
           zip -r framework.zip *.hpp *.ext *.sqf tcs
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: github.ref_name != 'master'
         with:
           name: outputs
