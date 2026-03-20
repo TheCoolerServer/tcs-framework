@@ -17,9 +17,7 @@ respawnOnStart = -1;
 // Enables the debug console for all Mods and Admins as well as the currently logged in Admin
 enableDebugConsole[] = {
 	"76561198037776313", // BearMilitia
-	"76561197982851011", // Dumbname
 	"76561198074598707", // FableChaser
-	"76561193743586276", // Hingle
 	"76561197997429145", // M16
 	"76561198064974942", // MexterInfinite
 	"76561197992043612", // Science
@@ -41,7 +39,7 @@ class Params{
     title = "Pre-init freeze time";
     values[] = {0, 5, 10, 15, 20, 25, 30};
     texts[] = {"Off", "5", "10", "15", "20", "25", "30"};
-    default = 20;
+    default = 10;
   };
 };
 
